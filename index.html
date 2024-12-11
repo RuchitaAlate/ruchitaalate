@@ -58,7 +58,7 @@
       padding: 50px;
       color: white;
       background: transparent;
-      position: absolute;
+      position: relative;
       top: 0;
       width: 100%;
       z-index: 1;
@@ -103,6 +103,19 @@
     .navbar-toggler {
       border-color: transparent;
     }
+
+    /* Profile Image */
+    .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
@@ -113,8 +126,9 @@
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Header Section -->
+  <!-- Header Section with Profile Picture -->
   <header>
+    <img src="your-profile-image.jpg" alt="Profile Picture" class="profile-img">
     <h1>RUCHITA CHANDRASHEKHAR ALATE</h1>
     <p>ralate2@illinois.edu | Champaign, IL 61820 | (217) 766-0323</p>
     <p>
