@@ -44,6 +44,15 @@
     gtag('js', new Date());
     gtag('config', 'UA-169007209-3');
   </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
 </head>
 
 <body>
@@ -64,6 +73,41 @@
       </p>
     </div>
   </header>
+
+  <!-- Navigation Menu (Bootstrap Navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#responsibility">Responsibility</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- About Section -->
   <section id="about">
@@ -176,47 +220,36 @@
       <div class="project-entry">
         <h4>Norman Police Incident Data Integration</h4>
         <ul>
-          <li>Implemented a Python-based ETL pipeline to process and store 6,000+ incident reports, reducing population time by 30%.</li>
-          <li>Enriched data with Google Geocoding API, improving analysis utility by 25%.</li>
-        </ul>
-      </div>
-      <div class="project-entry">
-        <h4>Employee Data Management Dashboard</h4>
-        <ul>
-          <li>Developed Tableau dashboards that boosted data-driven decision-making and optimized resource allocation.</li>
+          <li>Created an interactive heatmap for visualizing police activity based on time, location, and incident type.</li>
+          <li>Utilized Geopandas for enhanced location mapping.</li>
         </ul>
       </div>
     </div>
   </section>
-<!-- Position of Responsibilty Section -->
+
+  <!-- Responsibility Section -->
   <section id="responsibility">
     <div class="container">
-      <h2>Positions of Responsibility</h2>
+      <h2>Leadership & Responsibility</h2>
       <ul>
-        <li>Student Coordinator (University Dining Services, UIUC – Aug 2023 to May 2024)</li>
-        <li>Data Analyst Intern (Svenska Design Hotel – Jan 2023 to Mar 2023)</li>
-        <li>Creative Head (Finlytics Club, NMIMS Mumbai – Jun 2021 to Mar 2023)</li>
-        <li>Corporate Development Intern (Leadership Boulevard – Apr 2022 to Jun 2022)</li>
-        <li>Team Leader & Audit Executive (S. K. Patodia & Associates – Sep 2019 to Jun 2020)</li>
-        <li>Student Mentor (VOICE Sanjivani NGO – Jan 2019 to Aug 2019)</li>
+        <li>Student Analyst at the Data Science Club</li>
+        <li>Project leader for technical workshops, training peers on data visualization tools like Tableau.</li>
       </ul>
     </div>
   </section>
-  
-  
 
   <!-- Contact Section -->
   <section id="contacts">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email: ralate2@illinois.edu</p>
-      <p>Phone: +12177660323</p>
+      <p>Email: <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a></p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <div class="container">
+      <p>© 2024 Ruchita Alate. All rights reserved.</p>
     </div>
   </footer>
 
