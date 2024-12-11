@@ -2,113 +2,171 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Personal Portfolio</title>
-  
+  <meta content="Personal Portfolio" name="description">
+  <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer , Product Manager" name="keywords">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169007209-3');
+  </script>
+
+  <!-- Custom CSS -->
   <style>
+    /* Change Background */
     body {
-      background: url('assets/img/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #ffffff, #e3f2fd);
+      color: #333; /* Default black for text */
     }
 
-    #header {
-      text-align: center;
-      margin-top: 100px;
-    }
-
+    /* Font Styling for Each Section */
     h1 {
-      font-family: 'Pacifico', cursive; /* Font for "I am Ruchita Alate" */
+      font-family: 'Pacifico', cursive; /* Font for "Hi, I am Ruchita Alate!" */
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      color: #2c3e50; /* Navy Blue */
     }
 
     h2 {
-      font-family: 'Lobster', cursive; /* Font for "Welcome to my portfolio" */
+      font-family: 'Lobster', cursive; /* Font for "Welcome to My Portfolio" */
       font-size: 2rem;
-      margin-bottom: 15px;
+      color: #2980b9; /* Light Blue */
     }
 
     h3 {
-      font-family: 'Raleway', sans-serif; /* Font for roles */
+      font-family: 'Raleway', sans-serif; /* Font for "Dynamic Role" */
       font-size: 1.8rem;
-      margin-bottom: 10px;
+      color: #8e44ad; /* Purple */
     }
 
     #dynamic-role {
       font-family: 'Roboto', sans-serif; /* Font for dynamic text */
       font-size: 1.5rem;
-      color: cyan;
       font-weight: bold;
+      color: #d35400; /* Orange */
     }
 
+    /* Navigation Menu Styling */
     .nav-menu ul {
       list-style: none;
       padding: 0;
     }
 
     .nav-menu li {
-      display: inline;
-      margin-right: 15px;
+      display: inline-block;
+      margin: 0 10px;
     }
 
+    .nav-menu a {
+      color: #000; /* Black font for toggle options */
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-menu a:hover {
+      color: #3498db; /* Light Blue hover effect */
+    }
+
+    /* Social Links */
     .social-links a {
-      color: white;
+      color: #333;
       margin: 0 10px;
       font-size: 1.2rem;
+    }
+
+    .social-links a:hover {
+      color: #2980b9; /* Light Blue on hover */
     }
   </style>
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Header Section -->
   <header id="header">
-    <h1>I am Ruchita Alate</h1>
+    <h1><a href="index.html">Hi, I am Ruchita Alate!</a></h1>
     <h2>Welcome to My Portfolio!</h2>
     <h3><span id="dynamic-role">Coder</span></h3>
-
+    
     <!-- Navigation Menu -->
-    <nav class="nav-menu">
+    <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contacts">Contact</a></li>
+        <li class="active"><a href="#header"><span>Home</span></a></li>
+        <li><a href="#about"><span>About</span></a></li>
+        <li><a href="#education"><span>Education</span></a></li>
+        <li><a href="#experience"><span>Experience</span></a></li>
+        <li><a href="#portfolio"><span>Projects</span></a></li>
+        <li><a href="#skills"><span>Skills</span></a></li>
+        <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"><span>Resume</span></a></li>
+        <li><a href="#contacts"><span>Contact</span></a></li>
       </ul>
     </nav>
 
     <!-- Social Links -->
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.github.com/ruchitaalate" target="_blank"><i class="bx bxl-github"></i></a>
-      <a href="mailto:ralate2@illinois.edu" target="_blank"><i class="bx bxl-google"></i></a>
-      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
     </div>
   </header>
 
   <!-- Dynamic Role Script -->
   <script>
+    // Array of roles to display
     const roles = ["Data Enthusiast", "Data Analyst", "Business Analyst", "Data Engineer", "Product Manager"];
     const dynamicRoleElement = document.getElementById("dynamic-role");
     let roleIndex = 0;
 
+    // Function to update the text dynamically
     function updateRole() {
       dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length;
+      roleIndex = (roleIndex + 1) % roles.length; // Cycle through roles
     }
 
+    // Change text every 2 seconds
     setInterval(updateRole, 2000);
   </script>
 </body>
+
 </html>
 
 <!-- ======= About Section ======= -->
