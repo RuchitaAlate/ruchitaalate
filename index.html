@@ -36,15 +36,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-169007209-3');
-  </script>
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -53,6 +44,66 @@
   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+      color: white;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      box-shadow: none;
+      z-index: 2;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ff6347 !important;
+    }
+
+    section {
+      padding: 100px 0;
+      color: #fff;
+    }
+
+    section#about, section#education, section#experience, section#skills, section#projects, section#responsibility, section#contacts {
+      background: transparent;
+    }
+
+    h2, h4 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .navbar-toggler {
+      border-color: transparent;
+    }
+  </style>
 </head>
 
 <body>
@@ -63,19 +114,17 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Header Section -->
-  <header id="header" class="header-tops">
-    <div class="container">
-      <h1>RUCHITA CHANDRASHEKHAR ALATE</h1>
-      <p>ralate2@illinois.edu | Champaign, IL 61820 | (217) 766-0323</p>
-      <p>
-        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/RuchitaAlate" target="_blank">GitHub</a>
-      </p>
-    </div>
+  <header>
+    <h1>RUCHITA CHANDRASHEKHAR ALATE</h1>
+    <p>ralate2@illinois.edu | Champaign, IL 61820 | (217) 766-0323</p>
+    <p>
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" style="color: white;">LinkedIn</a> |
+      <a href="https://github.com/RuchitaAlate" target="_blank" style="color: white;">GitHub</a>
+    </p>
   </header>
 
   <!-- Navigation Menu (Bootstrap Navbar) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,29 +183,6 @@
           <li>Methods of Data Science</li>
         </ul>
       </div>
-      <div class="education-entry">
-        <h4>Narsee Monjee Institute of Management Studies, Mumbai</h4>
-        <p><strong>Master of Business Administration in Business Analytics</strong> (June 2021 - March 2023)</p>
-        <p>GPA: 3.44 / 4.00</p>
-        <ul>
-          <li>Data Visualization</li>
-          <li>Customer Relationship Management</li>
-          <li>Storytelling with Data</li>
-          <li>Machine Learning Techniques</li>
-          <li>Supply Chain Analytics</li>
-        </ul>
-      </div>
-      <div class="education-entry">
-        <h4>Narsee Monjee College of Commerce and Economics</h4>
-        <p><strong>Bachelor of Commerce in Financial Accounting and Auditing</strong> (June 2015 – June 2018)</p>
-        <p>GPA: 3.63 / 4.00</p>
-        <ul>
-          <li>Financial Accounting</li>
-          <li>Auditing</li>
-          <li>Marketing</li>
-          <li>Human Resource Management</li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -169,39 +195,18 @@
         <p><strong>Consultant</strong> (August 2024 – Present)</p>
         <ul>
           <li>Provided demand forecasting solutions for a Japan-based food export/import company, optimizing inventory management.</li>
-          <li>Identified inefficiencies in stock management, projected to enhance operational efficiency by 15% in Q1 2025.</li>
-        </ul>
-      </div>
-      <div class="experience-entry">
-        <h4>Administrative Information Technology Services (AITS)</h4>
-        <p><strong>Data Science Analyst Intern</strong> (August 2024 – Present)</p>
-        <ul>
-          <li>Analyzed legislative trends impacting education, identifying the top 5 states driving 80% of changes.</li>
-          <li>Developed machine learning models to standardize job postings data, achieving 77% accuracy.</li>
-          <li>Transitioned workflows and data processes from KNIME to Microsoft Azure for improved scalability.</li>
-        </ul>
-      </div>
-      <div class="experience-entry">
-        <h4>Radia</h4>
-        <p><strong>Interconnection Data Analyst</strong> (June 2024 - August 2024)</p>
-        <ul>
-          <li>Managed end-to-end data engineering, integrating data from 15+ renewable energy sources into AWS S3.</li>
-          <li>Enhanced data accessibility, improving efficiency by 30%.</li>
         </ul>
       </div>
     </div>
   </section>
-  
+
   <!-- Skills Section -->
   <section id="skills">
     <div class="container">
       <h2>Technical Skills</h2>
       <ul>
         <li><strong>Languages:</strong> Python, R, SQL</li>
-        <li><strong>Data Engineering & Management:</strong> AWS (S3, EC2, RDS, DynamoDB, Athena), GitHub, Excel, MongoDB, Microsoft Azure</li>
-        <li><strong>BI & Visualization:</strong> Tableau, Power BI, Canva</li>
-        <li><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Scikit-learn, Seaborn</li>
-        <li><strong>Statistical Analysis & ML:</strong> Hypothesis Testing, Regression, Clustering, Classification Models</li>
+        <li><strong>Data Engineering & Management:</strong> AWS (S3, EC2, RDS, DynamoDB, Athena), GitHub, Excel</li>
       </ul>
     </div>
   </section>
@@ -213,15 +218,7 @@
       <div class="project-entry">
         <h4>Loan Default Prediction</h4>
         <ul>
-          <li>Analyzed a dataset of 67,463 rows using Python and achieved 90.13% accuracy for a Logistic Regression model.</li>
-          <li>Improved risk assessment accuracy by 20% through key predictor identification.</li>
-        </ul>
-      </div>
-      <div class="project-entry">
-        <h4>Norman Police Incident Data Integration</h4>
-        <ul>
-          <li>Created an interactive heatmap for visualizing police activity based on time, location, and incident type.</li>
-          <li>Utilized Geopandas for enhanced location mapping.</li>
+          <li>Created a machine learning model to predict loan defaults using classification algorithms.</li>
         </ul>
       </div>
     </div>
@@ -242,7 +239,7 @@
   <section id="contacts">
     <div class="container">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a></p>
+      <p>Email: <a href="mailto:ralate2@illinois.edu" style="color: white;">ralate2@illinois.edu</a></p>
     </div>
   </section>
 
@@ -253,6 +250,22 @@
     </div>
   </footer>
 
+  <script>
+    // Smooth scrolling for navigation
+    $(document).ready(function(){
+      $(".navbar-nav .nav-link").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
