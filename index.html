@@ -44,127 +44,79 @@
 
   <!-- Inline CSS for Styling -->
   <style>
-    /* Body background color */
-    html, body {
-      background-color: #c3fcf9 !important; /* Light teal background */
+    body {
+      background-color: #c3fcf9; /* Light teal background color */
       margin: 0;
       font-family: 'Open Sans', sans-serif;
     }
 
-    /* Welcome section styles */
     .welcome-text {
       text-align: center;
       margin: 50px auto;
-      background-color: #ffffff !important; /* White background */
-      color: #c3fcf9 !important; /* Cyan font */
+      background-color: #ffffff; /* White background */
+      color: #c3fcf9; /* Cyan font */
       font-weight: bold;
       padding: 20px 40px;
       border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       display: inline-block;
     }
 
-    /* Header styling */
-    #header {
-      text-align: center;
-      padding: 100px 0;
-    }
-
-    #header h1 {
-      font-size: 3em;
-      color: white;
-      margin-bottom: 20px;
-    }
-
-    #header h2 {
-      font-size: 1.5em;
-      color: white;
-    }
-
-    /* Navigation styles */
-    .nav-menu ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .nav-menu ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    .nav-menu ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .social-links a {
-      color: white;
-      margin-right: 10px;
-      font-size: 1.5em;
+    h2 span {
+      color: #c3fcf9;
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
   <!-- Welcome Section -->
   <div class="welcome-text">
     <h1>Welcome to my portfolio</h1>
   </div>
 
   <!-- Header Section -->
-  <header id="header">
-    <h1><a href="index.html">Ruchita Alate</a></h1>
-    <h2>I'm a <span id="dynamic-role">Coder</span></h2>
-    
-    <!-- Navigation Menu -->
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li class="active"><a href="#header"><span>Home</span></a></li>
-        <li><a href="#about"><span>About</span></a></li>
-        <li><a href="#education"><span>Education</span></a></li>
-        <li><a href="#experience"><span>Experience</span></a></li>
-        <li><a href="#portfolio"><span>Projects</span></a></li>
-        <li><a href="#skills"><span>Skills</span></a></li>
-        <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"><span>Resume</span></a></li>
-        <li><a href="#contacts"><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+  <header id="header" class="header-tops">
+    <div class="container">
+      <h1><a href="index.html">Ruchita Alate!</a></h1>
+      <h2 style="color:#fff">I'm a <span id="dynamic-role">Coder</span></h2>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#education"> <span>Education</span></a></li>
+          <li><a href="#experience"> <span>Experience</span></a></li>
+          <li><a href="#portfolio"> <span>Projects</span></a></li>
+          <li><a href="#skills"> <span>Skills</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
+          <li><a href="#contacts"> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+        <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
     </div>
   </header>
 
   <!-- Dynamic Role Script -->
   <script>
-    // Array of roles to display
     const roles = ["Coder", "Data Analyst", "Business Analyst", "Data Engineer"];
     const dynamicRoleElement = document.getElementById("dynamic-role");
     let roleIndex = 0;
 
-    // Function to update the text dynamically
     function updateRole() {
       dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length; // Cycle through roles
+      roleIndex = (roleIndex + 1) % roles.length;
     }
 
-    // Change text every 2 seconds
     setInterval(updateRole, 2000);
   </script>
-
 </body>
 
 </html>
-
 
 <!-- ======= About Section ======= -->
   <section id="about" class="about">
