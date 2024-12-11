@@ -46,6 +46,48 @@
     body {
       background: url('assets/img/background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: white;
+    }
+
+    #header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .left-content {
+      max-width: 50%;
+    }
+
+    .right-content img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3, a, .nav-menu ul li a, .social-links a {
+      color: white !important;
+      text-decoration: none;
+    }
+
+    .nav-menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-menu ul li {
+      margin: 10px 0;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    #dynamic-role {
+      font-weight: bold;
+      font-size: 1.5em;
     }
   </style>
 </head>
@@ -57,33 +99,40 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-
   <!-- Header Section -->
   <header id="header">
-    <h1><a href="index.html"> Hi,  I am Ruchita Alate !</a></h1>
-    <h2> Welcome to My Portfolio ! </h2>
-    <h3> <span id="dynamic-role">Coder</span></h3>
-    
-    <!-- Navigation Menu -->
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li class="active"><a href="#header"><span>Home</span></a></li>
-        <li><a href="#about"><span>About</span></a></li>
-        <li><a href="#education"><span>Education</span></a></li>
-        <li><a href="#experience"><span>Experience</span></a></li>
-        <li><a href="#portfolio"><span>Projects</span></a></li>
-        <li><a href="#skills"><span>Skills</span></a></li>
-        <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank"><span>Resume</span></a></li>
-        <li><a href="#contacts"><span>Contact</span></a></li>
-      </ul>
-    </nav>
+    <!-- Left Content -->
+    <div class="left-content">
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio!</h2>
+      <h3><span id="dynamic-role">Coder</span></h3>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+        <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="right-content">
+      <img src="assets/img/profile.jpg" alt="Profile Image">
     </div>
   </header>
 
