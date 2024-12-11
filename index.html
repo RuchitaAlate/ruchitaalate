@@ -2,132 +2,96 @@
 <html lang="en">
 
 <head>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-
-  <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
-  <meta content="Personal Portfolio" name="description">
-  <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer, Product Manager" name="keywords">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 
   <style>
     body {
-      background: url('assets/img/background/Bg.jpg') no-repeat center center fixed;
+      background: url('assets/img/background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-    }
-
-    h1, h2, h3, p {
-      margin: 20px 0;
-    }
-
-    h1 {
-      color: white;
-    }
-
-    h2 {
-      color: white;
-    }
-
-    h3 {
-      color: white;
+      font-family: 'Roboto', sans-serif;
     }
 
     #header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 40px;
+      text-align: center;
+      margin-top: 100px;
     }
 
-    #header .content {
-      max-width: 60%;
-      text-align: left;
+    h1 {
+      font-family: 'Pacifico', cursive; /* Font for "I am Ruchita Alate" */
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
-    #header .image-container img {
-      max-width: 1000px;
-      margin-left: auto;
+    h2 {
+      font-family: 'Lobster', cursive; /* Font for "Welcome to my portfolio" */
+      font-size: 2rem;
+      margin-bottom: 15px;
     }
 
-    nav.nav-menu ul {
+    h3 {
+      font-family: 'Raleway', sans-serif; /* Font for roles */
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    #dynamic-role {
+      font-family: 'Roboto', sans-serif; /* Font for dynamic text */
+      font-size: 1.5rem;
+      color: cyan;
+      font-weight: bold;
+    }
+
+    .nav-menu ul {
       list-style: none;
       padding: 0;
-      display: flex;
-      flex-direction: column;
     }
 
-    nav.nav-menu ul li {
-      margin: 10px 0;
-    }
-
-    nav.nav-menu ul li a {
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-    }
-
-    nav.nav-menu ul li a:hover {
-      color: grey;
-    }
-
-    .spacing {
-      margin: 30px 0;
-      padding: 20px;
+    .nav-menu li {
+      display: inline;
+      margin-right: 15px;
     }
 
     .social-links a {
       color: white;
       margin: 0 10px;
-      transition: 0.3s;
-    }
-
-    .social-links a:hover {
-      color: white;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 
 <body>
-
-  <!-- Header Section -->
   <header id="header">
-    <div class="content">
-      <h1>Hi, I am Ruchita Alate!</h1>
-      <h2>Welcome to My Portfolio!</h2>
-      <h3> Roles That Inspire Me: <span id="dynamic-role">Coder</span></h3>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="https://drive.google.com/file/d/1pT-Nk6AxY9ZOWBizuDb4htA3IiUF_fSe/view?usp=sharing" target="_blank">Resume</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
-    </div>
-    <div class="image-container">
-      <img src="assets/img/profile1.jpg" alt="Profile Image">
+    <h1>I am Ruchita Alate</h1>
+    <h2>Welcome to My Portfolio!</h2>
+    <h3><span id="dynamic-role">Coder</span></h3>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank"><i class="bx bxl-instagram"></i></a>
     </div>
   </header>
 
@@ -144,9 +108,7 @@
 
     setInterval(updateRole, 2000);
   </script>
-
 </body>
-
 </html>
 
 <!-- ======= About Section ======= -->
