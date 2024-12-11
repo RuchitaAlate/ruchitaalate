@@ -34,7 +34,7 @@
     }
 
     h1 {
-      color: Light blue;
+      color: peachpuff;
     }
 
     h2 {
@@ -42,7 +42,7 @@
     }
 
     h3 {
-      color: Light blue;
+      color: peachpuff;
     }
 
     #header {
@@ -80,7 +80,7 @@
     }
 
     nav.nav-menu ul li a:hover {
-      color: Light blue;
+      color: peachpuff;
     }
 
     .spacing {
@@ -89,7 +89,7 @@
     }
 
     .social-links a {
-      color: Light blue;
+      color: peachpuff;
       margin: 0 10px;
       transition: 0.3s;
     }
@@ -132,18 +132,29 @@
   </header>
 
   <!-- Dynamic Role Script -->
-  <script>
-    const roles = [ "Data Analyst", "Business Analyst", "Data Engineer", "Product Manager"];
-    const dynamicRoleElement = document.getElementById("dynamic-role");
-    let roleIndex = 0;
+  <style>
+  #dynamic-role {
+    background-color: white; /* White background */
+    color: #3498db; /* Replace with your preferred hex color */
+    padding: 5px; /* Optional padding for better appearance */
+    border-radius: 5px; /* Optional rounded corners */
+    display: inline-block; /* Ensures the background wraps around the text */
+  }
+</style>
 
-    function updateRole() {
-      dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
+<script>
+  const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Product Manager"];
+  const dynamicRoleElement = document.getElementById("dynamic-role");
+  let roleIndex = 0;
 
-    setInterval(updateRole, 2000);
-  </script>
+  function updateRole() {
+    dynamicRoleElement.textContent = roles[roleIndex];
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
+
+  setInterval(updateRole, 2000);
+</script>
+
 
 </body>
 
