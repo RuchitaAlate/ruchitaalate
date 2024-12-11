@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
 
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
@@ -16,31 +14,13 @@
 
   <title>Personal Portfolio</title>
   <meta content="Personal Portfolio" name="description">
-  <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer , Product Manager" name="keywords">
+  <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer, Product Manager" name="keywords">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169007209-3');
-  </script>
 
   <style>
     body {
@@ -49,68 +29,89 @@
       color: white;
     }
 
+    h1, h2, h3, p {
+      margin: 20px 0;
+    }
+
+    h1 {
+      color: cyan;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    h3 {
+      color: cyan;
+    }
+
     #header {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
       align-items: center;
-      padding: 50px;
+      justify-content: space-between;
+      padding: 40px;
     }
 
-    .left-content {
-      max-width: 50%;
+    #header .content {
+      max-width: 60%;
+      text-align: left;
     }
 
-    .right-content img {
-      max-width: 50%;
+    #header .image-container img {
+      max-width: 250px;
+      border: 5px solid orange;
       border-radius: 10px;
+      margin-left: auto;
     }
 
-    h1, h2, h3, a, .nav-menu ul li a, .social-links a {
-      color: white !important;
-      text-decoration: none;
-    }
-
-    .nav-menu ul {
+    nav.nav-menu ul {
       list-style: none;
       padding: 0;
+      display: flex;
+      flex-direction: column;
     }
 
-    .nav-menu ul li {
+    nav.nav-menu ul li {
       margin: 10px 0;
     }
 
-    .social-links a {
-      margin: 0 10px;
-      font-size: 24px;
+    nav.nav-menu ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
     }
 
-    #dynamic-role {
-      font-weight: bold;
-      font-size: 1.5em;
+    nav.nav-menu ul li a:hover {
+      color: cyan;
+    }
+
+    .spacing {
+      margin: 30px 0;
+      padding: 20px;
+    }
+
+    .social-links a {
+      color: cyan;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: white;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
   <!-- Header Section -->
   <header id="header">
-    <!-- Left Content -->
-    <div class="left-content">
+    <div class="content">
       <h1>Hi, I am Ruchita Alate!</h1>
       <h2>Welcome to My Portfolio!</h2>
       <h3><span id="dynamic-role">Coder</span></h3>
-
-      <!-- Navigation Menu -->
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -120,8 +121,6 @@
           <li><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- Social Links -->
       <div class="social-links">
         <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
@@ -129,34 +128,28 @@
         <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
       </div>
     </div>
-
-    <!-- Right Content -->
-    <div class="right-content">
+    <div class="image-container">
       <img src="assets/img/profile.jpg" alt="Profile Image">
     </div>
   </header>
 
   <!-- Dynamic Role Script -->
   <script>
-    // Array of roles to display
     const roles = ["Data Enthusiast", "Data Analyst", "Business Analyst", "Data Engineer", "Product Manager"];
     const dynamicRoleElement = document.getElementById("dynamic-role");
     let roleIndex = 0;
 
-    // Function to update the text dynamically
     function updateRole() {
       dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length; // Cycle through roles
+      roleIndex = (roleIndex + 1) % roles.length;
     }
 
-    // Change text every 2 seconds
     setInterval(updateRole, 2000);
   </script>
 
 </body>
 
 </html>
-
 
 <!-- ======= About Section ======= -->
   <section id="about" class="about">
