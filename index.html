@@ -182,7 +182,7 @@ setInterval(updateRole, 2000);
       <!-- Profile Image -->
       <div class="col-md-4">
         <div class="image-wrapper">
-          <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+          <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image" style="width: 100%; max-width: 250px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         </div>
       </div>
 
@@ -198,35 +198,41 @@ setInterval(updateRole, 2000);
     </div>
 
     <!-- Personal Information Section -->
-    <div class="personal-details">
-      <h3>Personal Information</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <ul>
-            <li><strong>Birthdate:</strong> 24th December 1997</li>
-            <li><strong>Location:</strong> Champaign, IL</li>
+    <div class="personal-details" style="background-color: #f9f9f9; padding: 20px; margin-top: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <h3 style="font-size: 1.6em; color: #333; margin-bottom: 20px; text-align: center; font-weight: bold;">Personal Information</h3>
+      <div class="row" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <!-- Birthdate & Location -->
+        <div class="col-md-4" style="width: 32%; padding-left: 20px;">
+          <ul style="list-style-type: none; padding: 0;">
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;"><strong style="color: #333;">Birthdate:</strong> 24th December 1997</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;"><strong style="color: #333;">Location:</strong> Champaign, IL</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a></li>
-            <li><strong>Languages:</strong> English, Hindi, Marathi, French</li>
+        
+        <!-- Email & Languages -->
+        <div class="col-md-4" style="width: 32%; padding-left: 20px;">
+          <ul style="list-style-type: none; padding: 0;">
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;"><strong style="color: #333;">Email:</strong> <a href="mailto:ralate2@illinois.edu" style="color: #007bff;">ralate2@illinois.edu</a></li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;"><strong style="color: #333;">Languages:</strong> English, Hindi, Marathi, French</li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul>
-            <li><strong>Interests:</strong></li>
-            <li>Baking</li>
-            <li>Cooking</li>
-            <li>Traveling</li>
-            <li>Art & Craft</li>
-            <li>Music</li>
+
+        <!-- Interests -->
+        <div class="col-md-4" style="width: 32%; padding-left: 20px;">
+          <ul style="list-style-type: none; padding: 0;">
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;"><strong style="color: #333;">Interests:</strong></li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;">Baking</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;">Cooking</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;">Traveling</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;">Art & Craft</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px; color: #555;">Music</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
