@@ -211,132 +211,130 @@ setInterval(updateRole, 2000);
 </style> <!-- End About Me -->
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    /* Apply flexbox to the body to push content to the bottom */
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+  /* Apply flexbox to the body to push content to the bottom */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Ensure the "Interests" section is at the bottom of the page */
-    .interests {
-      margin-top: auto; /* Pushes the "Interests" section to the bottom */
-      padding: 40px 20px;
-      background-color: #e0ffff;
-      border-radius: 10px;
-    }
+  /* Ensure the "Interests" section is at the bottom of the page */
+  .interests {
+    margin-top: auto; /* Pushes the "Interests" section to the bottom */
+    padding: 40px 20px;
+    background-color: #e0ffff;
+    border-radius: 10px;
+  }
 
-    /* Style for the title of the Interests section */
-    .section-title h2 {
-      color: #030e1a;
-      font-size: 30px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  /* Style for the title of the Interests section */
+  .section-title h2 {
+    color: #030e1a;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    /* Flexbox layout for row */
-    .row {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+  /* Flexbox layout for row */
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 
-    /* Style for each interest box */
-    .interest-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 250px; /* Increased width */
-      height: 250px; /* Increased height */
-      padding: 20px;
-      margin: 10px;
-      text-align: center;
-      border: 2px solid #000;
-      border-radius: 10px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  /* Style for each interest box */
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    /* Style for icons */
-    .interest-box i {
-      font-size: 50px; /* Larger icons */
-      color: #0288d1; /* Icon color */
-      margin-bottom: 15px;
-    }
+  /* Style for icons */
+  .icon-box i {
+    font-size: 50px; /* Larger icons */
+    color: #0288d1; /* Icon color */
+    margin-bottom: 15px;
+  }
 
-    /* Style for titles inside the interest boxes */
-    .interest-box h4 {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-
-  </style>
+  /* Style for titles inside the interest boxes */
+  .icon-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #030e1a;
+  }
+</style>
 </head>
 
 <!-- ======= Interests ======= -->
 <div class="interests container" style="background-color: #e0ffff; padding: 20px; border-radius: 10px;">
-    <!-- Title for the Interests section -->
-    <div class="section-title">
-      <h2>Interests</h2>
-    </div>
-    
+  <!-- Title for the Interests section -->
+  <div class="section-title">
+    <h2>Interests</h2>
+  </div>
+  
   <div class="row">
     <div class="col-lg-3 col-md-4">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-computer-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Technology</h3>
+      <div class="icon-box">
+        <i class="ri-computer-line"></i>
+        <h3>Technology</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-bar-chart-box-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Analytics</h3>
+      <div class="icon-box">
+        <i class="ri-bar-chart-box-line"></i>
+        <h3>Analytics</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-line-chart-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Predictive Analytics</h3>
+      <div class="icon-box">
+        <i class="ri-line-chart-line"></i>
+        <h3>Predictive Analytics</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-database-2-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Data Mining</h3>
+      <div class="icon-box">
+        <i class="ri-database-2-line"></i>
+        <h3>Data Mining</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-lightbulb-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Insights</h3>
+      <div class="icon-box">
+        <i class="ri-lightbulb-line"></i>
+        <h3>Insights</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-stack-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Data Science</h3>
+      <div class="icon-box">
+        <i class="ri-stack-line"></i>
+        <h3>Data Science</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-pie-chart-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Visualization</h3>
+      <div class="icon-box">
+        <i class="ri-pie-chart-line"></i>
+        <h3>Visualization</h3>
       </div>
     </div>
     <div class="col-lg-3 col-md-4 mt-4">
-      <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
-        <i class="ri-brush-line" style="color: #030e1a; font-size: 30px;"></i>
-        <h3 style="color: #030e1a;">Data Cleaning</h3>
+      <div class="icon-box">
+        <i class="ri-brush-line"></i>
+        <h3>Data Cleaning</h3>
       </div>
     </div>
   </div>
-
 </div><!-- End Interests -->
 
 <!-- Vendor JS Files -->
