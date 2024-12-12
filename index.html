@@ -40,6 +40,10 @@
       color: white; 
     }
 
+    h3 {
+      color: LightCyan;
+    }
+
     #header {
       display: flex;
       align-items: center;
@@ -47,60 +51,77 @@
       padding: 40px;
     }
 
-    /* About Section Styles */
-    .about-section {
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      background-color: rgba(0, 0, 0, 0.7); /* Optional background color */
+    #header .content {
+      max-width: 60%;
+      text-align: left;
     }
 
-    .container {
-      display: flex;
-      width: 100%;
+    #header .image-wrapper img {
+      max-width: 1200px;
+      margin-left: auto;
     }
 
-    .image-wrapper {
-      flex: 1; /* Allow image wrapper to take up space */
-    }
-
-    .profile-image {
-      max-width: 100%; /* Responsive image */
-      height: auto; /* Maintain aspect ratio */
-    }
-
-    .text-content {
-      flex: 2; /* Allow text content to take up more space */
-      padding-left: 20px; /* Space between image and text */
-    }
-
-    .text-content h2 {
-      color: LightCyan; /* Heading color */
-    }
-
-    .text-content p {
-      color: white; /* Text color */
-    }
-    
     nav.nav-menu ul {
       list-style: none;
       padding: 0;
       display: flex;
       flex-direction: column;
     }
-    
+
     nav.nav-menu ul li {
       margin: 10px 0;
     }
-    
+
     nav.nav-menu ul li a {
       text-decoration: none;
       color: LightCyan; 
       transition: 0.3s;
     }
-    
+
     nav.nav-menu ul li a:hover {
       color: LightCyan; 
+    }
+
+    .spacing {
+      margin: 30px 0;
+      padding: 20px;
+    }
+
+    .social-links a:hover {
+      color: #030e1a !important ; 
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    #dynamic-role {
+      background-color: LightCyan;
+      color: #030e1a !important; 
+      padding: 5px; 
+      border-radius: 0px; 
+      display: inline-block;  
+    }
+    
+    .image-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image {
+        display: block;
+        width: 1200px; 
+        height: auto; 
+    }
+
+    .image-wrapper::before {
+        content: '';
+        position: absolute;
+        top: -10px; 
+        left: -10px; 
+        right: -10px; 
+        bottom: -10px; 
+        background-color: #030e1a; 
+        filter: blur(5px); 
+        z-index: -1;
     }
     
 </style>
@@ -140,21 +161,6 @@
   </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="about-section">
-  <div class="container">
-    <div class="image-wrapper">
-      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-    </div>
-    <div class="text-content">
-      <h2>About Me</h2>
-      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
-    </div>
-  </div>
-</section>
-
 <!-- Dynamic Role Script -->
 <script>
 const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
@@ -168,6 +174,21 @@ function updateRole() {
 
 setInterval(updateRole, 2000);
 </script>
+
+  <!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
