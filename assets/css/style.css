@@ -391,8 +391,8 @@ section .container {
 }
 
 .profile-image {
-  max-width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
+  height: 500px; /* Adjust this value as needed */
+  width: auto;
 }
 
 .text-content {
