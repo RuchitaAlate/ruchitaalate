@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Header Top */
-/*#header.header-top {
+#header.header-top {
   height: 90px;
   position: fixed;
   left: 0;
@@ -304,12 +304,12 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top h1 {
     font-size: 26px;
   }
-} */
+} 
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+/*section {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -369,7 +369,7 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # About
