@@ -229,60 +229,63 @@ setInterval(updateRole, 2000);
       border-radius: 10px;
     }
 
-    /* Increase size of the boxes to align with "About Me" section */
-    .interest-box {
-      flex: 1;
-      padding: 20px;
-      margin: 10px;
-      text-align: center;
-      border: 2px solid #000;
-      border-radius: 8px;
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 200px; /* Increase width */
-      height: 200px; /* Increase height */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Style for icons inside the boxes */
-    .interest-box i {
-      font-size: 40px; /* Larger icons */
-      color: #0288d1; /* Icon color */
-      margin-bottom: 10px;
-    }
-
-    .interest-box h4 {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-
+    /* Style for the title of the Interests section */
     .section-title h2 {
       color: #030e1a;
       font-size: 30px;
       text-align: center;
+      margin-bottom: 30px;
     }
 
-    /* Flexbox for row */
+    /* Flexbox layout for row */
     .row {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 20px;
+      flex-wrap: wrap;
     }
+
+    /* Style for each interest box */
+    .interest-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px; /* Increased width */
+      height: 250px; /* Increased height */
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      border: 2px solid #000;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for icons */
+    .interest-box i {
+      font-size: 50px; /* Larger icons */
+      color: #0288d1; /* Icon color */
+      margin-bottom: 15px;
+    }
+
+    /* Style for titles inside the interest boxes */
+    .interest-box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
   </style>
 </head>
 
 <!-- ======= Interests ======= -->
 <div class="interests container" style="background-color: #e0ffff; padding: 20px; border-radius: 10px;">
-
-  <div class="section-title">
-    <h2>Interests</h2>
-  </div>
-
+    <!-- Title for the Interests section -->
+    <div class="section-title">
+      <h2>Interests</h2>
+    </div>
+    
   <div class="row">
     <div class="col-lg-3 col-md-4">
       <div class="icon-box" style="background-color: #e0ffff; border-radius: 10px; padding: 10px; text-align: center;">
