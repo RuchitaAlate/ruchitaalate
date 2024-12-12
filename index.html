@@ -11,7 +11,6 @@
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Personal Portfolio</title>
   <meta content="Personal Portfolio" name="description">
   <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer" name="keywords">
@@ -34,7 +33,7 @@
     }
 
     h1 {
-      color: LightCyan; /* Changed from MintCream to LightCyan */
+      color: LightCyan;
     }
 
     h2 {
@@ -42,7 +41,7 @@
     }
 
     h3 {
-      color: LightCyan; /* Changed from MintCream to LightCyan */
+      color: LightCyan;
     }
 
     #header {
@@ -57,7 +56,7 @@
       text-align: left;
     }
 
-    #header .image-container img {
+    #header .image-wrapper img {
       max-width: 1200px;
       margin-left: auto;
     }
@@ -75,12 +74,12 @@
 
     nav.nav-menu ul li a {
       text-decoration: none;
-      color: LightCyan; /* Changed from MintCream to LightCyan */
+      color: LightCyan; 
       transition: 0.3s;
     }
 
     nav.nav-menu ul li a:hover {
-      color: LightCyan; /* Ensure hover color is LightCyan */
+      color: LightCyan; 
     }
 
     .spacing {
@@ -94,94 +93,87 @@
       transition: 0.3s;
     }
 
+    #dynamic-role {
+      background-color: LightCyan;
+      color: #030e1a !important; 
+      padding: 5px; 
+      border-radius: 0px; 
+      display: inline-block;  
+    }
+    
+    .image-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .image {
+        display: block;
+        width: 1200px; 
+        height: auto; 
+    }
+
+    .image-wrapper::before {
+        content: '';
+        position: absolute;
+        top: -10px; 
+        left: -10px; 
+        right: -10px; 
+        bottom: -10px; 
+        background-color: #030e1a; 
+        filter: blur(5px); 
+        z-index: -1;
+    }
+    
 </style>
-</head>
-
-<head>
-    <style>
-        .image-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
-        .image {
-            display: block;
-            width: 1200px; /* Set your desired width */
-            height: auto; /* Maintains aspect ratio */
-        }
-
-        .image-wrapper:before {
-            content: '';
-            position: absolute;
-            top: -10px; /* Adjust as needed */
-            left: -10px; /* Adjust as needed */
-            right: -10px; /* Adjust as needed */
-            bottom: -10px; /* Adjust as needed */
-            background-color: #030e1a; /* Same image */
-            filter: blur(5px); /* Adjust blur strength */
-            z-index: -1;
-        }
-    </style>
 </head>
 
 <body>
 
-  <!-- Header Section -->
-  <header id="header">
-    <div class="content">
-      <h1>Hi, I am Ruchita Alate! </h1>
-      <h2 style="color:#fff"> Welcome to My Portfolio. </h2>
-      <h2><span id="dynamic-role">Data Analyst</span></h2>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
+<!-- Header Section -->
+<header id="header">
+  <div class="content">
+    <h1>Hi, I am Ruchita Alate!</h1>
+    <h2>Welcome to My Portfolio.</h2>
+    <h2><span id="dynamic-role">Data Analyst</span></h2>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
     </div>
-    <div class="image-wrapper">
+  </div>
+
+  <div class="image-wrapper">
     <img src="assets/img/profile2.jpg" alt="Profile Image" class="image">
-    </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Dynamic Role Script -->
-  <style>
-  #dynamic-role {
-    background-color: LightCyan;
-    color: #030e1a !important; /* Forces this color */
-    padding: 5px; 
-    border-radius: 0px; 
-    display: inline-block;  
-  }
-</style>
-
+<!-- Dynamic Role Script -->
 <script>
-  const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
-  const dynamicRoleElement = document.getElementById("dynamic-role");
-  let roleIndex = 0;
+const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
+const dynamicRoleElement = document.getElementById("dynamic-role");
+let roleIndex = 0;
 
-  function updateRole() {
-    dynamicRoleElement.textContent = roles[roleIndex];
-    roleIndex = (roleIndex + 1) % roles.length;
-  }
+function updateRole() {
+   dynamicRoleElement.textContent = roles[roleIndex];
+   roleIndex = (roleIndex + 1) % roles.length;
+}
 
-  setInterval(updateRole, 2000);
+setInterval(updateRole, 2000);
 </script>
-
-</body>
-
-</html>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -196,12 +188,12 @@
 <script src="assets/vendor/typed.js/typed.min.js"></script>
 
 <script type="text/javascript">
-  var typed = new Typed('.typing',{
-    strings: ["Data Scientist", "Data Analyst", "AI Enthusiast"],
-    loop: true,
-    typeSpeed: 65,
-    backSpeed: 65
-  });
+var typed = new Typed('.typing',{
+   strings: ["Data Scientist", "Data Analyst", "AI Enthusiast"],
+   loop: true,
+   typeSpeed: 65,
+   backSpeed: 65
+});
 </script>
 
 <!-- Template Main JS File -->
@@ -210,5 +202,3 @@
 </body>
 
 </html>
-
-
