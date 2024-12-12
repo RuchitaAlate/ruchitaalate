@@ -33,11 +33,11 @@ body::before {
 }
 
 a {
-  color: #12d640;
+  color: #00bcd4;
 }
 
 a:hover {
-  color: #12d640;
+  color: #00bcd4;
   text-decoration: none;
 }
 
