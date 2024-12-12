@@ -407,6 +407,36 @@ section .container {
 .text-content p {
   color: white; /* Text color */
 }
+
+.personal-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-details h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.personal-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.personal-details ul li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.personal-details ul li strong {
+  font-weight: bold;
+  color: #555;
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
