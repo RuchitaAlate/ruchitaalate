@@ -210,6 +210,19 @@ setInterval(updateRole, 2000);
   }
 </style> <!-- End About Me -->
 
+  <style>
+    /* Apply flexbox to the body to push content to the bottom */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Ensure the "Interests" section is at the bottom of the page */
+    .interests {
+      margin-top: auto; /* Pushes the "Interests" section to the bottom */
+    }
+  </style>
 
 <!-- ======= Interests ======= -->
 <div class="interests container" style="background-color: #e0ffff; padding: 20px; border-radius: 10px;">
