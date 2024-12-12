@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/*section {
+section {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -369,7 +369,7 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
-} */
+} 
 
 /*--------------------------------------------------------------
 # About
