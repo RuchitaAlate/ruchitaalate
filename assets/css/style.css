@@ -374,31 +374,39 @@ section .container {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-me .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #1c7d32;
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background color */
 }
 
-.about-me .content ul {
-  list-style: none;
-  padding: 0;
+.container {
+  display: flex;
+  width: 100%;
 }
 
-.about-me .content ul li {
-  padding-bottom: 10px;
+.image-wrapper {
+  flex: 1; /* Allow image wrapper to take up space */
 }
 
-.about-me .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #1c7d32;
+.profile-image {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.about-me .content p:last-child {
-  margin-bottom: 0;
+.text-content {
+  flex: 2; /* Allow text content to take up more space */
+  padding-left: 20px; /* Space between image and text */
 }
 
+.text-content h2 {
+  color: LightCyan; /* Heading color */
+}
+
+.text-content p {
+  color: white; /* Text color */
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
