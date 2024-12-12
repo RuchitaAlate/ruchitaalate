@@ -178,33 +178,36 @@ setInterval(updateRole, 2000);
  <!-- About Section -->
 <section id="about" class="about-section">
   <div class="container">
+    <!-- Profile Image -->
     <div class="image-wrapper">
       <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
     </div>
+
+    <!-- Text Content -->
     <div class="text-content">
       <h2>About Me</h2>
       <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
       <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
       <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+    </div>
 
-      <!-- Added Details -->
-      <div class="personal-details">
-        <h3>Personal Information</h3>
-        <div class="details-grid">
-          <div>
-            <ul>
-              <li><strong>Birthdate:</strong> 24th December 1997</li>
-              <li><strong>Location:</strong> Champaign, IL</li>
-              <li><strong>Email:</strong> <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li><strong>Phone:</strong> +1 217-766-0323</li>
-              <li><strong>Languages:</strong> English, Hindi, Marathi, French</li>
-              <li><strong>Interests:</strong> Baking, Cooking, Traveling, Art and Craft, Music</li>
-            </ul>
-          </div>
+    <!-- Personal Details Section -->
+    <div class="personal-details">
+      <h3>Personal Information</h3>
+      <div class="details-grid">
+        <div>
+          <ul>
+            <li><strong>Birthdate:</strong> 24th December 1997</li>
+            <li><strong>Location:</strong> Champaign, IL</li>
+            <li><strong>Email:</strong> <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><strong>Phone:</strong> +1 217-766-0323</li>
+            <li><strong>Languages:</strong> English, Hindi, Marathi, French</li>
+            <li><strong>Interests:</strong> Baking, Cooking, Traveling, Art and Craft, Music</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -213,21 +216,67 @@ setInterval(updateRole, 2000);
 
 <!-- CSS -->
 <style>
+  .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .image-wrapper {
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .text-content {
+    margin-top: 20px;
+  }
+
+  .personal-details {
+    position: absolute;
+    top: 70%; /* Adjust this value to control how much the section overlaps */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   .details-grid {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
   }
+
   .details-grid div {
     flex: 1;
-    padding: 0 10px;
+    padding: 0 15px;
   }
+
   .details-grid ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
+  .details-grid ul li {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin-top: 0;
+    text-align: center;
+  }
 </style>
+
 
 
 <!-- Vendor JS Files -->
