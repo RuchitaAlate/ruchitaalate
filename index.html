@@ -97,6 +97,33 @@
 </style>
 </head>
 
+<head>
+    <style>
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image {
+            display: block;
+            width: 300px; /* Set your desired width */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .image-wrapper:before {
+            content: '';
+            position: absolute;
+            top: -10px; /* Adjust as needed */
+            left: -10px; /* Adjust as needed */
+            right: -10px; /* Adjust as needed */
+            bottom: -10px; /* Adjust as needed */
+            background-image: url('assets/img/profile2.jpg'); /* Same image */
+            filter: blur(15px); /* Adjust blur strength */
+            z-index: -1;
+        }
+    </style>
+</head>
+
 <body>
 
   <!-- Header Section -->
