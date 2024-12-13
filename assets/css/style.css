@@ -45,24 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* Change the background of the navigation bar for all pages */
-#header.header-top {
-  background: #030e1a; /* Change navigation bar background color */
-}
-
-/* Hide header content globally, keeping only the toggle button */
-#header .content h1,
-#header .content h2,
-#header .content nav.nav-menu,
-#header .content .social-links {
-  display: none; /* Hides header content */
-}
-
-/* Ensure the toggle button remains visible */
-.mobile-nav-toggle {
-  display: block; /* Keeps the toggle button visible */
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -158,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  margin-top:50px;
+  margin-top: 35px;
 }
 
 .nav-menu ul {
@@ -188,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #030e1a;
+  background-color: #9e7f25;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -202,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
   text-decoration: none;
-} 
+}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -322,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top h1 {
     font-size: 26px;
   }
-} 
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -387,7 +369,7 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
-} 
+}
 
 /*--------------------------------------------------------------
 # About
@@ -396,7 +378,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 40px;
-  background-color: #030e1a; /* Optional: Add a background color */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a background color */
 }
 
 .container {
@@ -409,8 +391,8 @@ section .container {
 }
 
 .profile-image {
-  height: 500px; /* Adjust this value as needed */
-  width: auto;
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .text-content {
@@ -425,36 +407,6 @@ section .container {
 .text-content p {
   color: white; /* Text color */
 }
-
-.personal-details {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #030e1a;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.personal-details h3 {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.personal-details ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.personal-details ul li {
-  font-size: 1.1em;
-  margin-bottom: 8px;
-}
-
-.personal-details ul li strong {
-  font-weight: bold;
-  color: #555;
-}
-
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
