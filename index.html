@@ -146,83 +146,83 @@
   </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="about-section">
-  <style>
-    /* About Section Styling */
-    #about {
-      position: relative;
-      padding-top: 10px; /* Reduced padding to shift content up */
-      padding-bottom: 50px; /* Increased bottom padding for bigger sections */
-    }
+<style>
+  
+  /* About Section Styling */
+  #about {
+    position: relative;
+    padding-top: 0px; /* Reduced padding to shift content up */
+    padding-bottom: 50px; /* Increased bottom padding for bigger sections */
+  }
+  
+  .nav-wrapper {
+    text-align: center; /* Center the navigation */
+    position: absolute;
+    top: -20px; /* Moves the navigation up */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the navigation horizontally */
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of the content */
+  }
 
-    .nav-wrapper {
-      text-align: center; /* Center the navigation */
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%); /* Centers the navigation horizontally */
-      width: 100%;
-      z-index: 1000; /* Ensure it's on top of the content */
-    }
+  nav.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Aligns the items in a straight line */
+  }
 
-    nav.nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-flex; /* Aligns the items in a straight line */
-    }
+  nav.nav-menu ul li {
+    margin: 0 30px; /* Increased spacing between the menu items */
+  }
 
-    nav.nav-menu ul li {
-      margin: 0 30px; /* Increased spacing between the menu items */
-    }
+  nav.nav-menu ul li a {
+    color: LightCyan; /* Change text color */
+    text-decoration: none;
+    font-size: 18px; /* Restored font size for the navigation links */
+    padding: 15px;
+    display: block;
+  }
 
-    nav.nav-menu ul li a {
-      color: LightCyan; /* Change text color */
-      text-decoration: none;
-      font-size: 17px; /* Restored font size for the navigation links */
-      padding: 15px;
-      display: block;
-    }
+  nav.nav-menu ul li a:hover {
+    background-color: #575757; /* Change on hover */
+    border-radius: 5px;
+  }
 
-    nav.nav-menu ul li a:hover {
-      background-color: #575757; /* Change on hover */
-      border-radius: 5px;
-    }
+  /* Container Styling */
+  .container {
+    margin-top: -20px; /* Added margin to make sure content is pushed down */
+  }
 
-    /* Container Styling */
-    .container {
-      margin-top: -20px; /* Added margin to make sure content is pushed down */
-    }
+  .image-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .image-wrapper {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  .profile-image {
+    width: 800px; /* Increased image size */
+    height: 600px;
+    border-radius: 0%; 
+    object-fit: cover;
+  }
 
-    .profile-image {
-      width: 800px; /* Increased image size */
-      height: 600px;
-      border-radius: 0%; 
-      object-fit: cover;
-    }
+  .text-content {
+    max-width: 900px; /* Larger max width for text content */
+    margin: 0 auto; /* Centering the text */
+  }
 
-    .text-content {
-      max-width: 900px; /* Larger max width for text content */
-      margin: 0 auto; /* Centering the text */
-    }
+  .text-content h2 {
+    font-size: 2em; /* Increased size of the heading */
+    margin-bottom: 20px;
+  }
 
-    .text-content h2 {
-      font-size: 2em; /* Increased size of the heading */
-      margin-bottom: 20px;
-    }
+  .text-content p {
+    text-align: justify;
+    font-size: 1.1em; /* Increased paragraph text size */
+    margin-bottom: 20px;
+  }
+</style>
 
-    .text-content p {
-      text-align: justify;
-      font-size: 1.1em; /* Increased paragraph text size */
-      margin-bottom: 20px;
-    }
-  </style>
 
   <div class="nav-wrapper">
     <nav class="nav-menu">
