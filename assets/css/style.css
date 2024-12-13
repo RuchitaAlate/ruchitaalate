@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0s;
-  position: relative;
+  position: fixed;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .nav-menu ul {
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li + li {
-  margin-left: 30px;
+  margin-centre: 30px;
 }
 
 .nav-menu a {
