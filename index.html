@@ -256,25 +256,104 @@
 
 <!-- About Section -->
 <section id="about" class="about-section">
+  <style>
+    /* About Section Layout */
+    #about {
+      display: flex;
+      flex-direction: row; /* Align photo and text horizontally */
+      align-items: flex-start; /* Align items to the top */
+      padding: 50px;
+      background-color: #030e1a; /* Ensure dark background */
+    }
+
+    #about .image-wrapper {
+      flex: 1; /* Allow space for the image */
+      max-width: 40%; /* Adjust the image width */
+      text-align: center; /* Center the image */
+    }
+
+    #about .profile-image {
+      max-width: 100%;
+      border-radius: 0%; /* No rounded corners */
+    }
+
+    #about .text-content {
+      flex: 2; /* Allow more space for the text */
+      max-width: 55%;
+      padding-left: 20px;
+      color: white; /* White text color */
+      text-align: justify;
+    }
+
+    /* Info Boxes for Birthdate, Address, Phone */
+    #about .info-box {
+      background-color: LightCyan; /* Box background color */
+      color: #030e1a; /* Text color */
+      padding: 10px 15px; /* Padding inside the box */
+      border-radius: 5px; /* Rounded edges */
+      display: inline-block; /* Align in a straight line */
+      margin: 10px; /* Spacing between boxes */
+      text-align: center;
+    }
+
+    #about .info-container {
+      display: flex;
+      justify-content: space-around; /* Spread the boxes equally */
+      align-items: center;
+      width: 100%; /* Full width of the container */
+      margin-top: 20px; /* Space above the info boxes */
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @media screen and (max-width: 768px) {
+      #about {
+        flex-direction: column; /* Stack photo and text vertically */
+        text-align: center;
+      }
+
+      #about .text-content {
+        padding-left: 0;
+        max-width: 100%;
+      }
+
+      #about .image-wrapper {
+        margin-bottom: 20px;
+      }
+
+      #about .info-container {
+        flex-direction: column; /* Stack info boxes vertically */
+        text-align: center;
+      }
+
+      #about .info-box {
+        margin-bottom: 10px;
+      }
+  </style>
+  
   <div class="container">
-    <div class="image-wrapper">
-      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-    </div>
-    <div class="text-content">
-      <h2>About Me</h2>
-      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
-    </div>
-    <div class="info-box">
-      <strong>Birthdate:</strong> 24 Dec 1997
-    </div>
-    <div class="info-box">
-      <strong>Address:</strong> Champaign, Illinois
-    </div>
-    <div class="info-box">
-      <strong>Phone:</strong> 2177660323
-    </div>
+      <div class="image-wrapper">
+        <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+      </div>
+
+      <div class="text-content">
+        <h2>About Me</h2>
+        <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+        <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+        <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+      </div>
+
+      <!-- Info Section -->
+      <div class="info-container">
+        <div class="info-box">
+          <strong>Birthdate:</strong> 24 Dec 1997
+        </div>
+        <div class="info-box">
+          <strong>Address:</strong> Champaign, Illinois
+        </div>
+        <div class="info-box">
+          <strong>Phone:</strong> 2177660323
+        </div>
+      </div>
   </div>
 </section>
   
