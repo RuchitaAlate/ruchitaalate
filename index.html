@@ -150,84 +150,9 @@
   
   <!-- About Section -->
 <section id="about" class="about-section">
-
-  <style>
-    /* About Section Styling */
-.about-section {
-  position: relative;
-  padding-top: 0px; /* Reduced padding to shift content up */
-  padding-bottom: 50px; /* Increased bottom padding for bigger sections */
-  z-index: 1; /* Ensures the about section content stays above the nav menu */
-}
-
-/* Navigation Styling */
-.about-section .nav-wrapper {
-  text-align: center; /* Center the navigation */
-  position: absolute;
-  top: -20px; /* Moves the navigation up */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the navigation horizontally */
-  width: 100%;
-  z-index: 0; /* Ensures navigation is below the section content */
-}
-
-.about-section nav.nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-flex; /* Aligns the items in a straight line */
-}
-
-.about-section nav.nav-menu ul li {
-  margin: 0 30px; /* Increased spacing between the menu items */
-}
-
-.about-section nav.nav-menu ul li a {
-  color: LightCyan; /* Change text color */
-  text-decoration: none;
-  font-size: 17px; /* Restored font size for the navigation links */
-  padding: 15px;
-  display: block;
-}
-
-.about-section nav.nav-menu ul li a:hover {
-  background-color: #575757; /* Change on hover */
-  border-radius: 5px;
-}
-
-/* Container Styling */
-.about-section .container {
-  margin-top: -20px; /* Added margin to make sure content is pushed down */
-}
-
-.about-section .image-wrapper {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.about-section .profile-image {
-  width: 800px; /* Increased image size */
-  height: 600px;
-  border-radius: 0%; 
-  object-fit: cover;
-}
-
-.about-section .text-content {
-  max-width: 900px; /* Larger max width for text content */
-  margin: 0 auto; /* Centering the text */
-}
-
-.about-section .text-content h2 {
-  font-size: 2em; /* Increased size of the heading */
-  margin-bottom: 20px;
-}
-
-.about-section .text-content p {
-  text-align: justify;
-  font-size: 1.1em; /* Increased paragraph text size */
-  margin-bottom: 20px;
-}
-  <nav class="nav-menu">
+  <div class="container">
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -239,20 +164,100 @@
         <li><a href="#contacts">Contact</a></li>
       </ul>
     </nav>
-  
-  <!-- Content of About Section -->
-  <div class="container">
+
+    <!-- About Content -->
     <div class="image-wrapper">
       <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
     </div>
     <div class="text-content">
       <h2>About Me</h2>
-      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
     </div>
   </div>
 </section>
+
+<style>
+  /* General Section Styling */
+  .about-section {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.8); /* Keeps the dark background look */
+    color: white;
+    position: relative; /* Ensures proper stacking */
+    z-index: 2; /* Higher than other sections */
+  }
+
+  .about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Navigation Menu Styling */
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu ul li {
+    margin: 0 15px;
+  }
+
+  .nav-menu ul li a {
+    text-decoration: none;
+    color: LightCyan;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  .nav-menu ul li a:hover {
+    background: LightCyan;
+    color: #030e1a;
+  }
+
+  /* Image Styling */
+  .about-section .image-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-section .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* Text Content Styling */
+  .about-section .text-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: LightCyan;
+  }
+
+  .about-section .text-content p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  .about-section .text-content a {
+    color: LightCyan;
+    text-decoration: none;
+  }
+
+  .about-section .text-content a:hover {
+    text-decoration: underline;
+  }
+</style>
+
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
