@@ -27,29 +27,29 @@
         //   $('#header').fadeIn(); // Show header when on homepage or after navigating to it
         // }
 
-        if (hash == '#header') {
-          $('#header').removeClass('header-top');
-          $("section").removeClass('section-show');
-          return;
-        }
+        // if (hash == '#header') {
+        //   $('#header').removeClass('header-top');
+        //   $("section").removeClass('section-show');
+        //   return;
+        // }
 
-        if (!$('#header').hasClass('header-top')) {
-          $('#header').addClass('header-top');
-          setTimeout(function() {
-            $("section").removeClass('section-show');
-            $(hash).addClass('section-show');
-          }, 350);
-        } else {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }
+        // if (!$('#header').hasClass('header-top')) {
+        //   $('#header').addClass('header-top');
+        //   setTimeout(function() {
+        //     $("section").removeClass('section-show');
+        //     $(hash).addClass('section-show');
+        //   }, 350);
+        // } else {
+        //   $("section").removeClass('section-show');
+        //   $(hash).addClass('section-show');
+        // }
 
-        // Close mobile nav if open
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
+        // // Close mobile nav if open
+        // if ($('body').hasClass('mobile-nav-active')) {
+        //   $('body').removeClass('mobile-nav-active');
+        //   $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        //   $('.mobile-nav-overly').fadeOut();
+        // }
 
         return false;
       }
