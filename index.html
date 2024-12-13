@@ -165,6 +165,99 @@
       <li><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
+  <style>
+/* General Reset */
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* About Section */
+.about-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+  position: fixed; /* Sticks the menu to the top */
+  top: 0;
+  width: 100%;
+  background-color: #333; /* Dark background */
+  z-index: 1000; /* Ensures it appears above all other content */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #1abc9c; /* Highlight color on hover */
+}
+
+/* Container Styling */
+.container {
+  margin-top: 80px; /* Adds space below the fixed menu */
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #1abc9c;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.text-content a {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.text-content a:hover {
+  text-decoration: underline;
+}
+</style>
 
   <!-- About Section Content -->
   <div class="container">
