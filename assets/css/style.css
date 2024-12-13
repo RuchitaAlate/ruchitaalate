@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Change the background of the navigation bar for all pages */
 #header.header-top {
-  background: #030e1a; /* Change navigation bar background color */
+  background: #030e1a; /* Global navigation bar background color */
 }
 
 /* Hide header content globally, keeping only the toggle button */
@@ -55,12 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 #header .content h2,
 #header .content nav.nav-menu,
 #header .content .social-links {
-  display: none; /* Hides header content */
+  display: none; /* Globally hide unnecessary header content */
 }
 
 /* Ensure the toggle button remains visible */
 .mobile-nav-toggle {
-  display: block; /* Keeps the toggle button visible */
+  display: block; /* Keeps the toggle button visible globally */
 }
 
 /*--------------------------------------------------------------
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background:rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 992px) {
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .nav-menu ul {
@@ -224,173 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.mobile-nav {
-  position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  z-index: 9999;
-  overflow-y: auto;
-  background: rgba(0, 0, 0, 0.7);
-  transition: ease-in-out 0s;
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 10px;
-  padding: 10px 0;
-  border: 2px solid rgba(255, 255, 255, 0.12);
-}
-
-.mobile-nav * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mobile-nav a {
-  display: block;
-  position: relative;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: 500;
-  outline: none;
-}
-
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.mobile-nav-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 9997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: rgba(9, 9, 9, 0.6);
-  overflow: hidden;
-  display: none;
-  transition: ease-in-out 0s;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active .mobile-nav {
-  opacity: 1;
-  visibility: visible;
-}
-
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-}
-
-/* Header Top */
-#header.header-top {
-  height: 90px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  background: #09203a;
-}
-
-#header.header-top .social-links, #header.header-top h2 {
-  display: none;
-}
-
-#header.header-top h1 {
-  margin-right: auto;
-  font-size: 36px;
-}
-
-#header.header-top .container {
-  display: flex;
-  align-items: center;
-}
-
-#header.header-top .nav-menu {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #header.header-top {
-    height: 60px;
-  }
-  #header.header-top h1 {
-    font-size: 26px;
-  }
-} 
-
 /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
-  z-index: 2;
-}
-
-section.section-show {
-  top: 70px;
-  bottom: auto;
-  opacity: 1;
-  padding-bottom: 0px;
-}
-
-section .container {
-  background: rgba(0, 0, 0, 0);
-  padding: 30px;
-}
-
-@media (max-width: 768px) {
-  section {
-    top: 120px;
-  }
-  section.section-show {
-    top: 80px;
-  }
-}
-
-.section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 20px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #dee2e6;
-  font-family: "Poppins", sans-serif;
-}
-
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #dee2e6;
-  margin: 4px 10px;
-}
-
-.section-title p {
-  margin: 0;
-  margin: -15px 0 15px 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-} 
-
-/*--------------------------------------------------------------
-# About
+# About Section
 --------------------------------------------------------------*/
 .about-section {
   display: flex;
@@ -436,7 +271,7 @@ section .container {
 
 .personal-details h3 {
   font-size: 1.5em;
-  color: #333;
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -452,7 +287,7 @@ section .container {
 
 .personal-details ul li strong {
   font-weight: bold;
-  color: #555;
+  color: #12d640;
 }
 
 /*--------------------------------------------------------------
