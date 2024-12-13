@@ -66,11 +66,15 @@
     }
 
     .header-row {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: center;
     }
+    .header-row h1, .header-row h2 {
+    margin: 10px 0; /* Add spacing between lines */
+    }
+
 
     #dynamic-role {
       background-color: LightCyan;
@@ -120,6 +124,12 @@
     .social-links a:hover {
       color: #030e1a;
     }
+
+    section {
+    padding: 50px 20px; /* Ensure sections have some spacing for visibility */
+    scroll-margin-top: 100px; /* Adjust for fixed headers */
+    }
+    
   </style>
 </head>
 
@@ -134,17 +144,17 @@
       <h2><span id="dynamic-role">Data Analyst</span></h2>
 
       <nav class="nav-menu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#interests">Interests</a></li>
-          <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#portfolio">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+    <li><a href="#contacts">Contact</a></li>
+  </ul>
+</nav>
 
       <div class="social-links">
         <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
