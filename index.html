@@ -180,12 +180,15 @@ body, ul, li {
   width: 100%; /* Makes the menu span the full width */
   background-color: inherit; /* Keeps the background as it is */
   z-index: 1000; /* Ensures it stays on top of other content */
+  display: flex; /* Enables flex for centering */
+  justify-content: center; /* Centers the menu horizontally */
+  align-items: center; /* Aligns the items vertically */
+  height: 60px; /* Optional: Set a fixed height for consistency */
 }
 
 .nav-menu ul {
   display: flex;
-  justify-content: center; /* Center-aligns the navigation items */
-  padding: 10px 0;
+  padding: 0;
 }
 
 .nav-menu li {
