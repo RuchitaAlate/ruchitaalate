@@ -26,8 +26,6 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #030e1a;
-      color: white;
       font-family: 'Poppins', sans-serif;
     }
 
@@ -99,27 +97,39 @@
       color: white;
     }
 
-    /* Section Styles */
+    /* Section Styling */
     section {
-      padding: 100px 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
+      background-color: #030e1a;
+      color: white;
+      padding: 20px;
     }
 
-    #about {
-      background-color: #1a1a1a;
-    }
-
-    #about h2 {
+    section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
       color: LightCyan;
     }
 
-    #about p {
+    section p {
       max-width: 800px;
-      margin: 0 auto;
       line-height: 1.6;
       color: white;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    section ul li {
+      font-size: 1.2rem;
+      margin: 10px 0;
     }
 
     /* Social Links */
@@ -173,21 +183,13 @@
     <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
   </div>
 </header>
+
 <!-- About Section -->
-<section id="about" class="about-section" style="background-color: #030e1a; color: white; text-align: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 50px 20px;">
-  <div class="container" style="max-width: 800px;">
-    <div class="image-wrapper" style="margin-bottom: 20px;">
-      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid LightCyan;">
-    </div>
-    <div class="text-content" style="line-height: 1.8; font-size: 16px;">
-      <h2 style="margin-bottom: 20px; font-size: 28px; color: LightCyan;">About Me</h2>
-      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana-Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu" style="color: LightCyan; text-decoration: underline;">ralate2@illinois.edu</a> to explore potential opportunities.</p>
-    </div>
-  </div>
+<section id="about">
+  <h2>About Me</h2>
+  <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success...</p>
 </section>
-  
+
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
   <div class="container">
