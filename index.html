@@ -66,15 +66,15 @@
     }
 
     .header-row {
-    display: flex;
-    flex-direction: column; /* Change to column layout */
-    justify-content: center;
-    align-items: center;
-    }
-    .header-row h1, .header-row h2 {
-    margin: 10px 0; /* Add spacing between lines */
+      display: flex;
+      flex-direction: column; /* Change to column layout */
+      justify-content: center;
+      align-items: center;
     }
 
+    .header-row h1, .header-row h2 {
+      margin: 10px 0; /* Add spacing between lines */
+    }
 
     #dynamic-role {
       background-color: LightCyan;
@@ -126,10 +126,46 @@
     }
 
     section {
-    padding: 50px 20px; /* Ensure sections have some spacing for visibility */
-    scroll-margin-top: 100px; /* Adjust for fixed headers */
+      padding: 50px 20px; /* Ensure sections have some spacing for visibility */
+      scroll-margin-top: 100px; /* Adjust for fixed headers */
     }
-    
+
+    #about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      padding: 50px;
+    }
+
+    #about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    #about .content {
+      max-width: 600px;
+    }
+
+    .info-box {
+      background-color: LightCyan;
+      color: #030e1a;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .info-box a {
+      color: #030e1a;
+      text-decoration: none;
+    }
+
+    .info-box a:hover {
+      color: white;
+    }
   </style>
 </head>
 
@@ -144,17 +180,17 @@
       <h2><span id="dynamic-role">Data Analyst</span></h2>
 
       <nav class="nav-menu">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#portfolio">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#interests">Interests</a></li>
-    <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-    <li><a href="#contacts">Contact</a></li>
-  </ul>
-</nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
 
       <div class="social-links">
         <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -165,26 +201,28 @@
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="container">
+  <!-- About Me Section -->
+  <section id="about">
+    <div>
+      <img src="assets/img/profile2.jpg" alt="Ruchita Alate">
+    </div>
+    <div class="content">
       <h2>About Me</h2>
-      <p>With a strong academic and professional background, I am passionate about data-driven decision-making. I hold a Master's in Information Management and have experience in Python, SQL, and more.</p>
+      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+
+      <div class="info-box">
+        <strong>Birthdate:</strong> 24 Dec 1997
+      </div>
+      <div class="info-box">
+        <strong>Address:</strong> Champaign, Illinois
+      </div>
+      <div class="info-box">
+        <strong>Phone:</strong> 2177660323
+      </div>
     </div>
   </section>
 
-  <!-- Dynamic Role Script -->
-  <script>
-    const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
-    const dynamicRoleElement = document.getElementById("dynamic-role");
-    let roleIndex = 0;
-
-    function updateRole() {
-      dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
-
-    setInterval(updateRole, 2000);
-  </script>
 </body>
 </html>
