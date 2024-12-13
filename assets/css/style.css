@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: ease-in-out 0s;
-  position: fixed;
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .nav-menu ul {
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li + li {
-  margin-centre: 30px;
+  margin-left: 30px;
 }
 
 .nav-menu a {
@@ -173,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #9e7f25;
   visibility: hidden;
   width: 0px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
@@ -214,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
   overflow-y: auto;
   background: rgba(0, 0, 0, 0.7);
+  transition: ease-in-out 0s;
   opacity: 0;
   visibility: hidden;
   border-radius: 10px;
