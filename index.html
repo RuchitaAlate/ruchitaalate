@@ -91,6 +91,7 @@
     nav.nav-menu ul li a {
       text-decoration: none;
       color: LightCyan;
+      transition: 0.3s;
     }
 
     nav.nav-menu ul li a:hover {
@@ -107,6 +108,7 @@
       margin: 0 10px;
       font-size: 24px;
       color: LightCyan;
+      transition: 0.3s;
     }
 
     .social-links a:hover {
@@ -164,74 +166,6 @@
       <li><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
-  
-  <style>
-/* Resetting Default Margins and Padding */
-body, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Navigation Menu Styling */
-.nav-menu {
-  position: fixed; /* Fixes the menu at the top of the page */
-  top: 0;
-  width: 100%; /* Makes the menu span the full width */
-  background-color: inherit; /* Keeps the background as it is */
-  z-index: 1000; /* Ensures it stays on top of other content */
-  display: flex; /* Enables flex for centering */
-  justify-content: center; /* Centers the menu horizontally */
-  align-items: center; /* Aligns the items vertically */
-  height: 60px; /* Optional: Set a fixed height for consistency */
-}
-
-.nav-menu ul {
-  display: flex;
-  padding: 0;
-}
-
-.nav-menu li {
-  margin: 0 10px; /* Adds spacing between menu items */
-}
-
-.nav-menu a {
-  text-decoration: none; /* Removes underline from links */
-  color: inherit; /* Keeps the text color unchanged */
-  font-weight: inherit; /* Retains your original styling */
-  font-size: inherit; /* Ensures the font size is unchanged */
-}
-
-/* Adjusting Content to Avoid Overlap with Fixed Menu */
-.container {
-  margin-top: 80px; /* Adds space below the fixed menu */
-}
-
-/* Retaining the Rest of the Aesthetic */
-.image-wrapper img {
-  max-width: 100%;
-  height: auto;
-  border-radius: inherit; /* Keeps original border-radius */
-}
-
-.text-content {
-  text-align: inherit; /* Keeps original text alignment */
-}
-
-.text-content h2 {
-  font-size: inherit; /* Keeps original font size */
-  margin-bottom: inherit; /* Retains existing spacing */
-}
-
-.text-content p {
-  line-height: inherit; /* Keeps line height as defined */
-}
-
-.text-content a {
-  color: inherit; /* Retains original link color */
-  font-weight: inherit; /* Keeps link font styling unchanged */
-}
-</style>
 
   <!-- About Section Content -->
   <div class="container">
