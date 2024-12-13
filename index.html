@@ -34,20 +34,19 @@
       align-items: center;
     }
 
-    h1, h2, h3, p {
-      margin: 10px;
+    h1, h2 {
+      margin: 10px 0;
+      font-family: 'Poppins', sans-serif;
     }
 
     h1 {
       color: LightCyan;
+      font-size: 2.5rem;
     }
 
     h2 {
       color: white; 
-    }
-
-    h3 {
-      color: LightCyan;
+      font-size: 2rem;
     }
 
     #header {
@@ -57,13 +56,8 @@
 
     .header-row {
       display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-
-    .header-row h1 {
-      margin-right: 10px;
+      flex-direction: column; /* Ensures h1 and h2 stack vertically */
+      align-items: center;
     }
 
     #dynamic-role {
@@ -114,7 +108,6 @@
     .social-links a:hover {
       color: #030e1a;
     }
-
   </style>
 </head>
 
