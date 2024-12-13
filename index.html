@@ -31,69 +31,21 @@
   <style>
     /* General Styling */
     body {
-      background: url('assets/img/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
       margin: 0;
       padding: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     h1,
-    h2,
-    h3,
-    p {
+    h2 {
       margin: 10px;
     }
 
-    h1 {
-      color: LightCyan;
-    }
-
-    h2 {
-      color: white;
-    }
-
-    h3 {
-      color: LightCyan;
-    }
-
-    #header {
-      text-align: center;
-      max-width: 80%;
-    }
-
-    .header-row {
+    /* Home Page Navigation Menu */
+    nav.nav-menu {
       display: flex;
       justify-content: center;
-      align-items: baseline;
+      margin-top: 30px;
       flex-wrap: wrap;
-    }
-
-    .header-row h1 {
-      margin-right: 10px;
-    }
-
-    #dynamic-role {
-      background-color: LightCyan;
-      color: #030e1a !important;
-      padding: 5px;
-      border-radius: 0px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    /* Navigation Menu */
-    nav.nav-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 10px 0;
-      z-index: 1000;
     }
 
     nav.nav-menu ul {
@@ -101,14 +53,47 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      margin: 0;
     }
 
     nav.nav-menu ul li {
-      margin: 0 15px;
+      margin: 10px 20px;
     }
 
     nav.nav-menu ul li a {
+      text-decoration: none;
+      color: LightCyan;
+      transition: 0.3s;
+    }
+
+    nav.nav-menu ul li a:hover {
+      color: white;
+    }
+
+    /* Fixed Navigation Menu for Other Sections */
+    nav.fixed-nav-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      z-index: 1000;
+      display: none; /* Hidden by default */
+    }
+
+    nav.fixed-nav-menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+
+    nav.fixed-nav-menu ul li {
+      margin: 0 15px;
+    }
+
+    nav.fixed-nav-menu ul li a {
       text-decoration: none;
       color: LightCyan;
       font-size: 16px;
@@ -116,43 +101,21 @@
       transition: color 0.3s;
     }
 
-    nav.nav-menu ul li a:hover {
+    nav.fixed-nav-menu ul li a:hover {
       color: #00f7ff;
     }
 
-    /* About Section Styling */
-    .about-section {
-      padding-top: 70px; /* Space for the fixed menu */
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: LightCyan;
-      transition: 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #030e1a;
-    }
-
-    /* Disable Smooth Scrolling */
-    html {
-      scroll-behavior: auto;
+    /* Offset for Fixed Menu */
+    section {
+      padding-top: 60px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Navigation Menu -->
-  <nav class="nav-menu">
+  <!-- Fixed Navigation Menu (For Other Sections) -->
+  <nav class="fixed-nav-menu">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
@@ -168,61 +131,59 @@
   <!-- Header Section -->
   <header id="header">
     <div class="content">
-      <div class="header-row">
-        <h1>Hi, I am Ruchita Alate!</h1>
-        <h2>Welcome to My Portfolio.</h2>
-      </div>
-      <h2><span id="dynamic-role">Data Analyst</span></h2>
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio.</h2>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
+      <!-- Home Page Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
+  <section id="about">
     <div class="container">
-      <div class="image-wrapper">
-        <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-      </div>
-      <div class="text-content">
-        <h2>About Me</h2>
-        <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success...</p>
-      </div>
+      <h2>About Me</h2>
+      <p>In today's data-driven landscape...</p>
     </div>
   </section>
 
   <!-- Interests Section -->
-  <section id="interests" class="interests-section">
+  <section id="interests">
     <div class="container">
       <h2>Interests</h2>
       <ul>
         <li>Data Analytics</li>
-        <li>Machine Learning and AI</li>
-        <li>Renewable Energy</li>
-        <li>Business Intelligence</li>
-        <li>Sustainable Technologies</li>
-        <li>Exploring Emerging Tech Trends</li>
+        <li>Machine Learning</li>
       </ul>
     </div>
   </section>
 
   <script>
-    const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
-    const dynamicRoleElement = document.getElementById("dynamic-role");
-    let roleIndex = 0;
+    // Show fixed navigation menu on scroll (hide it on the home page)
+    window.addEventListener("scroll", function () {
+      const fixedNavMenu = document.querySelector(".fixed-nav-menu");
+      const header = document.getElementById("header");
+      const headerBottom = header.offsetHeight;
 
-    function updateRole() {
-      dynamicRoleElement.textContent = roles[roleIndex];
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
-
-    setInterval(updateRole, 2000);
+      if (window.scrollY > headerBottom) {
+        fixedNavMenu.style.display = "block";
+      } else {
+        fixedNavMenu.style.display = "none";
+      }
+    });
   </script>
+
 </body>
 
 </html>
