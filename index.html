@@ -1,168 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script>
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-            var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
-            j.async=true;
-            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5BB8W2X');
-    </script>
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Personal Portfolio</title>
-    <meta content="Personal Portfolio" name="description">
-    <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer" name="keywords">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Personal Portfolio</title>
+  <meta content="Personal Portfolio" name="description">
+  <meta content="Business Analyst, Data Scientist, Data Analyst, Data Engineer" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('assets/img/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1, h2, h3, p {
+      margin: 10px;
+    }
+
+    h1 {
+      color: LightCyan;
+    }
+
+    h2 {
+      color: white; 
+    }
+
+    h3 {
+      color: LightCyan;
+    }
+
+    #header {
+      text-align: center;
+      max-width: 80%;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .header-row h1 {
+      margin-right: 10px;
+    }
+
+    #dynamic-role {
+      background-color: LightCyan;
+      color: #030e1a !important;
+      padding: 5px;
+      border-radius: 0px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    nav.nav-menu ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav.nav-menu ul li {
+      margin: 10px 20px;
+    }
+
+    nav.nav-menu ul li a {
+      text-decoration: none;
+      color: LightCyan;
+      transition: 0.3s;
+    }
+
+    nav.nav-menu ul li a:hover {
+      color: LightCyan;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: LightCyan;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #030e1a;
+    }
+
+  </style>
 </head>
+
 <body>
+
 <!-- Header Section -->
 <header id="header">
-    <div class="content">
-        <div class="header-row">
-            <h1>Hi, I am Ruchita Alate!</h1>
-            <h2>Welcome to My Portfolio.</h2>
-        </div>
-        <h2><span id="dynamic-role">Data Analyst</span></h2>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-links">
-            <!-- Social Links -->
-            <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-            <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-            <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        </div>
-
-        <!-- Styles -->
-        <style>
-            body {
-                background: url('assets/img/background.jpg') no-repeat center center fixed;
-                background-size: cover;
-                color: white;
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            h1, h2 {
-                margin: 10px 0;
-                font-family: 'Poppins', sans-serif;
-            }
-            h1 { color: LightCyan; font-size: 2.5rem; }
-            h2 { color: white; font-size: 2rem; }
-            #header { text-align: center; max-width: 80%; }
-            .header-row { display: flex; flex-direction: column; align-items: center; }
-            #dynamic-role {
-                background-color: LightCyan;
-                color: #030e1a !important;
-                padding: 5px;
-                border-radius: 0px;
-                display: inline-block;
-                margin-top: 20px;
-            }
-            nav.nav-menu ul {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                margin-top: 30px;
-                flex-wrap: wrap;
-            }
-            nav.nav-menu ul li {
-                margin: 10px 20px;
-            }
-            nav.nav-menu ul li a {
-                text-decoration: none;
-                color: LightCyan;
-                transition: 0.3s;
-            }
-            nav.nav-menu ul li a:hover { color: LightCyan; }
-            .social-links {
-                display: flex;
-                justify-content: center; /* Centering social links */
-                margin-top: 20px;
-            }
-            .social-links a {
-                margin: 0 10px; 
-                font-size: 24px; 
-                color: LightCyan; 
-                transition: 0.3s; 
-            }
-            .social-links a:hover { color: #030e1a; }
-        </style>
-
+  <div class="content">
+    <div class="header-row">
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio.</h2>
     </div>
+    <h2><span id="dynamic-role">Data Analyst</span></h2>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+    </div>
+  </div>
 </header>
 
 <!-- About Section -->
 <section id="about" class="about-section">
-    <!-- About Section Content -->
-    <div class="container">
-        <div class="image-wrapper">
-            <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-        </div>
-        <div class="text-content">
-            <h2>About Me</h2>
-            <!-- About Me Content -->
-            <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success...</p>
-        </div>
+  <!-- Navigation Menu for About Section -->
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+      <li><a href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section Content -->
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
     </div>
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+    </div>
+  </div>
 </section>
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
-    <div class="container">
-        <h2>Interests</h2>
-        <ul>
-            <li>Data Analytics</li>
-            <li>Machine Learning and AI</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h2>Interests</h2>
+    <ul>
+      <li>Data Analytics</li>
+      <li>Machine Learning and AI</li>
+      <li>Renewable Energy</li>
+      <li>Business Intelligence</li>
+      <li>Sustainable Technologies</li>
+      <li>Exploring Emerging Tech Trends</li>
+    </ul>
+  </div>
 </section>
 
 <!-- Dynamic Role Script -->
 <script>
-    const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
-    const dynamicRoleElement = document.getElementById("dynamic-role");
-    let roleIndex = 0;
+const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
+const dynamicRoleElement = document.getElementById("dynamic-role");
+let roleIndex = 0;
 
-    function updateRole() {
-        dynamicRoleElement.textContent = roles[roleIndex];
-        roleIndex = (roleIndex + 1) % roles.length;
-    }
+function updateRole() {
+   dynamicRoleElement.textContent = roles[roleIndex];
+   roleIndex = (roleIndex + 1) % roles.length;
+}
 
-    setInterval(updateRole, 2000);
+setInterval(updateRole, 2000);
 </script>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+
+<script type="text/javascript">
+var typed = new Typed('.typing',{
+   strings: ["Data Scientist", "Data Analyst", "AI Enthusiast"],
+   loop: true,
+   typeSpeed: 65,
+   backSpeed: 65
+});
+</script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
+
