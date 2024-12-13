@@ -96,7 +96,12 @@
     }
 
     nav.nav-menu ul li a:hover {
-      color: #030e1a;
+      color: #030e1a; /* Ensure hover changes to the desired dark color */
+    }
+
+    nav.nav-menu ul li.active a {
+      color: LightCyan; /* Keep active link consistent with LightCyan */
+      cursor: default;
     }
 
     .social-links {
@@ -214,6 +219,8 @@
     </div>
   </div>
 </section>
+
+
   
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
