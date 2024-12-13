@@ -2,19 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5BB8W2X');
-  </script>
-
-  <!-- Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
@@ -225,5 +212,22 @@
       </div>
     </div>
   </section>
+
+  <!-- jQuery for Smooth Scrolling -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).on('click', '.nav-menu a', function(e) {
+      var hash = this.hash;
+      var target = $(hash);
+      
+      if (target.length) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);  // Adjust the speed as per your need
+      }
+    });
+  </script>
 </body>
+
 </html>
