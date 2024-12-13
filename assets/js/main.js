@@ -9,49 +9,25 @@
 
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
-      var target = $(hash);
-      if (target.length) {
-        e.preventDefault();
+    var hash = this.hash;
+    var target = $(hash);
+    if (target.length) {
+      e.preventDefault(); // Prevent default anchor behavior
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
+      // Smooth scroll to the target section
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500); // 500ms for smooth scrolling
 
-        // Check if we're on the homepage or another section
-        if (!$('body').hasClass('home-page') && hash !== '#header') {
-          $('#header').fadeOut();  // Hide header when navigating to sections
-        } else {
-          $('#header').fadeIn(); // Show header when on homepage or after navigating to it
-        }
-
-        if (hash == '#header') {
-          $('#header').removeClass('header-top');
-          $("section").removeClass('section-show');
-          return;
-        }
-
-        if (!$('#header').hasClass('header-top')) {
-          $('#header').addClass('header-top');
-          setTimeout(function() {
-            $("section").removeClass('section-show');
-            $(hash).addClass('section-show');
-          }, 350);
-        } else {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }
-
-        // Close mobile nav if open
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-
-        return false;
+      // Optionally add active class to the clicked item
+      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+      $(this).closest('li').addClass('active');
+      
+      // Close mobile nav if open
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        $('.mobile-nav-overly').fadeOut();
       }
     }
   });
