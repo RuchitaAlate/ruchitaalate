@@ -22,47 +22,59 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-    /* Reset body styling */
     body {
+      background: url('assets/img/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       margin: 0;
       padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* Header Section */
-    #header {
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      background-color: #030e1a;
-      color: white;
     }
 
-    #header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+    h1, h2, h3, p {
+      margin: 10px;
+    }
+
+    h1 {
       color: LightCyan;
     }
 
-    #header h2 {
-      font-size: 1.5rem;
-      margin: 0;
-      color: white;
+    h2 {
+      color: white; 
+    }
+
+    h3 {
+      color: LightCyan;
+    }
+
+    #header {
+      text-align: center;
+      max-width: 80%;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .header-row h1 {
+      margin-right: 10px;
     }
 
     #dynamic-role {
       background-color: LightCyan;
-      color: #030e1a;
-      padding: 5px 10px;
-      border-radius: 5px;
+      color: #030e1a !important;
+      padding: 5px;
+      border-radius: 0px;
       display: inline-block;
       margin-top: 20px;
     }
 
-    /* Navigation Menu */
     nav.nav-menu {
       position: sticky;
       top: 0;
@@ -96,44 +108,32 @@
     nav.nav-menu ul li a:hover {
       color: white;
     }
-
-    /* Section Styling */
+    /* Section Styles */
     section {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 100px 20px;
       text-align: center;
-      background-color: #030e1a;
-      color: white;
-      padding: 20px;
     }
 
-    section h2 {
+    #about {
+      background-color: #030e1a;
+    }
+
+    #about h2 {
       font-size: 2rem;
       margin-bottom: 20px;
       color: LightCyan;
     }
 
-    section p {
+    #about p {
       max-width: 800px;
+      margin: 0 auto;
       line-height: 1.6;
       color: white;
     }
 
-    section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    section ul li {
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
-
-    /* Social Links */
     .social-links {
+      display: flex;
+      justify-content: center;
       margin-top: 20px;
     }
 
@@ -141,17 +141,13 @@
       margin: 0 10px;
       font-size: 24px;
       color: LightCyan;
-      transition: color 0.3s;
+      transition: 0.3s;
     }
 
     .social-links a:hover {
-      color: white;
+      color: #030e1a;
     }
 
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
   </style>
 </head>
 
@@ -159,35 +155,48 @@
 
 <!-- Header Section -->
 <header id="header">
-  <h1>Hi, I am Ruchita Alate!</h1>
-  <h2>Welcome to My Portfolio</h2>
-  <h2><span id="dynamic-role">Data Analyst</span></h2>
+  <div class="content">
+    <div class="header-row">
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio.</h2>
+    </div>
+    <h2><span id="dynamic-role">Data Analyst</span></h2>
+    
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#portfolio">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-    <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-    <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-    <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+    </div>
   </div>
 </header>
 
 <!-- About Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success...</p>
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+    </div>
+  </div>
 </section>
 
 <!-- Interests Section -->
