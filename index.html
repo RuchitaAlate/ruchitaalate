@@ -57,13 +57,12 @@
 
     .header-row {
       display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
+      flex-direction: column; /* Ensures elements stack vertically */
+      align-items: center;
     }
 
     .header-row h1 {
-      margin-right: 10px;
+      margin: 5px 0; /* Adjusts spacing between the lines */
     }
 
     #dynamic-role {
@@ -114,7 +113,6 @@
     .social-links a:hover {
       color: #030e1a;
     }
-
   </style>
 </head>
 
@@ -125,7 +123,7 @@
   <div class="content">
     <div class="header-row">
       <h1>Hi, I am Ruchita Alate!</h1>
-      <h2>Welcome to My Portfolio.</h2>
+      <h1>Welcome to My Portfolio.</h1>
     </div>
     <h2><span id="dynamic-role">Data Analyst</span></h2>
     
