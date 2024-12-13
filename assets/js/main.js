@@ -20,7 +20,7 @@
           $(this).closest('li').addClass('active');
         }
 
-        Check if we're on the homepage or another section
+        // Check if we're on the homepage or another section
         if (!$('body').hasClass('home-page') && hash !== '#header') {
           $('#header').fadeOut();  // Hide header when navigating to sections
         } else {
