@@ -64,7 +64,6 @@
                 padding: 0;
                 height: 100vh;
                 display: flex;
-                flex-direction: column; /* Stack elements vertically */
                 justify-content: center;
                 align-items: center;
             }
@@ -101,31 +100,6 @@
                 transition: 0.3s;
             }
             nav.nav-menu ul li a:hover { color: LightCyan; }
-            .social-links {
-                display: flex;
-                justify-content: center; /* Centering social links */
-                margin-top: 20px;
-            }
-            .social-links a {
-                margin: 0 10px; 
-                font-size: 24px; 
-                color: LightCyan; 
-                transition: 0.3s; 
-            }
-            .social-links a:hover { color: #030e1a; }
-
-            /* Ensure About Section is not overlapped */
-            section {
-              position: relative; /* Prevent overlapping issues */
-              z-index: 1; /* Ensure it is above other elements */
-              padding-top: 50px; /* Add space for fixed header if needed */
-              width: 100%;
-              text-align:center; /* Center text in sections */
-              color:white; /* Ensure text is visible */
-              background-color:#00000099; /* Optional background for better visibility */
-              padding-bottom: 50px; /* Space at bottom */
-              box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5); /* Optional shadow for depth */
-          }
         </style>
 
     </div>
@@ -141,9 +115,7 @@
         <div class="text-content">
             <h2>About Me</h2>
             <!-- About Me Content -->
-            <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-            <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-            <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+            <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success...</p>
         </div>
     </div>
 </section>
@@ -155,6 +127,7 @@
         <ul>
             <li>Data Analytics</li>
             <li>Machine Learning and AI</li>
+            <!-- More Interests -->
         </ul>
     </div>
 </section>
@@ -182,4 +155,3 @@
 
 </body>
 </html>
-
