@@ -152,12 +152,15 @@
 </header>
 
 <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="about-section">
   <style>
     /* About Section Styling */
     #about {
       position: relative;
-      padding-top: 80px; /* Increased space for the navigation to be on top */
+      padding-top: 30px; /* Reduced padding to shift content up */
+      padding-bottom: 50px; /* Increased bottom padding for bigger sections */
+      font-size: 1.2em; /* Increase font size for bigger text */
     }
 
     .nav-wrapper {
@@ -178,20 +181,55 @@
     }
 
     nav.nav-menu ul li {
-      margin: 0 20px; /* Spacing between the menu items */
+      margin: 0 30px; /* Increased spacing between the menu items */
     }
 
     nav.nav-menu ul li a {
       color: white; /* Change text color */
       text-decoration: none;
-      font-size: 16px; /* Adjust size as needed */
-      padding: 10px;
+      font-size: 18px; /* Adjusted size for better visibility */
+      padding: 15px;
       display: block;
     }
 
     nav.nav-menu ul li a:hover {
       background-color: #575757; /* Change on hover */
       border-radius: 5px;
+    }
+
+    /* Container Styling */
+    .container {
+      margin-top: 100px; /* Added margin to make sure content is pushed down */
+      font-size: 1.15em; /* Increased font size for about section content */
+    }
+
+    .image-wrapper {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-image {
+      width: 200px; /* Increased image size */
+      height: 200px;
+      border-radius: 50%; /* Circle shape for the image */
+      object-fit: cover;
+    }
+
+    .text-content {
+      max-width: 900px; /* Larger max width for text content */
+      margin: 0 auto; /* Centering the text */
+      line-height: 1.8; /* Improved line spacing for readability */
+    }
+
+    .text-content h2 {
+      font-size: 2em; /* Increased size of the heading */
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      text-align: justify;
+      font-size: 1.1em; /* Increased paragraph text size */
+      margin-bottom: 20px;
     }
   </style>
 
@@ -216,12 +254,13 @@
     </div>
     <div class="text-content">
       <h2>About Me</h2>
-      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
     </div>
   </div>
 </section>
+
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
