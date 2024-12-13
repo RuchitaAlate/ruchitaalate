@@ -22,85 +22,108 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
+    /* Reset body styling */
     body {
-      background: url('assets/img/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
       margin: 0;
       padding: 0;
+      background-color: #030e1a;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Header Section */
+    #header {
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-
-    h1, h2, h3, p {
-      margin: 10px;
-    }
-
-    h1 {
-      color: LightCyan;
-    }
-
-    h2 {
-      color: white; 
-    }
-
-    h3 {
-      color: LightCyan;
-    }
-
-    #header {
       text-align: center;
-      max-width: 80%;
+      background-color: #030e1a;
+      color: white;
     }
 
-    .header-row {
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
+    #header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: LightCyan;
     }
 
-    .header-row h1 {
-      margin-right: 10px;
+    #header h2 {
+      font-size: 1.5rem;
+      margin: 0;
+      color: white;
     }
 
     #dynamic-role {
       background-color: LightCyan;
-      color: #030e1a !important;
-      padding: 5px;
-      border-radius: 0px;
+      color: #030e1a;
+      padding: 5px 10px;
+      border-radius: 5px;
       display: inline-block;
       margin-top: 20px;
     }
 
+    /* Navigation Menu */
+    nav.nav-menu {
+      position: sticky;
+      top: 0;
+      background-color: #030e1a;
+      width: 100%;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
     nav.nav-menu ul {
       list-style: none;
-      padding: 0;
       display: flex;
       justify-content: center;
-      margin-top: 30px;
-      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
     }
 
     nav.nav-menu ul li {
-      margin: 10px 20px;
+      margin: 0 20px;
     }
 
     nav.nav-menu ul li a {
-      text-decoration: none;
       color: LightCyan;
-      transition: 0.3s;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease-in-out;
     }
 
     nav.nav-menu ul li a:hover {
+      color: white;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    #about {
+      background-color: #1a1a1a;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
       color: LightCyan;
     }
 
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: white;
+    }
+
+    /* Social Links */
     .social-links {
-      display: flex;
-      justify-content: center;
       margin-top: 20px;
     }
 
@@ -108,13 +131,17 @@
       margin: 0 10px;
       font-size: 24px;
       color: LightCyan;
-      transition: 0.3s;
+      transition: color 0.3s;
     }
 
     .social-links a:hover {
-      color: #030e1a;
+      color: white;
     }
 
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
@@ -122,35 +149,30 @@
 
 <!-- Header Section -->
 <header id="header">
-  <div class="content">
-    <div class="header-row">
-      <h1>Hi, I am Ruchita Alate!</h1>
-      <h2>Welcome to My Portfolio.</h2>
-    </div>
-    <h2><span id="dynamic-role">Data Analyst</span></h2>
-    
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
+  <h1>Hi, I am Ruchita Alate!</h1>
+  <h2>Welcome to My Portfolio</h2>
+  <h2><span id="dynamic-role">Data Analyst</span></h2>
 
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-    </div>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+      <li><a href="#contacts">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+    <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+    <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
   </div>
 </header>
-
 <!-- About Section -->
 <section id="about" class="about-section" style="background-color: #030e1a; color: white; text-align: center; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 50px 20px;">
   <div class="container" style="max-width: 800px;">
