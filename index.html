@@ -157,7 +157,7 @@
     /* About Section Styling */
     #about {
       position: relative;
-      padding-top: 50px; /* Adjust to give space for the navigation */
+      padding-top: 80px; /* Increased space for the navigation to be on top */
     }
 
     .nav-wrapper {
@@ -167,6 +167,7 @@
       left: 50%;
       transform: translateX(-50%); /* Centers the navigation horizontally */
       width: 100%;
+      z-index: 1000; /* Ensure it's on top of the content */
     }
 
     nav.nav-menu ul {
