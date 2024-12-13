@@ -45,6 +45,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* Change the background of the navigation bar for all pages */
+#header.header-top {
+  background: #030e1a; /* Change navigation bar background color */
+}
+
+/* Hide header content globally, keeping only the toggle button */
+#header .content h1,
+#header .content h2,
+#header .content nav.nav-menu,
+#header .content .social-links {
+  display: none; /* Hides header content */
+}
+
+/* Ensure the toggle button remains visible */
+.mobile-nav-toggle {
+  display: block; /* Keeps the toggle button visible */
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
