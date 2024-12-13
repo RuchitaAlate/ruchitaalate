@@ -8,7 +8,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
 
-  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Personal Portfolio</title>
@@ -32,6 +32,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     h1, h2, h3, p {
@@ -43,7 +44,7 @@
     }
 
     h2 {
-      color: white; 
+      color: white;
     }
 
     h3 {
@@ -57,13 +58,13 @@
 
     .header-row {
       display: flex;
-      justify-content: center;
-      align-items: baseline;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .header-row h1 {
-      margin-right: 10px;
+    .header-row h1,
+    .header-row h2 {
+      margin: 5px 0;
     }
 
     #dynamic-role {
@@ -95,7 +96,7 @@
     }
 
     nav.nav-menu ul li a:hover {
-      color: LightCyan;
+      color: #030e1a;
     }
 
     .social-links {
@@ -115,6 +116,53 @@
       color: #030e1a;
     }
 
+    #about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    .about-section .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .image-wrapper {
+      flex: 1;
+      max-width: 40%;
+      text-align: center;
+    }
+
+    .profile-image {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+
+    .text-content {
+      flex: 2;
+      max-width: 55%;
+      padding-left: 20px;
+      color: white;
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 768px) {
+      #about {
+        flex-direction: column;
+      }
+
+      .text-content {
+        padding-left: 0;
+        max-width: 100%;
+      }
+
+      .image-wrapper {
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 
@@ -131,7 +179,7 @@
     
     <nav class="nav-menu">
       <ul>
-        <li class="active"><a href="#header"> <span>Home</span></a></li>
+        <li class="active"><a href="#header"><span>Home</span></a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -160,13 +208,13 @@
     </div>
     <div class="text-content">
       <h2>About Me</h2>
-      <p style="text-align: justify;">In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-      <p style="text-align: justify;">Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-      <p style="text-align: justify;">I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
     </div>
   </div>
 </section>
-
+  
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
   <div class="container">
