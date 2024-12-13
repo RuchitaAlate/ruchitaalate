@@ -9,25 +9,42 @@
 
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    var hash = this.hash;
-    var target = $(hash);
-    if (target.length) {
-      e.preventDefault(); // Prevent default anchor behavior
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var hash = this.hash;
+      var target = $(hash);
+      if (target.length) {
+        e.preventDefault();
 
-      // Smooth scroll to the target section
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 500); // 500ms for smooth scrolling
+        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
 
-      // Optionally add active class to the clicked item
-      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-      $(this).closest('li').addClass('active');
-      
-      // Close mobile nav if open
-      if ($('body').hasClass('mobile-nav-active')) {
-        $('body').removeClass('mobile-nav-active');
-        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        $('.mobile-nav-overly').fadeOut();
+        if (hash == '#header') {
+          $('#header').removeClass('header-top');
+          $("section").removeClass('section-show');
+          return;
+        }
+
+        if (!$('#header').hasClass('header-top')) {
+          $('#header').addClass('header-top');
+          setTimeout(function() {
+            $("section").removeClass('section-show');
+            $(hash).addClass('section-show');
+          }, 350);
+        } else {
+          $("section").removeClass('section-show');
+          $(hash).addClass('section-show');
+        }
+
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+
+        return false;
+
       }
     }
   });
@@ -108,7 +125,7 @@
     }
   });
 
-  // Portfolio isotope and filter
+  // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
@@ -126,7 +143,7 @@
 
   });
 
-  // Initiate venobox (lightbox feature used in portfolio)
+  // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox();
   });
