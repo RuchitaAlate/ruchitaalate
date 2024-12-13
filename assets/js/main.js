@@ -21,11 +21,11 @@
         }
 
         // Check if we're on the homepage or another section
-        if (!$('body').hasClass('home-page') && hash !== '#header') {
-          $('#header').fadeOut();  // Hide header when navigating to sections
-        } else {
-          $('#header').fadeIn(); // Show header when on homepage or after navigating to it
-        }
+        // if (!$('body').hasClass('home-page') && hash !== '#header') {
+        //   $('#header').fadeOut();  // Hide header when navigating to sections
+        // } else {
+        //   $('#header').fadeIn(); // Show header when on homepage or after navigating to it
+        // }
 
         if (hash == '#header') {
           $('#header').removeClass('header-top');
