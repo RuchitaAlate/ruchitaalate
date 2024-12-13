@@ -27,77 +27,97 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
+    /* General Page Styling */
     body {
-      background: url('assets/img/background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
       margin: 0;
       padding: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Poppins', sans-serif;
     }
 
-    h1,
-    h2,
-    h3,
-    p {
-      margin: 25px 0;
-    }
-
-    h1 {
-      color: LightCyan;
-    }
-
-    h2 {
-      color: white;
-    }
-
-    h3 {
-      color: LightCyan;
-    }
-
+    /* Header Section */
     #header {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px;
-      width: 100%;
-      background-color: #030e1a;
+      height: 100vh;
+      background: url('assets/img/background.jpg') no-repeat center center/cover;
+      color: white;
     }
 
-    #header .content {
-      display: none;
+    #header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    #header h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #dynamic-role {
+      background-color: LightCyan;
+      color: #030e1a;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    /* Navigation Menu */
+    nav.nav-menu {
+      background-color: #030e1a;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
 
     nav.nav-menu ul {
       list-style: none;
-      padding: 0;
+      margin: 0;
+      padding: 10px 0;
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      margin-top: 20px;
-      background-color: #030e1a;
     }
 
     nav.nav-menu ul li {
-      margin: 10px 20px;
+      margin: 0 20px;
     }
 
     nav.nav-menu ul li a {
       text-decoration: none;
       color: LightCyan;
+      font-weight: bold;
       transition: 0.3s;
     }
 
     nav.nav-menu ul li a:hover {
-      color: LightCyan;
+      color: white;
     }
 
+    /* About Section */
+    #about {
+      padding: 50px 20px;
+      background-color: #030e1a;
+      color: white;
+    }
+
+    #about h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      line-height: 1.6;
+    }
+
+    #about img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Social Links */
     .social-links {
       display: flex;
       justify-content: center;
@@ -112,69 +132,56 @@
     }
 
     .social-links a:hover {
-      color: #030e1a;
-    }
-
-    #dynamic-role {
-      background-color: LightCyan;
-      color: #030e1a !important;
-      padding: 5px;
-      border-radius: 0px;
-      display: inline-block;
+      color: white;
     }
   </style>
 </head>
 
 <body>
-
-<!-- Header Section -->
-<header id="header">
-  <div class="content">
-    <h1>Hi, I am Ruchita Alate!</h1>
-    <h2>Welcome to My Portfolio.</h2>
-    <h2><span id="dynamic-role">Data Analyst</span></h2>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#portfolio">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-      <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Social Links -->
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-    <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-    <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-    <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-  </div>
-</header>
-
-<!-- Add about content below -->
-<section id="about" style="background-color: #030e1a; color: white; padding: 20px;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="assets/img/profile.jpg" alt="Profile Image" class="img-fluid">
-      </div>
-      <div class="col-md-8">
-        <h2>About Me</h2>
-        <p>
-          In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success.
-        </p>
-      </div>
+  <!-- Header Section -->
+  <header id="header">
+    <div class="content">
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio.</h2>
+      <h2><span id="dynamic-role">Data Analyst</span></h2>
     </div>
-  </div>
-</section>
 
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contacts">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success.
+      </p>
+      <p>
+        With a Master's in Information Management from the University of Illinois Urbana-Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.
+      </p>
+    </div>
+  </section>
 </body>
 
 </html>
