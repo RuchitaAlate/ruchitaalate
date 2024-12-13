@@ -75,22 +75,13 @@
       margin-top: 20px;
     }
 
-    nav.nav-menu {
-      position: sticky;
-      top: 10;
-      background-color: #030e1a;
-      width: 100%;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      z-index: 1000;
-    }
-
     nav.nav-menu ul {
       list-style: none;
+      padding: 0;
       display: flex;
       justify-content: center;
-      margin: 0;
-      padding: 0;
+      margin-top: 30px;
+      flex-wrap: wrap;
     }
 
     nav.nav-menu ul li {
@@ -98,37 +89,13 @@
     }
 
     nav.nav-menu ul li a {
-      color: LightCyan;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.3s ease-in-out;
+      color: LightCyan;
+      transition: 0.3s;
     }
 
     nav.nav-menu ul li a:hover {
       color: LightCyan;
-    }
-    /* Section Styles */
-    section {
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    #about {
-      background-color: #030e1a;
-    }
-
-    #about h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: LightCyan;
-    }
-
-    #about p {
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: white;
     }
 
     .social-links {
@@ -151,7 +118,7 @@
   </style>
 </head>
 
-<body class="home-page"> <!-- Added 'home-page' class here -->
+<body>
 
 <!-- Header Section -->
 <header id="header">
