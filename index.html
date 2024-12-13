@@ -22,7 +22,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-       body {
+    body {
       background: url('assets/img/background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
@@ -35,7 +35,7 @@
     }
 
     h1, h2, h3, p {
-      margin: 25px 0;
+      margin: 10px;
     }
 
     h1 {
@@ -51,23 +51,26 @@
     }
 
     #header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 40px;
-      max-width: 100%;
+      max-width: 80%;
     }
 
-    #header .content {
-      flex: 1;
+    .header-row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
     }
-    
+
+    .header-row h1 {
+      margin-right: 10px;
+    }
+
     #dynamic-role {
       background-color: LightCyan;
       color: #030e1a !important;
       padding: 5px;
-      border-radius: 2px;
+      border-radius: 0px;
       display: inline-block;
       margin-top: 20px;
     }
@@ -120,8 +123,10 @@
 <!-- Header Section -->
 <header id="header">
   <div class="content">
-    <h1>Hi, I am Ruchita Alate !</h1>
-    <h2>Welcome to My Portfolio.</h2>
+    <div class="header-row">
+      <h1>Hi, I am Ruchita Alate!</h1>
+      <h2>Welcome to My Portfolio.</h2>
+    </div>
     <h2><span id="dynamic-role">Data Analyst</span></h2>
     
     <nav class="nav-menu">
@@ -146,103 +151,8 @@
   </div>
 </header>
 
-<style>
-  
-  <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="about-section">
-
-  <style>
-    /* About Section Styling */
-.about-section {
-  position: relative;
-  padding-top: 0px; /* Reduced padding to shift content up */
-  padding-bottom: 50px; /* Increased bottom padding for bigger sections */
-  z-index: 1; /* Ensures the about section content stays above the nav menu */
-}
-
-/* Navigation Styling */
-.about-section .nav-wrapper {
-  text-align: center; /* Center the navigation */
-  position: absolute;
-  top: -20px; /* Moves the navigation up */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the navigation horizontally */
-  width: 100%;
-  z-index: 0; /* Ensures navigation is below the section content */
-}
-
-.about-section nav.nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-flex; /* Aligns the items in a straight line */
-}
-
-.about-section nav.nav-menu ul li {
-  margin: 0 30px; /* Increased spacing between the menu items */
-}
-
-.about-section nav.nav-menu ul li a {
-  color: LightCyan; /* Change text color */
-  text-decoration: none;
-  font-size: 17px; /* Restored font size for the navigation links */
-  padding: 15px;
-  display: block;
-}
-
-.about-section nav.nav-menu ul li a:hover {
-  background-color: #575757; /* Change on hover */
-  border-radius: 5px;
-}
-
-/* Container Styling */
-.about-section .container {
-  margin-top: -20px; /* Added margin to make sure content is pushed down */
-}
-
-.about-section .image-wrapper {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.about-section .profile-image {
-  width: 800px; /* Increased image size */
-  height: 600px;
-  border-radius: 0%; 
-  object-fit: cover;
-}
-
-.about-section .text-content {
-  max-width: 900px; /* Larger max width for text content */
-  margin: 0 auto; /* Centering the text */
-}
-
-.about-section .text-content h2 {
-  font-size: 2em; /* Increased size of the heading */
-  margin-bottom: 20px;
-}
-
-.about-section .text-content p {
-  text-align: justify;
-  font-size: 1.1em; /* Increased paragraph text size */
-  margin-bottom: 20px;
-}
-  </style>
-  
-  <nav class="nav-menu">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
-  
-  <!-- Content of About Section -->
   <div class="container">
     <div class="image-wrapper">
       <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
@@ -306,8 +216,9 @@ var typed = new Typed('.typing',{
 });
 </script>
 
+<!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
 </body>
 
-</html>  
+</html>
