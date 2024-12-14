@@ -1,22 +1,11 @@
 !(function($) {
   "use strict";
 
-  // Function to handle the header class visibility based on section
-  function toggleHeaderClass(target) {
-    // If we're navigating to the home section, add the header-top class
-    if (target === '#header') {
-      $('#header').addClass('header-top');
-    } else {
-      $('#header').removeClass('header-top');
-    }
-  }
-
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var hash = this.hash;
       var target = $(hash);
-
       if (target.length) {
         e.preventDefault();
 
@@ -26,19 +15,30 @@
           $(this).closest('li').addClass('active');
         }
 
-        // Toggle header class based on the target section
-        toggleHeaderClass(hash);
-
-        // Handle showing/hiding sections
+        // Check if the section is the home page (header section)
         if (hash == '#header') {
-          // For home page, no need to show any section below it
+          // Remove the header-top class when navigating to the home page
+          $('#header').removeClass('header-top');
           $("section").removeClass('section-show');
           return;
         }
 
-        // Show the target section
-        $("section").removeClass('section-show');
-        $(hash).addClass('section-show');
+        // If the current section is not the header, ensure the header-top class is removed
+        if (hash != '#header' && $('#header').hasClass('header-top')) {
+          $('#header').removeClass('header-top');
+        }
+
+        // Show the relevant section and add the header-top class for the home section
+        if (!$('#header').hasClass('header-top')) {
+          $('#header').addClass('header-top');
+          setTimeout(function() {
+            $("section").removeClass('section-show');
+            $(hash).addClass('section-show'); // Show the target section
+          }, 350);
+        } else {
+          $("section").removeClass('section-show');
+          $(hash).addClass('section-show');
+        }
 
         // Handle mobile navigation toggle
         if ($('body').hasClass('mobile-nav-active')) {
@@ -56,9 +56,7 @@
   if (window.location.hash) {
     var initial_nav = window.location.hash;
     if ($(initial_nav).length) {
-      // Toggle the header class based on the initial hash (home page or other sections)
-      toggleHeaderClass(initial_nav);
-
+      $('#header').removeClass('header-top'); // Remove header-top class for sections other than home
       $('.nav-menu .active, .mobile-nav .active').removeClass('active');
       $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
       setTimeout(function() {
