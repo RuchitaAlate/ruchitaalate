@@ -422,7 +422,7 @@
 
     <!-- Profile Image below the interests -->
     <div class="text-center mt-4">
-      <img src="assets/img/profile2.jpg" alt="Profile Image" class="img-fluid" style="width: 1000px; height: 600px;">
+      <img src="assets/img/profile2.jpg" alt="Profile Image" class="img-fluid" style="width: 1000px; height: 550px;">
     </div>
   </div><!-- End Interests -->
 </section><!-- End Interests Section -->
@@ -500,7 +500,7 @@
     background-color: #e0f7fa; /* Light cyan background */
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0; /* Remove padding */
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -550,7 +550,12 @@
     width: 400px; /* Set image width to 400px */
     height: 100%; /* Make image cover the height of the box */
     object-fit: cover; /* Ensure the image covers the box completely */
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px; /* Round the left corners */
+  }
+
+  .education .text-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Responsive for smaller screens */
@@ -569,9 +574,11 @@
 
     .education .text-content {
       padding-left: 10px;
+      padding-right: 10px;
     }
   }
 </style>
+
 
   <!-- Start Experience Section -->
 
