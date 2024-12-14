@@ -448,7 +448,7 @@
       <!-- First Education Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
-          <img src="assets/img/education/UIUC.jpg" class="img-fluid" alt="UIUC">
+          <img src="assets/img/UIUC.jpg" class="img-fluid" alt="UIUC">
           <div class="text-content">
             <h3><strong>University of Illinois - Urbana Champaign</strong></h3>
             <p><strong>Master of Sciences in Information Management</strong></p>
@@ -462,7 +462,7 @@
       <!-- Second Education Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
-          <img src="assets/img/education/nmims.jpg" class="img-fluid" alt="NMIMS">
+          <img src="assets/img/nmims.jpg" class="img-fluid" alt="NMIMS">
           <div class="text-content">
             <h3><strong>Narsee Monjee Institute of Management Studies, Mumbai</strong></h3>
             <p><strong>Master of Business Administration in Business Analytics</strong></p>
@@ -476,7 +476,7 @@
       <!-- Third Education Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
-          <img src="assets/img/education/nm.jpg" class="img-fluid" alt="NM">
+          <img src="assets/img/nm.jpg" class="img-fluid" alt="NM">
           <div class="text-content">
             <h3><strong>Narsee Monjee College of Commerce and Economics</strong></h3>
             <p><strong>Bachelor of Commerce in Financial Accounting and Auditing</strong></p>
@@ -502,7 +502,6 @@
     align-items: center;
     padding: 0; /* Remove padding */
     border-radius: 10px;
-    text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a; /* Text color */
     transition: transform 0.3s ease;
@@ -518,10 +517,12 @@
 
   .education .text-content {
     padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    text-align: left; /* Ensure left-alignment for all text */
   }
 
   .education h3 {
@@ -529,18 +530,21 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #030e1a; /* Set text color for heading */
+    text-align: left; /* Ensure heading is left-aligned */
   }
 
   .education p {
     font-size: 14px;
     margin-bottom: 5px;
     color: #030e1a; /* Set text color for paragraph */
+    text-align: left; /* Ensure paragraph is left-aligned */
   }
 
   .education .gpa {
     font-size: 14px;
     font-weight: bold;
     color: #030e1a; /* Set text color for GPA */
+    text-align: left; /* Ensure GPA is left-aligned */
   }
 
   .education .row {
@@ -582,9 +586,6 @@
     }
   }
 </style>
-
-
-
 
   <!-- Start Experience Section -->
 
