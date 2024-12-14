@@ -125,6 +125,32 @@
       font-size: 18px
       transition: 0.3s;
     }
+   /* Center navigation menu for all sections except header */
+    nav.nav-menu {
+      position: relative;
+      justify-content: center; /* Ensures menu is centered */
+    }
+
+    section:not(.header) nav.nav-menu {
+      position: fixed; /* Fix the navigation for other sections */
+      top: 0; /* Align it to the top of the page */
+      left: 0;
+      width: 100%; /* Full width */
+      background-color: #030e1a; /* Consistent background */
+      z-index: 100; /* Keep it above content */
+      padding: 10px 0;
+    }
+
+  .header nav.nav-menu {
+    position: static; /* Default for header */
+  }
+
+  /* Adjust header greeting */
+  .header .header-row h1 {
+    display: block;
+    font-size: 3rem; /* Adjust font size if needed */
+    color: LightCyan;
+  }
 
     nav.nav-menu ul li a:hover {
       color: #ffffff; /* Ensure hover changes to the desired dark color */
@@ -159,10 +185,11 @@
     color: white; /* Ensures readability with the dark background */
     }
     
-    section:not(#header) .content {
-      display: none;
+    /* Hide "Hi, I am Ruchita" in other sections */
+    section:not(.header) .header-row h1 {
+      display: none; /* Ensures the greeting only appears on the header */
     }
-
+  
     body, header, section {
       background-color: #030e1a !important; /* Ensures no unwanted background color */
     }
