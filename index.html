@@ -576,21 +576,21 @@
   .view-transcript {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #ffffff; /* White background */
-    color: #030e1a; /* Dark text */
-    border: 2px solid #030e1a; /* Border for visibility */
+    padding: 8px 16px; /* Reduced size */
+    background-color: #030e1a; /* Dark background */
+    color: #00ffff; /* Cyan text color */
+    border: 2px solid #030e1a; /* Border matches background */
     text-decoration: none; /* Remove underline */
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: transform 0.2s ease, color 0.3s ease;
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
     text-align: center;
   }
 
   .view-transcript:hover {
-    background-color: #ffffff; /* No background change */
-    color: #030e1a; /* Ensure text stays dark */
+    background-color: #030e1a; /* Dark background remains */
+    color: #00ffff; /* Cyan text remains */
     transform: translateY(-2px); /* Slight lift on hover */
   }
 
@@ -614,7 +614,8 @@
     }
 
     .view-transcript {
-      width: 100%; /* Allow button to take full width on small screens */
+      width: auto; /* Allow button to adjust width naturally */
+      padding: 8px 16px; /* Maintain reduced size on small screens */
       text-align: center;
     }
   }
