@@ -595,25 +595,26 @@
 
 
   <!-- Experience Section -->
-  <section id="experience" class="services">
+<section id="experience" class="services">
   <div class="container">
     <style>
       /* Experience Section Styles */
       .experience-box {
         display: flex;
-        align-items: flex-start; /* Align items at the top */
-        justify-content: flex-start; /* Ensure left alignment */
+        align-items: flex-start; /* Align content at the top */
+        justify-content: flex-start; /* Left-align content */
         background-color: #e0ffff; /* Light cyan background */
         padding: 20px;
         margin-bottom: 20px;
         border: 1px solid #cce7e8; /* Optional border */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        height: 250px; /* Set a fixed height to ensure uniform size */
+        height: 300px; /* Fixed height to ensure uniform size */
+        width: 100%; /* Ensure full width */
       }
 
       .experience-img {
-        width: 80px;
-        height: 80px;
+        width: 120px; /* Increased image width */
+        height: 120px; /* Increased image height */
         margin-right: 20px;
         border-radius: 10px;
         flex-shrink: 0; /* Ensure image does not shrink */
@@ -652,6 +653,18 @@
         line-height: 1.5;
         text-align: left;
         margin-left: 0; /* Remove indentation */
+      }
+
+      /* Add responsive design */
+      @media (max-width: 768px) {
+        .experience-box {
+          flex-direction: column;
+          height: auto; /* Allow variable height on smaller screens */
+        }
+
+        .experience-img {
+          margin-bottom: 10px;
+        }
       }
     </style>
 
