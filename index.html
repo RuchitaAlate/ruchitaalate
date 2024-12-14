@@ -297,15 +297,14 @@
       color: #030e1a; /* Text color */
       padding: 10px 15px; /* Padding inside the box */
       border-radius: 5px; /* Rounded edges */
-      display: inline-block; /* Align in a straight line */
-      margin: 10px; /* Spacing between boxes */
       text-align: center;
+      flex: 1; /* Ensures the info boxes take equal space */
+      margin: 0 10px; /* Horizontal spacing between boxes */
     }
 
     #about .info-container {
       display: flex;
-      justify-content: space-around; /* Spread the boxes equally */
-      align-items: center;
+      justify-content: space-between; /* Align the info boxes in a row */
       width: 100%; /* Full width of the container */
       margin-top: 20px; /* Space above the info boxes */
     }
@@ -346,7 +345,7 @@
       <div class="text-box">
         <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
         <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-        <p> I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'"> ralate2@illinois.edu </a> to explore potential opportunities. </p
+        <p> I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'"> ralate2@illinois.edu </a> to explore potential opportunities. </p>
       </div>
     </div>
 
@@ -364,7 +363,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
