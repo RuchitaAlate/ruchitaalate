@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5BB8W2X');
+  </script>
 
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8">
@@ -21,7 +32,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
-<style>
+  <style>
     body {
       background: url('assets/img/background.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -44,52 +55,25 @@
     }
 
     h2 {
-      color: white !important; /* Ensure 'Welcome to My Portfolio' is white */
-    }
-
-    h3 {
-      color: LightCyan;
+      color: white !important;
     }
 
     #header {
       text-align: center;
       max-width: 80%;
-    }
-
-    .header-row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header-row h1,
-    .header-row h2 {
-      margin: 5px 0;
-    }
-
-    #header .content {
-      display: block; /* Default for home section */
-    }
-
-    #header {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      height: 100vh; /* Full viewport height */
-      background-color: #030e1a; /* Ensure consistent background */
+      height: 100vh;
+      background-color: #030e1a;
     }
 
-  #header h1,
-  #header h2 {
-    margin: 10px 0;
-    color: LightCyan;
-  }
-
-  #header h2 {
-    font-size: 20px; /* Adjust subtitle font size */
-  }
+    #header h1,
+    #header h2 {
+      margin: 10px 0;
+      color: LightCyan;
+    }
 
     #dynamic-role {
       background-color: LightCyan;
@@ -101,12 +85,16 @@
     }
 
     nav.nav-menu {
-      display: flex;
+      display: none; /* Hide navigation menu on homepage */
       justify-content: center;
       align-items: center;
-      margin-top: 20px; /* Adjust margin as needed */
+      margin-top: 20px;
     }
-    
+
+    nav.nav-menu.active {
+      display: flex; /* Show navigation menu on other sections */
+    }
+
     nav.nav-menu ul {
       list-style: none;
       padding: 0;
@@ -122,78 +110,29 @@
     nav.nav-menu ul li a {
       text-decoration: none;
       color: LightCyan;
-      font-size: 18px
+      font-size: 18px;
       transition: 0.3s;
     }
-   /* Center navigation menu for all sections except header */
-    nav.nav-menu {
-      position: relative;
-      justify-content: center; /* Ensures menu is centered */
-    }
-
-    section:not(.header) nav.nav-menu {
-      position: fixed; /* Fix the navigation for other sections */
-      top: 0; /* Align it to the top of the page */
-      left: 0;
-      width: 100%; /* Full width */
-      background-color: #030e1a; /* Consistent background */
-      z-index: 100; /* Keep it above content */
-      padding: 10px 0;
-    }
-
-  .header nav.nav-menu {
-    position: static; /* Default for header */
-  }
-
-  /* Adjust header greeting */
-  .header .header-row h1 {
-    display: block;
-    font-size: 3rem; /* Adjust font size if needed */
-    color: LightCyan;
-  }
 
     nav.nav-menu ul li a:hover {
-      color: #ffffff; /* Ensure hover changes to the desired dark color */
+      color: #ffffff;
     }
 
     nav.nav-menu ul li.active a {
-      color: LightCyan; /* Keep active link consistent with LightCyan */
+      color: LightCyan;
       cursor: default;
     }
 
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
+    section {
+      padding-top: 80px;
+      background-color: #030e1a;
+      color: white;
     }
 
-    .social-links a {
-      margin: 0 10px;
-      font-size: 24px;
-      color: LightCyan;
-      transition: 0.3s;
+    /* Center nav menu on sections */
+    body:not(#header) nav.nav-menu {
+      display: flex;
     }
-    .social-links a:hover {
-      color: white !important;
-    }
-    
-    section {
-    padding-top: 80px; /* Adjust this based on the height of your header */
-    }
-    section {
-    background-color: #030e1a;
-    color: white; /* Ensures readability with the dark background */
-    }
-    
-    /* Hide "Hi, I am Ruchita" in other sections */
-    section:not(.header) .header-row h1 {
-      display: none; /* Ensures the greeting only appears on the header */
-    }
-  
-    body, header, section {
-      background-color: #030e1a !important; /* Ensures no unwanted background color */
-    }
-    
 
     #about {
       display: flex;
@@ -217,7 +156,6 @@
 
     .profile-image {
       max-width: 100%;
-      border-radius: 0%;
     }
 
     .text-content {
@@ -243,8 +181,6 @@
       }
     }
   </style>
-
-
 </head>
 
 <body>
@@ -254,135 +190,53 @@
   <div class="content">
     <div class="header-row">
       <h1>Hi, I am Ruchita Alate!</h1>
-      <h2>Welcome to My Portfolio.</h2> <!-- Now the color is explicitly set to white -->
+      <h2>Welcome to My Portfolio.</h2>
     </div>
     <h2><span id="dynamic-role">Data Analyst</span></h2>
-    
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#header"><span>Home</span></a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ruchitaalate" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://www.github.com/ruchitaalate" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-      <a href="mailto:ralate2@illinois.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      <a href="https://www.instagram.com/ruchita_alate24/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-    </div>
   </div>
 </header>
 
+<!-- Navigation Menu -->
+<nav class="nav-menu">
+  <ul>
+    <li class="active"><a href="#header">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#portfolio">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#contacts">Contact</a></li>
+  </ul>
+</nav>
+
 <!-- About Section -->
 <section id="about" class="about-section">
-  <style>
-    /* About Section Layout */
-    #about {
-      display: flex;
-      flex-direction: row; /* Align photo and text horizontally */
-      align-items: flex-start; /* Align items to the top */
-      padding-left: 30px;
-      background-color: #030e1a; /* Ensure dark background */
-    }
-
-    #about .image-wrapper {
-      flex: 1; /* Allow space for the image */
-      max-width: 40%; /* Adjust the image width */
-      text-align: center; /* Center the image */
-    }
-
-    #about .profile-image {
-      max-width: 100%;
-      border-radius: 0%; /* No rounded corners */
-    }
-
-    #about .text-content {
-      flex: 2; /* Allow more space for the text */
-      max-width: 55%;
-      padding-left: 60px;
-      color: white; /* White text color */
-      text-align: justify;
-    }
-
-    /* Info Boxes for Birthdate, Address, Phone */
-    #about .info-box {
-      background-color: LightCyan; /* Box background color */
-      color: #030e1a; /* Text color */
-      padding: 10px 15px; /* Padding inside the box */
-      border-radius: 5px; /* Rounded edges */
-      display: inline-block; /* Align in a straight line */
-      margin: 10px; /* Spacing between boxes */
-      text-align: center;
-    }
-
-    #about .info-container {
-      display: flex;
-      justify-content: space-around; /* Spread the boxes equally */
-      align-items: center;
-      width: 100%; /* Full width of the container */
-      margin-top: 20px; /* Space above the info boxes */
-    }
-
-    /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 768px) {
-      #about {
-        flex-direction: column; /* Stack photo and text vertically */
-        text-align: center;
-      }
-
-      #about .text-content {
-        padding-left: 0;
-        max-width: 100%;
-      }
-
-      #about .image-wrapper {
-        margin-bottom: 20px;
-      }
-
-      #about .info-container {
-        flex-direction: column; /* Stack info boxes vertically */
-        text-align: center;
-      }
-
-      #about .info-box {
-        margin-bottom: 10px;
-      }
-  </style>
-  
   <div class="container">
-      <div class="image-wrapper">
-        <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-      </div>
-
-      <div class="text-content">
-        <h2>About Me</h2>
-        <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-        <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-        <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
-      </div>
-
-      <!-- Info Section -->
-      <div class="info-container">
-        <div class="info-box">
-          <strong>Birthdate:</strong> 24 December 1997
-        </div>
-        <div class="info-box">
-          <strong>Address:</strong> Champaign, Illinois
-        </div>
-        <div class="info-box">
-          <strong>Phone:</strong> +1 (217)-766-0323
-        </div>
-      </div>
+    <div class="image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+    </div>
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data...</p>
+    </div>
   </div>
 </section>
+
+<!-- Add other sections here -->
+
+<script>
+  // Show navigation menu on all sections except the homepage
+  document.addEventListener('scroll', function() {
+    const header = document.querySelector('#header');
+    const navMenu = document.querySelector('.nav-menu');
+    if (window.scrollY > header.offsetHeight) {
+      navMenu.classList.add('active');
+    } else {
+      navMenu.classList.remove('active');
+    }
+  });
+</script>
   
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
