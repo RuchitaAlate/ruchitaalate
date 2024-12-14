@@ -572,9 +572,26 @@
     margin: 0; /* Remove any margin between image and box */
   }
 
-  .education .text-content {
-    padding-left: 20px;
-    padding-right: 20px;
+  /* Styling for the "View Transcript" button */
+  .view-transcript {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff; /* White background */
+    color: #030e1a; /* Dark text */
+    border: 2px solid #030e1a; /* Border for visibility */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, color 0.3s ease;
+    text-align: center;
+  }
+
+  .view-transcript:hover {
+    background-color: #ffffff; /* No background change */
+    color: #030e1a; /* Ensure text stays dark */
+    transform: translateY(-2px); /* Slight lift on hover */
   }
 
   /* Responsive for smaller screens */
@@ -595,23 +612,13 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-    /* Styling for the "View Transcript" button */
+
     .view-transcript {
-      background-color: #ffffff; /* White background */
-      color: #030e1a; /* Dark text */
-      border: 2px solid #030e1a; /* Optional border */
-    }
-    .view-transcript:hover {
-      background-color: #ffffff; /* No change */
-      color: #030e1a; /* No change */
-    }
-    .education .text-content {
-      padding-left: 20px;
-      padding-right: 20px;
+      width: 100%; /* Allow button to take full width on small screens */
+      text-align: center;
     }
   }
 </style>
-
 
   <!-- Experience Section -->
 <section id="experience" class="services">
