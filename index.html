@@ -260,11 +260,10 @@
     /* About Section Layout */
     #about {
       display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center-align the section contents */
+      flex-direction: row; /* Align photo and text horizontally */
+      align-items: flex-start; /* Align items to the top */
       padding-left: 80px;
       background-color: #030e1a; /* Ensure dark background */
-      padding-top: 50px; /* Space above */
     }
 
     #about .image-wrapper {
@@ -305,36 +304,6 @@
       margin-top: 20px; /* Space above the info boxes */
     }
 
-    /* Navigation Menu */
-    #about .nav-menu {
-      display: flex;
-      justify-content: center; /* Center-align the menu items */
-      margin-bottom: 30px; /* Space below the navigation menu */
-      list-style: none; /* Remove default list styling */
-      padding: 0;
-    }
-
-    #about .nav-menu li {
-      margin: 0 15px; /* Space between menu items */
-    }
-
-    #about .nav-menu a {
-      color: white; /* White text color */
-      text-decoration: none; /* Remove underline */
-      font-size: 16px; /* Font size */
-      font-weight: bold; /* Bold font */
-      transition: color 0.3s; /* Smooth color transition */
-    }
-
-    #about .nav-menu a:hover {
-      color: LightCyan; /* Highlighted color on hover */
-    }
-
-    /* Hide the header completely */
-    header {
-      display: none;
-    }
-
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
       #about {
@@ -343,7 +312,7 @@
       }
 
       #about .text-content {
-        padding-left: 0;
+        padding-left: 50;
         max-width: 100%;
       }
 
@@ -359,22 +328,7 @@
       #about .info-box {
         margin-bottom: 10px;
       }
-    }
   </style>
-
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="https://drive.google.com/file/d/1pdwUImlZYfRCIDYX99AyUr6iRYR04qgq/view?usp=drive_link" target="_blank">Resume</a></li>
-        <li><a href="#contacts">Contact</a></li>
-      </ul>
-    </nav>
   
   <div class="container">
       <div class="image-wrapper">
