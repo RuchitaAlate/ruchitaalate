@@ -495,6 +495,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a; /* Text color */
     transition: transform 0.3s ease;
+    height: 350px; /* Set fixed height for equal-sized boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .education .icon-box:hover {
@@ -502,7 +506,7 @@
   }
 
   .education h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 15px;
     font-weight: bold;
   }
@@ -519,8 +523,8 @@
 
   .education .row {
     display: flex;
-    justify-content: space-between; /* Spreads the boxes with little space between */
-    gap: 15px; /* Adjusts the space between the boxes */
+    justify-content: space-evenly; /* Even space between boxes */
+    gap: 10px; /* Reduced gap between boxes */
   }
 
   /* Responsive for smaller screens */
@@ -532,6 +536,7 @@
 
     .education .icon-box {
       margin-bottom: 20px;
+      height: auto; /* Allows flexible height on smaller screens */
     }
   }
 </style>
