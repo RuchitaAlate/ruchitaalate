@@ -446,7 +446,7 @@
   <div class="education container">
     <div class="row">
       <!-- First Education Box -->
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
           <img src="assets/img/education/UIUC.jpg" class="img-fluid" alt="UIUC">
           <div class="text-content">
@@ -460,7 +460,7 @@
       </div>
 
       <!-- Second Education Box -->
-      <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
+      <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
           <img src="assets/img/education/nmims.jpg" class="img-fluid" alt="NMIMS">
           <div class="text-content">
@@ -474,7 +474,7 @@
       </div>
 
       <!-- Third Education Box -->
-      <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
+      <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
           <img src="assets/img/education/nm.jpg" class="img-fluid" alt="NM">
           <div class="text-content">
@@ -506,10 +506,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a; /* Text color */
     transition: transform 0.3s ease;
-    height: 350px; /* Fixed height */
-    width: 100%; /* Take full width of the column */
-    max-width: 350px; /* Max width to maintain equal size */
-    justify-content: space-between;
+    height: 300px; /* Fixed height */
+    width: 1000px; /* Fixed width */
+    justify-content: flex-start;
+    margin: 0 auto; /* Center the boxes */
   }
 
   .education .icon-box:hover {
@@ -521,6 +521,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
   }
 
   .education h3 {
@@ -541,38 +542,36 @@
 
   .education .row {
     display: flex;
-    justify-content: space-evenly; /* Even space between boxes */
-    gap: 10px; /* Slight gap between boxes */
+    flex-direction: column; /* Stacked vertically */
+    align-items: center; /* Center the boxes */
   }
 
   .education img {
-    max-width: 120px; /* Ensure image is not too large */
-    max-height: 120px;
+    width: 400px; /* Set image width to 400px */
+    height: 100%; /* Make image cover the height of the box */
+    object-fit: cover; /* Ensure the image covers the box completely */
     border-radius: 10px;
   }
 
   /* Responsive for smaller screens */
   @media (max-width: 768px) {
-    .education .row {
-      flex-direction: column;
-      align-items: center;
-    }
-
     .education .icon-box {
       width: 100%; /* Allow the boxes to take up full width on small screens */
       height: auto; /* Flexible height on smaller screens */
-      max-width: none; /* Remove max-width constraint on small screens */
-      margin-bottom: 20px;
+      margin-bottom: 20px; /* Add space between boxes */
     }
 
     .education img {
-      max-width: 80px; /* Smaller image size on smaller screens */
-      max-height: 80px;
+      width: 100%; /* Make the image responsive */
+      height: 200px; /* Adjust image height */
+      object-fit: cover; /* Ensure the image still covers the box */
+    }
+
+    .education .text-content {
+      padding-left: 10px;
     }
   }
 </style>
-
-
 
   <!-- Start Experience Section -->
 
