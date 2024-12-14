@@ -271,11 +271,16 @@
       flex: 1; /* Allow space for the image */
       max-width: 40%; /* Adjust the image width */
       text-align: center; /* Center the image */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     #about .profile-image {
-      max-width: 100%;
+      width: 100%; /* Adjust image width dynamically */
+      max-height: 100%; /* Ensure it scales proportionally */
       border-radius: 0%; /* No rounded corners */
+      object-fit: cover; /* Ensure the image fills the area */
     }
 
     #about .text-content {
@@ -292,7 +297,17 @@
       text-align: justify;
     }
 
-    /* Info Boxes for Birthdate, Address, Phone */
+    /* Dynamically match image and text-box height */
+    #about .image-wrapper,
+    #about .text-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about .image-wrapper {
+      height: auto; /* Adjust based on text box */
+    }
+
     #about .info-box {
       background-color: LightCyan; /* Box background color */
       color: #030e1a; /* Text color */
@@ -324,6 +339,12 @@
 
       #about .image-wrapper {
         margin-bottom: 20px;
+        max-width: 100%;
+      }
+
+      #about .profile-image {
+        width: 100%;
+        object-fit: contain;
       }
 
       #about .info-container {
@@ -339,7 +360,7 @@
 
   <div class="container">
     <div class="image-wrapper">
-      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image" style="width: 800px; height: 550px;">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
     </div>
 
     <div class="text-content">
@@ -364,6 +385,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
