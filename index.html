@@ -328,55 +328,39 @@
       #about .info-box {
         margin-bottom: 10px;
       }
-  </style>
-  
-  <div class="container">
-      <div class="image-wrapper">
-        <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
-      </div>
-
-      <div class="text-content">
-        <h2>About Me</h2>
-        <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-        <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-        <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
-      </div>
-
-      <head>
-  <style>
-    .info-box strong {
-      font-weight: bold; /* Ensures the text inside <strong> is bold */
     }
   </style>
-</head>
 
-<section>
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+    </div>
+
+    <div class="text-content">
+      <h2>About Me</h2>
+      <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+      <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+      <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu">ralate2@illinois.edu</a> to explore potential opportunities.</p>
+    </div>
+
     <!-- Info Section -->
     <div class="info-container">
-    <div class="info-box">
-      <strong>Birthdate:</strong> 24 December 1997
-    </div>
-    <div class="info-box">
-      <strong>Address:</strong> Champaign, Illinois
-    </div>
-    <div class="info-box">
-      <strong>Phone:</strong> +1 (217)-766-0323
+      <div class="info-box">
+        <strong>Birthdate:</strong> 24 December 1997
+      </div>
+      <div class="info-box">
+        <strong>Address:</strong> Champaign, Illinois
+      </div>
+      <div class="info-box">
+        <strong>Phone:</strong> +1 (217)-766-0323
+      </div>
     </div>
   </div>
 </section>
-    
-<!-- Interests Section -->
-<head>
-  <style>
-    .icon-box h3 {
-      color: #030e1a !important;
-    }
-  </style>
-</head>
 
+<!-- Interests Section -->
 <section id="interests" class="interests-section">
   <div class="interests container">
-
     <div class="row">
       <div class="col-lg-3 col-md-4">
         <div class="icon-box" style="background-color: #e0f7fa;">
@@ -432,25 +416,23 @@
     <div class="text-center mt-4">
       <img src="assets/img/profile2.jpg" alt="Profile Image" class="img-fluid" style="width: 1000px; height: 800px;">
     </div>
-
   </div><!-- End Interests -->
 </section><!-- End Interests Section -->
 
 <!-- Dynamic Role Script -->
 <script>
-const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
-const dynamicRoleElement = document.getElementById("dynamic-role");
-let roleIndex = 0;
+  const roles = ["Data Analyst", "Business Analyst", "Data Engineer", "Business Intelligence Analyst", "Data Scientist"];
+  const dynamicRoleElement = document.getElementById("dynamic-role");
+  let roleIndex = 0;
 
-function updateRole() {
-   dynamicRoleElement.textContent = roles[roleIndex];
-   roleIndex = (roleIndex + 1) % roles.length;
-}
+  function updateRole() {
+    dynamicRoleElement.textContent = roles[roleIndex];
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
 
-setInterval(updateRole, 2000);
+  setInterval(updateRole, 2000);
 </script>
-
-
+  
   <!-- ======= Education Section ======= -->
 <section id="education" class="services">
   <div class="container">
