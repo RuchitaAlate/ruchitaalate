@@ -598,80 +598,89 @@
 <section id="experience" class="services">
   <div class="container">
     <style>
-  /* Experience Section Styles */
-  .experience-box {
-    display: flex;
-    align-items: flex-start; /* Align content at the top */
-    justify-content: flex-start; /* Left-align content */
-    background-color: #e0ffff; /* Light cyan background */
-    padding: 0; /* Remove padding */
-    margin-bottom: 20px;
-    border: 1px solid #cce7e8; /* Optional border */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    height: 300px; /* Fixed height for uniform size */
-    max-height: 300px; /* Ensure uniform maximum height */
-    width: 100%; /* Full width */
-    max-width: 100%; /* Ensure consistent maximum width */
-  }
-
-  .experience-img {
-    width: 300px; /* Fixed width for consistency */
-    height: 100%; /* Full height to match the box */
-    border: 1px solid #030e1a; /* Add border to the image */
-    object-fit: cover; /* Ensure image scales properly */
-    flex-shrink: 0; /* Prevent image shrinkage */
-  }
-
-  .experience-text {
-    color: #030e1a;
-    flex: 1; /* Ensures text fills available space */
-    padding: 20px; /* Add padding inside the text section */
-    text-align: left;
-    overflow-y: auto; /* Handle overflow if content exceeds box height */
-    max-height: 300px; /* Ensure text fits within the box */
-  }
-
-  .experience-text h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .experience-text h5 {
-    font-size: 16px;
-    margin-bottom: 15px; /* Add more space between role and description */
-  }
-
-  .experience-text p {
-    margin: 0 0 10px 0; /* Add spacing below the role description */
-    padding: 0;
-  }
-
-  .experience-text ul {
-    list-style-type: disc;
-    padding-left: 20px; /* Add padding for bullet list alignment */
-    margin: 0;
-  }
-
-  .experience-text ul li {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: left;
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .experience-box {
-      flex-direction: column;
-      height: auto; /* Allow variable height on smaller screens */
-    }
-
-    .experience-img {
-      width: 100%; /* Full width for smaller screens */
-      height: auto; /* Maintain aspect ratio */
-    }
-  }
+      /* Experience Section Styles */
+      .experience-box {
+        display: flex;
+        align-items: flex-start; /* Align content at the top */
+        justify-content: flex-start; /* Left-align content */
+        background-color: #e0ffff; /* Light cyan background */
+        padding: 0; /* Remove padding */
+        margin-bottom: 20px;
+        border: 1px solid #cce7e8; /* Border for definition */
+        border-radius: 10px; /* Rounded edges */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        height: 300px; /* Fixed height for uniform size */
+        width: 100%; /* Full width for uniform size */
+        max-width: 100%; /* Ensure consistency across all boxes */
+      }
+    
+      .experience-img {
+        width: 300px; /* Fixed width for consistency */
+        height: 100%; /* Full height to match the box */
+        border: 1px solid #030e1a; /* Border around the image */
+        border-radius: 10px 0 0 10px; /* Rounded edges for image */
+        object-fit: cover; /* Ensure image scales properly */
+        flex-shrink: 0; /* Prevent image shrinkage */
+      }
+    
+      .experience-text {
+        color: #030e1a;
+        flex: 1; /* Ensures text fills available space */
+        padding: 20px; /* Add padding inside the text section */
+        text-align: left;
+        overflow-y: auto; /* Handle overflow if content exceeds box height */
+        height: 100%; /* Match height of the container */
+        max-height: 300px; /* Prevent text from exceeding box height */
+        border-radius: 0 10px 10px 0; /* Rounded edges for text area */
+      }
+    
+      .experience-text h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    
+      .experience-text h5 {
+        font-size: 16px;
+        margin-bottom: 15px; /* Add spacing between role and description */
+      }
+    
+      .experience-text p {
+        margin: 0 0 10px 0; /* Add spacing below the role description */
+        padding: 0;
+      }
+    
+      .experience-text ul {
+        list-style-type: disc;
+        padding-left: 20px; /* Add padding for bullet list alignment */
+        margin: 0;
+      }
+    
+      .experience-text ul li {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+      }
+    
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .experience-box {
+          flex-direction: column;
+          height: auto; /* Allow variable height on smaller screens */
+        }
+    
+        .experience-img {
+          width: 100%; /* Full width for smaller screens */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
+        }
+    
+        .experience-text {
+          border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
+        }
+      }
 </style>
+
 
     <div class="row">
       <!-- Business Intelligence Group -->
