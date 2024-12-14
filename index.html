@@ -444,9 +444,88 @@
   <!-- ======= Education Section ======= -->
 <head>
   <style>
+    /* Education Section Styles */
+    .education-section {
+      padding: 60px 0;
+    }
+
+    .section-title h2 {
+      text-align: center;
+      color: #030e1a;
+      margin-bottom: 30px;
+    }
+
+    .icon-box {
+      background-color: #e0f7fa;
+      color: #030e1a;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .icon-box img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
     .icon-box h3 {
       color: #030e1a !important;
-      text-align: center; /* Center-align the text */
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .icon-box p {
+      color: #030e1a;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .icon-box p strong {
+      font-weight: bold;
+    }
+
+    .icon-box .school-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Adding GPA */
+    .icon-box .gpa {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff5722;
+      margin-top: 10px;
+    }
+
+    /* Ensures all boxes are of equal height */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .col-lg-3, .col-md-4 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .col-lg-3 .icon-box, .col-md-4 .icon-box {
+      min-height: 350px; /* Equal height for all boxes */
+      width: 100%;
+    }
+
+    /* No hover effects */
+    .icon-box:hover {
+      box-shadow: none;
+      transform: none;
     }
   </style>
 </head>
@@ -462,37 +541,41 @@
     <div class="row">
       <!-- First Education Box -->
       <div class="col-lg-3 col-md-4">
-        <div class="icon-box" style="background-color: #e0f7fa;">
+        <div class="icon-box">
           <img src="assets/img/education/UIUC.jpg" class="img-fluid" alt="UIUC">
           <h3>Master of Sciences in Information Management</h3>
           <p><strong>August 2023 - May 2025</strong></p>
           <p>University of Illinois, Urbana-Champaign</p>
+          <p class="gpa">GPA: 4.00/4.00</p> <!-- Added GPA -->
         </div>
       </div>
 
       <!-- Second Education Box -->
       <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box" style="background-color: #e0f7fa;">
+        <div class="icon-box">
           <img src="assets/img/education/nmims.jpg" class="img-fluid" alt="NMIMS">
           <h3>Master of Business Administration in Business Analytics</h3>
           <p><strong>June 2021 - March 2023</strong></p>
           <p>NMIMS University</p>
+          <p class="gpa">GPA: 3.80/4.00</p> <!-- Added GPA -->
         </div>
       </div>
 
       <!-- Third Education Box -->
       <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-        <div class="icon-box" style="background-color: #e0f7fa;">
+        <div class="icon-box">
           <img src="assets/img/education/nm.jpg" class="img-fluid" alt="NM">
           <h3>Bachelor of Commerce in Financial Accounting and Auditing</h3>
           <p><strong>June 2015 - June 2018</strong></p>
           <p>NM College of Commerce & Economics</p>
+          <p class="gpa">GPA: 3.60/4.00</p> <!-- Added GPA -->
         </div>
       </div>
     </div><!-- End row -->
 
   </div><!-- End Education -->
 </section><!-- End Education Section -->
+
 
 
 
