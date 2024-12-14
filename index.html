@@ -593,43 +593,36 @@
   }
 </style>
 
-  <!-- Start Experience Section -->
-<section id="experience" class="services experience">
+
+  <!-- Experience Section -->
+  <section id="experience" class="services">
   <div class="container">
     <style>
       /* Experience Section Styles */
-      .experience {
-        background-color: #e0ffff; /* Light cyan background for the section */
-        padding: 40px 0;
-      }
-
-      .section-title h2 {
-        color: #030e1a;
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-
       .experience-box {
         display: flex;
-        align-items: center;
-        background-color: #e0ffff; /* Light cyan background for each box */
+        align-items: flex-start; /* Align items at the top */
+        justify-content: flex-start; /* Ensure left alignment */
+        background-color: #e0ffff; /* Light cyan background */
         padding: 20px;
         margin-bottom: 20px;
-        border: 1px solid #cce7e8; /* Optional border for separation */
+        border: 1px solid #cce7e8; /* Optional border */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        height: 250px; /* Set a fixed height to ensure uniform size */
       }
 
       .experience-img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin-right: 20px;
-        border-radius: 10px; /* Optional rounded corners for the image */
-        object-fit: cover; /* Ensures image fits nicely */
+        border-radius: 10px;
+        flex-shrink: 0; /* Ensure image does not shrink */
       }
 
       .experience-text {
-        color: #030e1a; /* Text color */
-        flex: 1; /* Ensures text takes up remaining space */
+        color: #030e1a;
+        flex: 1; /* Ensures text fills available space */
+        text-align: left;
       }
 
       .experience-text h4 {
@@ -643,22 +636,25 @@
         margin-bottom: 10px;
       }
 
+      .experience-text p {
+        margin: 0;
+        padding: 0;
+      }
+
       .experience-text ul {
         list-style-type: disc;
-        margin-left: 20px;
+        padding: 0;
+        margin: 0;
       }
 
       .experience-text ul li {
         font-size: 14px;
         line-height: 1.5;
-      }
-
-      /* Remove hover effects */
-      .experience-box:hover {
-        transform: none;
-        box-shadow: none;
+        text-align: left;
+        margin-left: 0; /* Remove indentation */
       }
     </style>
+
 
     <div class="row">
       <!-- Business Intelligence Group -->
