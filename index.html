@@ -510,6 +510,7 @@
 
 <!-- CSS for Education Section -->
 <style>
+  /* Main styles for education section */
   #education {
     padding: 60px 0;
   }
@@ -603,22 +604,22 @@
 
   /* Responsive Design for Education Section */
   @media (max-width: 768px) {
-    .education-box {
+    .education .icon-box {
       flex-direction: column; /* Stack content vertically */
       height: auto; /* Allow flexible height */
-      margin-bottom: 20px; /* Add space between education items */
     }
 
-    .education-img {
+    .education img {
       width: 100%; /* Full width for smaller screens */
-      height: 200px; /* Adjust image height */
+      height: auto; /* Adjust height for flexibility */
       object-fit: cover; /* Ensure the image fits nicely */
       border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
     }
 
-    .education-text {
+    .education .text-content {
       padding: 10px; /* Add padding for better spacing */
       border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
+      text-align: center; /* Center-align text for mobile */
     }
 
     .view-transcript {
@@ -629,6 +630,7 @@
     }
   }
 </style>
+
 
   <!-- Experience Section -->
 <section id="experience" class="services">
