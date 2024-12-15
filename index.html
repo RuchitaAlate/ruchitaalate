@@ -601,29 +601,31 @@
     transform: translateY(-2px); /* Slight lift on hover */
   }
 
-  /* Responsive for smaller screens */
+  /* Responsive Design for Education Section */
   @media (max-width: 768px) {
-    .education .icon-box {
-      width: 100%; /* Allow the boxes to take up full width on small screens */
-      height: auto; /* Flexible height on smaller screens */
-      margin-bottom: 20px; /* Add space between boxes */
+    .education-box {
+      flex-direction: column; /* Stack content vertically */
+      height: auto; /* Allow flexible height */
+      margin-bottom: 20px; /* Add space between education items */
     }
 
-    .education img {
-      width: 100%; /* Make the image responsive */
+    .education-img {
+      width: 100%; /* Full width for smaller screens */
       height: 200px; /* Adjust image height */
-      object-fit: cover; /* Ensure the image still covers the box */
+      object-fit: cover; /* Ensure the image fits nicely */
+      border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
     }
 
-    .education .text-content {
-      padding-left: 10px;
-      padding-right: 10px;
+    .education-text {
+      padding: 10px; /* Add padding for better spacing */
+      border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
     }
 
     .view-transcript {
-      width: auto; /* Allow button to adjust width naturally */
-      padding: 8px 16px; /* Maintain reduced size on small screens */
-      text-align: center;
+      width: auto; /* Allow the button to resize naturally */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Slightly smaller font for mobile screens */
+      text-align: center; /* Center the button text */
     }
   }
 </style>
