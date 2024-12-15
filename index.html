@@ -311,12 +311,12 @@
 
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
-      #about .image-wrapper,
-      #about .text-content,
-      #about .info-container {
-        width: 100%;
+      #about {
+        flex-direction: column; /* Stack photo and text vertically */
+        padding: 20px;
+        text-align: center;
       }
-      
+
       #about .text-content {
         padding-left: 0;
         max-width: 100%;
@@ -330,11 +330,12 @@
       #about .profile-image {
         width: 100%;
         object-fit: contain; /* Maintain aspect ratio */
-        border-radius: 0px; /* Rounded edges */
+        border-radius: 10px; /* Rounded edges */
       }
 
       #about .info-container {
-        gap: 10px; /* Space between info boxes */
+        flex-direction: column; /* Stack info boxes vertically */
+        text-align: center;
       }
 
       #about .info-box {
