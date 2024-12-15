@@ -592,42 +592,37 @@
     transform: translateY(-2px); /* Slight lift on hover */
   }
 
-  /* Mobile-specific changes */
   @media (max-width: 768px) {
-    .education .icon-box {
-      flex-direction: column;
-      align-items: flex-start; /* Align all items to the left */
-      height: auto;
-      width: 100%; /* Full width */
-      margin: 0; /* Remove all margins */
-      padding: 0; /* Remove all padding */
-    }
-
-    .education img {
-      width: 100%; /* Full width */
-      height: auto; /* Flexible height */
-      object-fit: contain;
-      border-radius: 10px 10px 0 0;
-    }
-
-    .education .text-content {
-      padding: 0 15px; /* Reduce padding for better fit */
-      margin: 0; /* Remove all margins */
-      text-align: justify; /* Justify the text */
-      width: 100%; /* Ensure full width */
-      box-sizing: border-box; /* Ensure padding doesn't exceed the width */
-    }
-
-    .education h3, .education p, .education .gpa {
-      margin: 0; /* Remove margins from headings and paragraphs */
-      padding: 5px 0; /* Add slight vertical spacing */
-    }
-
-    .view-transcript {
-      margin: 10px 0; /* Slight margin for spacing */
-      width: auto; /* Ensure button fits content */
-    }
+  .education .icon-box {
+    flex-direction: column;
+    align-items: stretch; /* Stretch all children full width */
+    height: auto;
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 0;
   }
+
+  .education img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .education .text-content,
+  .education .text-content * { /* Ensure justification for all text */
+    padding: 0 15px;
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .view-transcript {
+    margin: 10px 0;
+    width: auto;
+  }
+}
 </style>
 
 
