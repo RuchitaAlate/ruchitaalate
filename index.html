@@ -508,7 +508,6 @@
 </section><!-- End Education Section -->
 
 
-<!-- CSS for Education Section -->
 <style>
   /* Main styles for education section */
   #education {
@@ -535,13 +534,12 @@
   }
 
   .education .text-content {
-    padding-left: 22px;
-    padding-right: 20px;
+    padding: 0; /* Remove unnecessary padding */
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    text-align: left; /* Ensure left-alignment for all text */
+    text-align: left; /* Ensure left alignment */
   }
 
   .education h3 {
@@ -549,29 +547,48 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #030e1a; /* Set text color for heading */
-    text-align: left; /* Ensure heading is left-aligned */
   }
 
   .education p {
     font-size: 16px;
     margin-bottom: 5px;
     color: #030e1a; /* Set text color for paragraph */
-    text-align: left; /* Ensure paragraph is left-aligned */
   }
 
   .education .gpa {
     font-size: 15px;
     font-weight: bold;
     color: #030e1a; /* Set text color for GPA */
-    text-align: left; /* Ensure GPA is left-aligned */
   }
 
   .education img {
-    width: 400px; /* Set image width to 400px */
-    height: 350px; /* Ensure the image covers the height of the box */
-    object-fit: cover; /* Ensure the image fills the box completely */
+    width: 400px; /* Set image width */
+    height: 350px; /* Ensure image height matches box height */
+    object-fit: contain; /* Ensure the full image is visible */
     border-radius: 10px 0 0 10px; /* Round the left corners */
     margin: 0; /* Remove any margin between image and box */
+  }
+
+  /* Styling for the "View Transcript" button */
+  .view-transcript {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px; /* Reduced size */
+    background-color: #030e1a; /* Dark background */
+    color: #e0ffff; /* Cyan text color */
+    border: 2px solid #030e1a; /* Border matches background */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+  }
+
+  .view-transcript:hover {
+    background-color: #030e1a; /* Dark background remains */
+    color: #e0ffff; /* Cyan text remains */
+    transform: translateY(-2px); /* Slight lift on hover */
   }
 
   /* Responsive Design for Education Section */
@@ -585,15 +602,14 @@
 
     .education img {
       width: 100%; /* Full width for smaller screens */
-      height: 200px; /* Reduce height for smaller screens */
-      object-fit: cover; /* Ensure the image fits nicely */
+      height: auto; /* Flexible height to prevent cutting */
+      object-fit: contain; /* Ensure the full image is visible */
       border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
     }
 
     .education .text-content {
-      padding: 10px; /* Add padding for better spacing */
-      border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
-      text-align: center; /* Center-align text for mobile */
+      padding: 0; /* Remove unnecessary padding */
+      text-align: left; /* Ensure complete left alignment */
     }
 
     .education h3 {
@@ -603,15 +619,8 @@
     .education p {
       font-size: 14px; /* Slightly smaller text */
     }
-
-    .view-transcript {
-      width: auto; /* Allow the button to resize naturally */
-      padding: 8px 16px; /* Adjust padding for smaller screens */
-      font-size: 14px; /* Slightly smaller font for mobile screens */
-      text-align: center; /* Center the button text */
-    }
   }
-</style>
+</style
 
   <!-- Experience Section -->
 <section id="experience" class="services">
