@@ -107,7 +107,11 @@
       width: 100%; /* Full page width */
       height: 60px;
       align-items: center;
-      margin-top: 20px; /* Adjust margin as needed */
+      position: sticky; /* Keeps it visible while scrolling */
+      top: 0;
+      z-index: 1000; /* Ensures it stays on top of other elements */
+      margin: 0; /* Remove any default margin */
+      padding: 0;
     }
     
     nav.nav-menu ul {
