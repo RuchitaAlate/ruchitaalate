@@ -311,12 +311,12 @@
 
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
-      #about {
-        flex-direction: column;
-        gap: 20px; /* Add space between stacked elements */
+      #about .image-wrapper,
+      #about .text-content,
+      #about .info-container {
+        width: 100%;
       }
-
-
+      
       #about .text-content {
         padding-left: 0;
         max-width: 100%;
@@ -330,7 +330,7 @@
       #about .profile-image {
         width: 100%;
         object-fit: contain; /* Maintain aspect ratio */
-        border-radius: 10px; /* Rounded edges */
+        border-radius: 0px; /* Rounded edges */
       }
 
       #about .info-container {
