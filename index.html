@@ -71,14 +71,16 @@
       display: block; /* Default for home section */
     }
 
+
     #header {
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      height: 100vh; /* Full viewport height */
-      background-color: #030e1a; /* Ensure consistent background */
+      height: calc(100vh - 80px); /* Adjust to account for the nav height */
+      margin-top: 20px; /* Adds additional space above the header text */
+      background-color: #030e1a;
     }
 
   #header h1,
@@ -112,6 +114,7 @@
       z-index: 1000; /* Ensures it stays on top of other elements */
       margin: 0; /* Remove any default margin */
       padding: 0;
+      margin-bottom: 20px; /* Adds space below the navigation menu */
     }
 
     nav.nav-menu ul {
