@@ -566,12 +566,6 @@
     text-align: left; /* Ensure GPA is left-aligned */
   }
 
-  .education .row {
-    display: flex;
-    flex-direction: column; /* Stacked vertically */
-    align-items: center; /* Center the boxes */
-  }
-
   .education img {
     width: 400px; /* Set image width to 400px */
     height: 350px; /* Ensure the image covers the height of the box */
@@ -580,38 +574,18 @@
     margin: 0; /* Remove any margin between image and box */
   }
 
-  /* Styling for the "View Transcript" button */
-  .view-transcript {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 16px; /* Reduced size */
-    background-color: #030e1a; /* Dark background */
-    color: #e0ffff; /* Cyan text color */
-    border: 2px solid #030e1a; /* Border matches background */
-    text-decoration: none; /* Remove underline */
-    font-size: 14px; /* Font size */
-    font-weight: bold; /* Bold text */
-    border-radius: 5px; /* Rounded corners */
-    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-  }
-
-  .view-transcript:hover {
-    background-color: #030e1a; /* Dark background remains */
-    color: #e0ffff; /* Cyan text remains */
-    transform: translateY(-2px); /* Slight lift on hover */
-  }
-
   /* Responsive Design for Education Section */
   @media (max-width: 768px) {
     .education .icon-box {
       flex-direction: column; /* Stack content vertically */
       height: auto; /* Allow flexible height */
+      width: 90%; /* Make it narrower to fit the screen */
+      margin: 10px auto; /* Add spacing between items */
     }
 
     .education img {
       width: 100%; /* Full width for smaller screens */
-      height: auto; /* Adjust height for flexibility */
+      height: 200px; /* Reduce height for smaller screens */
       object-fit: cover; /* Ensure the image fits nicely */
       border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
     }
@@ -622,6 +596,14 @@
       text-align: center; /* Center-align text for mobile */
     }
 
+    .education h3 {
+      font-size: 16px; /* Slightly smaller text */
+    }
+
+    .education p {
+      font-size: 14px; /* Slightly smaller text */
+    }
+
     .view-transcript {
       width: auto; /* Allow the button to resize naturally */
       padding: 8px 16px; /* Adjust padding for smaller screens */
@@ -630,7 +612,6 @@
     }
   }
 </style>
-
 
   <!-- Experience Section -->
 <section id="experience" class="services">
