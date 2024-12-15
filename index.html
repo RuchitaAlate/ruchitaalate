@@ -256,106 +256,85 @@
 <!-- About Section -->
 <section id="about" class="about-section">
   <style>
-    /* About Section Layout */
+  /* About Section Layout */
+  #about {
+    display: flex;
+    flex-direction: row; /* Align photo and text horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding-left: 30px;
+    background-color: #030e1a; /* Ensure dark background */
+  }
+
+  #about .image-wrapper {
+    flex: 1; /* Allow space for the image */
+    max-width: 40%; /* Adjust the image width */
+    text-align: center; /* Center the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about .profile-image {
+    width: 100%; /* Adjust image width dynamically */
+    max-height: 100%; /* Ensure it scales proportionally */
+    border-radius: 10px 10px 0 0; /* Rounded corners on smaller screens */
+    object-fit: cover; /* Ensure the image fills the area */
+  }
+
+  #about .text-content {
+    flex: 2; /* Allow more space for the text */
+    max-width: 55%;
+    padding-left: 60px;
+  }
+
+  #about .text-box {
+    background-color: LightCyan; /* Box background color */
+    color: #030e1a; /* Text color */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: justify;
+  }
+
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
     #about {
-      display: flex;
-      flex-direction: row; /* Align photo and text horizontally */
-      align-items: flex-start; /* Align items to the top */
-      padding-left: 30px;
-      background-color: #030e1a; /* Ensure dark background */
+      flex-direction: column; /* Stack photo and text vertically */
+      padding: 20px;
+      text-align: center;
     }
 
     #about .image-wrapper {
-      flex: 1; /* Allow space for the image */
-      max-width: 40%; /* Adjust the image width */
-      text-align: center; /* Center the image */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      max-width: 100%; /* Full width for smaller screens */
+      margin-bottom: 20px;
     }
 
     #about .profile-image {
-      width: 100%; /* Adjust image width dynamically */
-      max-height: 100%; /* Ensure it scales proportionally */
-      border-radius: 0%; /* No rounded corners */
-      object-fit: cover; /* Ensure the image fills the area */
+      border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
+      width: 100%; /* Ensure it stretches fully */
+      height: auto; /* Maintain aspect ratio */
     }
 
     #about .text-content {
-      flex: 2; /* Allow more space for the text */
-      max-width: 55%;
-      padding-left: 60px;
+      max-width: 100%; /* Full width for the text */
+      padding-left: 0;
+      border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
     }
 
     #about .text-box {
-      background-color: LightCyan; /* Box background color */
-      color: #030e1a; /* Text color */
-      padding: 20px; /* Padding inside the box */
-      border-radius: 5px; /* Slightly rounded corners */
       text-align: justify;
     }
 
-    /* Dynamically match image and text-box height */
-    #about .image-wrapper,
-    #about .text-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #about .image-wrapper {
-      height: auto; /* Adjust based on text box */
+    #about .info-container {
+      flex-direction: column; /* Stack info boxes vertically */
+      gap: 10px;
     }
 
     #about .info-box {
-      background-color: LightCyan; /* Box background color */
-      color: #030e1a; /* Text color */
-      padding: 10px 15px; /* Padding inside the box */
-      border-radius: 5px; /* Rounded edges */
-      text-align: center;
-      flex: 1; /* Ensures the info boxes take equal space */
-      margin: 0 10px; /* Horizontal spacing between boxes */
+      margin-bottom: 10px;
     }
-
-    #about .info-container {
-      display: flex;
-      justify-content: space-between; /* Align the info boxes in a row */
-      width: 100%; /* Full width of the container */
-      margin-top: 20px; /* Space above the info boxes */
-    }
-
-    /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 768px) {
-      #about {
-        flex-direction: column; /* Stack photo and text vertically */
-        text-align: center;
-      }
-
-      #about .text-content {
-        padding-left: 0;
-        max-width: 100%;
-      }
-
-      #about .image-wrapper {
-        margin-bottom: 20px;
-        max-width: 100%;
-      }
-
-      #about .profile-image {
-        width: 100%;
-        object-fit: contain;
-      }
-
-      #about .info-container {
-        flex-direction: column; /* Stack info boxes vertically */
-        text-align: center;
-      }
-
-      #about .info-box {
-        margin-bottom: 10px;
-      }
-    }
-  </style>
-
+  }
+</style>
+  
   <div class="container">
     <div class="image-wrapper">
       <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
