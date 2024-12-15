@@ -517,7 +517,7 @@
   .education .icon-box {
     background-color: #e0f7fa; /* Light cyan background */
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Stretch children to fill height */
     padding: 0; /* Remove padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -525,7 +525,6 @@
     transition: transform 0.3s ease;
     height: 350px; /* Fixed height */
     width: 1000px; /* Fixed width */
-    justify-content: flex-start;
     margin: 0 auto; /* Center the boxes */
   }
 
@@ -533,14 +532,24 @@
     transform: translateY(-5px);
   }
 
+  /* Image: Fixed Width */
+  .education img {
+    width: 400px; /* Fixed width for the image */
+    height: 100%; /* Match box height */
+    object-fit: cover; /* Ensure the image fills the area */
+    border-radius: 10px 0 0 10px; /* Round the left corners */
+    margin: 0; /* Remove margin */
+  }
+
+  /* Text Content: Take Full Remaining Space */
   .education .text-content {
-    padding-left: 22px; /* Original padding restored */
-    padding-right: 20px; /* Original padding restored */
+    flex: 1; /* Take remaining space */
+    padding: 15px 20px; /* Balanced padding */
+    text-align: justify; /* Justify the text */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-    text-align: left; /* Ensure left alignment */
+    box-sizing: border-box; /* Include padding in width */
   }
 
   .education h3 {
@@ -560,14 +569,7 @@
     font-size: 15px;
     font-weight: bold;
     color: #030e1a; /* Set text color for GPA */
-  }
-
-  .education img {
-    width: 400px; /* Set image width */
-    height: 350px; /* Ensure image height matches box height */
-    object-fit: contain; /* Ensure the full image is visible */
-    border-radius: 10px 0 0 10px; /* Round the left corners */
-    margin: 0; /* Remove any margin between image and box */
+    margin-top: 10px;
   }
 
   /* Styling for the "View Transcript" button */
@@ -584,6 +586,7 @@
     border-radius: 5px; /* Rounded corners */
     transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
     text-align: center;
+    width: fit-content; /* Adjust button size to content */
   }
 
   .view-transcript:hover {
@@ -592,40 +595,42 @@
     transform: translateY(-2px); /* Slight lift on hover */
   }
 
+  /* Mobile-specific changes */
   @media (max-width: 768px) {
-  .education .icon-box {
-    flex-direction: column;
-    align-items: stretch; /* Stretch all children full width */
-    height: auto;
-    width: 100%; /* Full width */
-    margin: 0;
-    padding: 0;
-  }
+    .education .icon-box {
+      flex-direction: column; /* Stack items vertically */
+      align-items: stretch; /* Ensure children stretch */
+      height: auto; /* Auto height */
+      width: 100%; /* Full width */
+    }
 
-  .education img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px 10px 0 0;
-  }
+    .education img {
+      width: 100%; /* Full width for image */
+      height: auto; /* Flexible height */
+      object-fit: contain; /* Ensure entire image is visible */
+      border-radius: 10px 10px 0 0; /* Round top corners */
+    }
 
-  .education .text-content,
-  .education .text-content * { /* Ensure justification for all text */
-    padding: 0 15px;
-    text-align: justify;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
+    .education .text-content {
+      padding: 10px 15px; /* Adjust padding */
+      text-align: justify; /* Justify the text */
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Include padding in width */
+    }
 
-  .view-transcript {
-    margin: 10px 0;
-    width: auto;
+    .education h3, .education p, .education .gpa {
+      margin: 0; /* Remove margins */
+      padding: 5px 0; /* Add slight vertical spacing */
+    }
+
+    .view-transcript {
+      margin: 10px 0; /* Adjust spacing */
+      width: auto; /* Allow button to resize */
+    }
   }
-}
 </style>
 
-
+  
   <!-- Experience Section -->
 <section id="experience" class="services">
   <div class="container">
