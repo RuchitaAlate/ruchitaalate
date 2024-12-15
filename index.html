@@ -596,9 +596,11 @@
   @media (max-width: 768px) {
     .education .icon-box {
       flex-direction: column; /* Stack content vertically */
+      align-items: flex-start;
       height: auto; /* Allow flexible height */
       width: 90%; /* Make it narrower to fit the screen */
-      margin: 10px auto; /* Add spacing between items */
+      margin: 0px auto;/* Add spacing between items */
+      padding: 0;
     }
 
     .education img {
@@ -609,12 +611,20 @@
     }
 
     .education .text-content {
-      padding: 0; /* Remove padding for mobile */
-      text-align: left; /* Completely left-align the text */
+      padding: 0; /* Remove all padding */
+      margin: 0; /* Remove all margins */
+      text-align: left; /* Fully align text to the left */
+      width: 100%; /* Ensure full-width text */
+    }
+    
+        .education h3, .education p, .education .gpa {
+      margin: 0; /* Remove margins from headings and paragraphs */
+      padding: 5px 0; /* Add slight vertical spacing */
     }
 
-    .education h3 {
-      font-size: 16px; /* Slightly smaller text */
+    .view-transcript {
+      margin: 10px 0; /* Slight margin for spacing */
+      width: auto; /* Ensure button fits content */
     }
 
     .education p {
