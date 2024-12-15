@@ -312,10 +312,10 @@
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
       #about {
-        flex-direction: column; /* Stack photo and text vertically */
-        padding: 20px;
-        text-align: center;
+        flex-direction: column;
+        gap: 20px; /* Add space between stacked elements */
       }
+
 
       #about .text-content {
         padding-left: 0;
@@ -334,8 +334,7 @@
       }
 
       #about .info-container {
-        flex-direction: column; /* Stack info boxes vertically */
-        text-align: center;
+        gap: 10px; /* Space between info boxes */
       }
 
       #about .info-box {
