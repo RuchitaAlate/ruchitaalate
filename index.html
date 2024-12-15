@@ -324,36 +324,39 @@
     }
 
     /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 768px) {
-      #about {
-        flex-direction: column; /* Stack photo and text vertically */
-        text-align: center;
-      }
-
-      #about .text-content {
-        padding-left: 0;
-        max-width: 100%;
-      }
-
-      #about .image-wrapper {
-        margin-bottom: 20px;
-        max-width: 100%;
-      }
-
-      #about .profile-image {
-        width: 100%;
-        object-fit: contain;
-      }
-
-      #about .info-container {
-        flex-direction: column; /* Stack info boxes vertically */
-        text-align: center;
-      }
-
-      #about .info-box {
-        margin-bottom: 10px;
-      }
+  @media screen and (max-width: 768px) {
+    #about {
+      flex-direction: column; /* Stack photo and text vertically */
+      padding: 20px;
+      text-align: center;
     }
+
+    #about .text-content {
+      padding-left: 0;
+      max-width: 100%;
+    }
+
+    #about .image-wrapper {
+      margin-bottom: 20px;
+      max-width: 100%; /* Ensure full width of the image */
+    }
+
+    #about .profile-image {
+      width: 100%;
+      object-fit: contain; /* Maintain aspect ratio */
+      border-radius: 10px; /* Rounded edges */
+    }
+
+    #about .info-container {
+      flex-direction: column; /* Stack info boxes vertically */
+      text-align: center;
+    }
+
+    #about .info-box {
+      margin-bottom: 10px; /* Space between info boxes */
+    }
+  }
+</style>
   </style>
 
   <div class="container">
