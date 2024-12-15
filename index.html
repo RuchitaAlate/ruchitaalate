@@ -611,10 +611,11 @@
     }
 
     .education .text-content {
-      padding: 0 20px; /* Add padding to the left and right */
+      padding: 0 15px; /* Reduce padding for better fit */
       margin: 0; /* Remove all margins */
       text-align: justify; /* Justify the text */
-      width: calc(100% - 40px); /* Adjust width to account for padding */
+      width: 100%; /* Ensure full width */
+      box-sizing: border-box; /* Ensure padding doesn't exceed the width */
     }
 
     .education h3, .education p, .education .gpa {
