@@ -517,38 +517,33 @@
   .education .icon-box {
     background-color: #e0f7fa; /* Light cyan background */
     display: flex;
-    align-items: stretch; /* Stretch children to fill height */
-    padding: 0; /* Remove padding */
+    align-items: stretch; /* Stretch children to fill container */
+    flex-direction: row; /* Default: side-by-side */
+    padding: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #030e1a; /* Text color */
+    color: #030e1a;
     transition: transform 0.3s ease;
-    height: 350px; /* Fixed height */
-    width: 1000px; /* Fixed width */
-    margin: 0 auto; /* Center the boxes */
+    height: 350px;
+    width: 100%; /* Ensure full width */
+    margin: 0 auto;
+    box-sizing: border-box; /* Prevent content overflow */
   }
 
-  .education .icon-box:hover {
-    transform: translateY(-5px);
-  }
-
-  /* Image: Fixed Width */
   .education img {
-    width: 400px; /* Fixed width for the image */
-    height: 100%; /* Match box height */
-    object-fit: cover; /* Ensure the image fills the area */
-    border-radius: 10px 0 0 10px; /* Round the left corners */
-    margin: 0; /* Remove margin */
+    width: 40%; /* 40% of container width */
+    height: auto;
+    object-fit: cover; /* Maintain image proportions */
+    border-radius: 10px 0 0 10px;
   }
 
-  /* Text Content: Take Full Remaining Space */
   .education .text-content {
-    flex: 1; /* Take remaining space */
-    padding: 15px 20px; /* Balanced padding */
-    text-align: justify; /* Justify the text */
+    flex: 1; /* Take up remaining space */
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify; /* Justify text */
     box-sizing: border-box; /* Include padding in width */
   }
 
@@ -556,80 +551,63 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #030e1a; /* Set text color for heading */
+    color: #030e1a;
   }
 
   .education p {
     font-size: 16px;
     margin-bottom: 5px;
-    color: #030e1a; /* Set text color for paragraph */
+    color: #030e1a;
   }
 
   .education .gpa {
     font-size: 15px;
     font-weight: bold;
-    color: #030e1a; /* Set text color for GPA */
+    color: #030e1a;
     margin-top: 10px;
   }
 
-  /* Styling for the "View Transcript" button */
   .view-transcript {
     display: inline-block;
     margin-top: 15px;
-    padding: 8px 16px; /* Reduced size */
-    background-color: #030e1a; /* Dark background */
-    color: #e0ffff; /* Cyan text color */
-    border: 2px solid #030e1a; /* Border matches background */
-    text-decoration: none; /* Remove underline */
-    font-size: 14px; /* Font size */
-    font-weight: bold; /* Bold text */
-    border-radius: 5px; /* Rounded corners */
-    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
-    width: fit-content; /* Adjust button size to content */
+    padding: 8px 16px;
+    background-color: #030e1a;
+    color: #e0ffff;
+    border: 2px solid #030e1a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    width: fit-content;
   }
 
   .view-transcript:hover {
-    background-color: #030e1a; /* Dark background remains */
-    color: #e0ffff; /* Cyan text remains */
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-2px);
   }
 
   /* Mobile-specific changes */
   @media (max-width: 768px) {
     .education .icon-box {
-      flex-direction: column; /* Stack items vertically */
-      align-items: stretch; /* Ensure children stretch */
-      height: auto; /* Auto height */
-      width: 100%; /* Full width */
+      flex-direction: column; /* Stack image and text vertically */
+      height: auto;
+      width: 100%;
     }
 
     .education img {
-      width: 100%; /* Full width for image */
+      width: 100%; /* Image takes full width */
       height: auto; /* Flexible height */
-      object-fit: contain; /* Ensure entire image is visible */
-      border-radius: 10px 10px 0 0; /* Round top corners */
+      border-radius: 10px 10px 0 0;
     }
 
     .education .text-content {
-      padding: 10px 15px; /* Adjust padding */
-      text-align: justify; /* Justify the text */
-      width: 100%; /* Ensure full width */
-      box-sizing: border-box; /* Include padding in width */
-    }
-
-    .education h3, .education p, .education .gpa {
-      margin: 0; /* Remove margins */
-      padding: 5px 0; /* Add slight vertical spacing */
-    }
-
-    .view-transcript {
-      margin: 10px 0; /* Adjust spacing */
-      width: auto; /* Allow button to resize */
+      padding: 10px; /* Reduce padding */
+      width: 100%; /* Full width */
+      text-align: left; /* Align text to left */
+      box-sizing: border-box;
     }
   }
 </style>
-
   
   <!-- Experience Section -->
 <section id="experience" class="services">
