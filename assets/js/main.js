@@ -78,12 +78,12 @@
 
   // Function to Toggle Header Visibility
   function toggleHeaderVisibility(currentHash) {
-    const headerH1 = $("#header h1");
+    const header = $("#header");
 
     if (currentHash === "#header") {
-      headerH1.fadeIn(300); // Show the h1 smoothly
+      header.removeClass("hidden"); // Ensure header is visible
     } else {
-      headerH1.fadeOut(300); // Hide the h1 smoothly
+      header.addClass("hidden"); // Hide header completely
     }
   }
 
