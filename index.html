@@ -586,6 +586,7 @@
       <!-- First Certification Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
+          <img src="assets/img/certification/Accenture.jpg" alt="Accenture Certification" class="certification-image">
           <div class="text-content">
             <h3><strong>Accenture North America Data Analytics and Visualization Job Simulation </strong></h3>
             <p><strong>October 2024</strong></p>
@@ -598,10 +599,10 @@
           </div>
         </div>
       </div>
-
       <!-- Second Certification Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
+          <img src="assets/img/certification/Excel.jpg" alt="Goldman Sachs Certification" class="certification-image">
           <div class="text-content">
             <h3><strong>Goldman Sachs Excel Skills for Business Job Simulation </strong></h3>
             <p><strong>October 2024</strong></p>
@@ -614,10 +615,10 @@
           </div>
         </div>
       </div>
-
       <!-- Third Certification Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
+          <img src="assets/img/certification/BCG.jpg" alt="BCG Certification" class="certification-image">
           <div class="text-content">
             <h3><strong>BCG Introduction to Strategy Consulting Job Simulation </strong></h3>
             <p><strong>October 2024</strong></p>
@@ -629,10 +630,10 @@
           </div>
         </div>
       </div>
-
       <!-- Fourth Certification Box -->
       <div class="col-lg-12 col-md-12 mb-4">
         <div class="icon-box">
+          <img src="assets/img/certification/SQL.jpg" alt="SQL Certification" class="certification-image">
           <div class="text-content">
             <h3><strong>SQL - MySQL for Data Analytics and Business Intelligence</strong></h3>
             <p><strong>Completed: October 2024</strong></p>
@@ -645,125 +646,136 @@
           </div>
         </div>
       </div>
-
-      <!-- Fifth Certification Box -->
-      <div class="col-lg-12 col-md-12 mb-4">
-        <div class="icon-box">
-          <div class="text-content">
-            <h3><strong>Microsoft Excel 2013 Advanced</strong></h3>
-            <p><strong>Completed: October 2024</strong></p>
-            <ul>
-              <li>Mastered complex formulas and functions like VLOOKUP, INDEX-MATCH, and array functions for sophisticated data analysis</li>
-              <li>Learned to create dynamic charts, pivot tables, and dashboards that visually represent data trends</li>
-              <li>Acquired the ability to automate repetitive tasks using Excel macros, improving efficiency in data handling</li>
-            </ul>
-            <a href="https://www.udemy.com/certificate/UC-14178c41-2446-4e1e-8b33-90dd59033aad/" target="_blank" class="view-credentials">Show Credentials</a>
-          </div>
-        </div>
-      </div>
-    </div><!-- End row -->
-  </div><!-- End Certifications -->
-</section><!-- End Certifications Section -->
+    </div>
+  </div>
+</section>
 
 
-<style>
-  /* Main styles for certifications section */
-  #certifications {
-    padding: 60px 0;
-    box-sizing: border-box;
-  }
 
-  .certifications .icon-box {
-    background-color: #e0f7fa; /* Light cyan background */
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #030e1a;
-    width: 100%; /* Ensure full width */
-    max-width: 1000px; /* Cap width */
-    margin: 0 auto;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .certifications .text-content {
-    flex: 1; /* Expand text content */
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left; /* Left align the text */
-  }
-
-  .certifications h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 0 10px;
-    color: #030e1a;
-  }
-
-  .certifications p {
-    font-size: 16px;
-    margin: 0 0 10px;
-    color: #030e1a;
-  }
-
-  .certifications ul {
-    font-size: 16px;
-    margin: 0 0 10px;
-    color: #030e1a;
-  }
-
-  .view-credentials {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 16px;
-    background-color: #030e1a;
-    color: #e0ffff;
-    border: none;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-  }
-
-  .view-credentials:hover {
-    transform: translateY(-2px);
-  }
-
-  /* Mobile-specific changes */
-  @media (max-width: 768px) {
-    .certifications .icon-box {
-      flex-direction: column; /* Stack vertically */
-      align-items: stretch; /* Stretch items fully */
-      padding: 0;
-      width: 100%;
+    /* Main styles for certifications section */
+    #certifications {
+      padding: 60px 0;
       box-sizing: border-box;
     }
-
+    
+    .certifications .icon-box {
+      background-color: #e0f7fa; /* Light cyan background */
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      padding: 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #030e1a;
+      width: 100%; /* Ensure full width */
+      max-width: 1000px; /* Cap width */
+      margin: 0 auto;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    
+    .image-container {
+      flex: 1;
+      height: 100%; /* Ensure the image container covers full height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .certification-image {
+      width: 100%; /* Full width for mobile */
+      height: 100%; /* Cover the height of the box */
+      object-fit: cover; /* Ensure the image covers the container */
+      border-radius: 10px 0 0 10px; /* Round only left corners */
+    }
+    
     .certifications .text-content {
-      width: 100%; /* Ensure full width for text */
-      padding: 15px; /* Add space inside text content */
-      text-align: left;
+      flex: 1; /* Expand text content */
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left; /* Left align the text */
     }
-
-    .certifications h3, .certifications p, .certifications ul {
-      font-size: 16px; /* Adjust font sizes */
-      margin-bottom: 10px;
+    
+    .certifications h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 0 10px;
+      color: #030e1a;
     }
-
+    
+    .certifications p {
+      font-size: 16px;
+      margin: 0 0 10px;
+      color: #030e1a;
+    }
+    
+    .certifications ul {
+      font-size: 16px;
+      margin: 0 0 10px;
+      color: #030e1a;
+    }
+    
     .view-credentials {
+      display: inline-block;
       margin-top: 10px;
-      width: 100%; /* Make the button full-width on mobile */
+      padding: 10px 16px;
+      background-color: #030e1a;
+      color: #e0ffff;
+      border: none;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
       text-align: center;
     }
-  }
-</style>
+    
+    .view-credentials:hover {
+      transform: translateY(-2px);
+    }
+    
+    /* Mobile-specific changes */
+    @media (max-width: 768px) {
+      .certifications .icon-box {
+        flex-direction: column; /* Stack vertically */
+        align-items: stretch; /* Stretch items fully */
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    
+      .image-container {
+        height: auto; /* Adjust height to accommodate stacked layout */
+        flex: none;
+      }
+    
+      .certification-image {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px 10px 0 0; /* Adjust rounded corners for vertical layout */
+      }
+    
+      .certifications .text-content {
+        width: 100%; /* Ensure full width for text */
+        padding: 15px; /* Add space inside text content */
+        text-align: left;
+      }
+    
+      .certifications h3,
+      .certifications p,
+      .certifications ul {
+        font-size: 16px; /* Adjust font sizes */
+        margin-bottom: 10px;
+      }
+    
+      .view-credentials {
+        margin-top: 10px;
+        width: 100%; /* Make the button full-width on mobile */
+        text-align: center;
+      }
+    }
 
   <!-- Experience Section -->
 <section id="experience" class="services">
