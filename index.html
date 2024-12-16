@@ -201,104 +201,95 @@
     /* About Section Layout */
     #about {
       display: flex;
-      flex-direction: row; /* Align photo and text horizontally */
+      flex-direction: row; /* Align image and text horizontally */
       align-items: flex-start; /* Align items to the top */
-      padding-left: 30px;
+      padding: 20px;
       background-color: #030e1a; /* Ensure dark background */
     }
 
     #about .image-wrapper {
-      flex: 1; /* Allow space for the image */
-      max-width: 40%; /* Adjust the image width */
-      text-align: center; /* Center the image */
+      flex: 1; /* Allocate space for the image */
+      max-width: 40%; /* Adjust image width */
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-right: 20px; /* Space between image and text */
     }
 
     #about .profile-image {
-      width: 100%; /* Adjust image width dynamically */
-      max-height: 100%; /* Ensure it scales proportionally */
-      border-radius: 0%; /* No rounded corners */
-      object-fit: cover; /* Ensure the image fills the area */
+      width: 100%; /* Dynamic width */
+      max-height: 100%; /* Maintain aspect ratio */
+      border-radius: 0; /* No rounded corners */
+      object-fit: cover; /* Ensure image fills the area */
     }
 
     #about .text-content {
-      flex: 2; /* Allow more space for the text */
-      max-width: 55%;
-      padding-left: 60px;
+      flex: 2; /* More space for text */
+      max-width: 60%;
     }
 
     #about .text-box {
-      background-color: LightCyan; /* Box background color */
+      background-color: LightCyan; /* Background color */
       color: #030e1a; /* Text color */
-      padding: 20px; /* Padding inside the box */
-      border-radius: 5px; /* Slightly rounded corners */
-      text-align: justify;
+      padding: 20px; /* Internal spacing */
+      border-radius: 5px; /* Rounded corners */
+      text-align: justify; /* Align text */
     }
 
-    /* Dynamically match image and text-box height */
-    #about .image-wrapper,
-    #about .text-content {
+    /* Info Boxes */
+    #about .info-container {
       display: flex;
-      flex-direction: column;
-    }
-
-    #about .image-wrapper {
-      height: auto; /* Adjust based on text box */
+      justify-content: space-between; /* Arrange info boxes in a row */
+      width: 100%; /* Full width of the container */
+      margin-top: 20px; /* Space above the info boxes */
     }
 
     #about .info-box {
-      background-color: LightCyan; /* Box background color */
+      background-color: LightCyan; /* Background color */
       color: #030e1a; /* Text color */
       padding: 10px 15px; /* Padding inside the box */
       border-radius: 5px; /* Rounded edges */
       text-align: center;
-      flex: 1; /* Ensures the info boxes take equal space */
-      margin: 0 10px; /* Horizontal spacing between boxes */
-    }
-
-    #about .info-container {
-      display: flex;
-      justify-content: space-between; /* Align the info boxes in a row */
-      width: 100%; /* Full width of the container */
-      margin-top: 20px; /* Space above the info boxes */
+      flex: 1; /* Equal space for each info box */
+      margin: 0 10px; /* Horizontal spacing */
     }
 
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
       #about {
-        flex-direction: column; /* Stack photo and text vertically */
-        padding: 20px;
+        flex-direction: column; /* Stack image, text, and info boxes vertically */
         text-align: center;
-      }
-
-      #about .text-content {
-        padding-left: 0;
-        max-width: 100%;
+        padding: 10px; /* Adjust padding */
       }
 
       #about .image-wrapper {
-        margin-bottom: 20px;
-        max-width: 100%; /* Ensure full width of the image */
+        margin-bottom: 20px; /* Add spacing below the image */
+        max-width: 100%; /* Full width for small screens */
       }
 
       #about .profile-image {
         width: 100%;
         object-fit: contain; /* Maintain aspect ratio */
-        border-radius: 10px; /* Rounded edges */
+        border-radius: 10px; /* Optional rounded edges */
+      }
+
+      #about .text-content {
+        max-width: 100%; /* Full width for text */
+        padding: 0; /* Remove side padding */
+        margin-bottom: 20px; /* Space below text */
       }
 
       #about .info-container {
-        flex-direction: column; /* Stack info boxes vertically */
-        text-align: center;
+        flex-direction: column; /* Stack info boxes */
+        align-items: center; /* Center align the boxes */
       }
 
       #about .info-box {
-        margin-bottom: 10px; /* Space between info boxes */
+        width: 100%; /* Full width for each info box */
+        margin: 10px 0; /* Vertical spacing between boxes */
       }
     }
-  </style>
+</style>
   
   <div class="container">
     <div class="image-wrapper">
