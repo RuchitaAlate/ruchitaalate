@@ -949,7 +949,7 @@
     <div class="row" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
       <!-- Data Engineering & Data Management -->
       <div class="col-lg-6" style="margin-bottom: 20px;">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="skills-box large-box">
           <h4>Data Engineering & Data Management</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Amazon Web Services (AWS): S3, EC2, RDS, DynamoDB, Athena</li>
@@ -968,14 +968,14 @@
 
       <!-- Statistical Analysis, Machine Learning and Predictive Analytics -->
       <div class="col-lg-6" style="margin-bottom: 20px;">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="skills-box large-box">
           <h4>Statistical Analysis, Machine Learning and Predictive Analytics</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Hypothesis testing</li>
             <li>Regression analysis</li>
             <li>Clustering</li>
             <li>Classification Models</li>
-            <li>Ensemble Menthods</li>
+            <li>Ensemble Methods</li>
             <li>Time Series Analysis</li>
             <li>Hugging Face</li>
             <li>KNIME</li>
@@ -989,7 +989,7 @@
     <div class="row" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
       <!-- Business Intelligence and Data Visualization -->
       <div class="col-lg-4" style="margin-bottom: 20px;">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="skills-box small-box">
           <h4>Business Intelligence and Data Visualization</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Tableau</li>
@@ -1003,7 +1003,7 @@
 
       <!-- Open-source libraries -->
       <div class="col-lg-4" style="margin-bottom: 20px;">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="skills-box small-box">
           <h4>Open-source libraries</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Pandas</li>
@@ -1018,7 +1018,7 @@
 
       <!-- Development Tools -->
       <div class="col-lg-4" style="margin-bottom: 20px;">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="skills-box small-box">
           <h4>Development Tools</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>VS Code</li>
@@ -1037,21 +1037,18 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <!-- End Skills Section -->
 
 <!-- CSS Styles -->
 <style>
-  /* Skills Box Styles */
   .skills-box {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #e0f7fa;
     color: #030e1a;
-    margin-bottom: 20px; /* Reduced margin between boxes */
   }
   .skills-box h4 {
     text-align: center;
@@ -1068,19 +1065,25 @@
     font-size: 1rem;
     margin-bottom: 8px;
   }
-  /* Small Screen Responsiveness */
+  /* Consistent Heights */
+  .large-box {
+    height: 400px; /* Adjust height as needed */
+  }
+  .small-box {
+    height: 300px; /* Adjust height as needed */
+  }
+  /* Responsive Design */
   @media (max-width: 768px) {
-    .skills-box {
-      width: 100%;
-      margin-bottom: 20px;
+    .large-box, .small-box {
+      height: auto;
     }
-    /* Center Align Image */
     .skills-image img {
       margin: 0 auto;
       display: block;
     }
   }
 </style>
+
 
 
 
