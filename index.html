@@ -39,9 +39,9 @@
       margin: 10px;
     }
 
+    /* Hide all h1 elements globally */
     h1 {
-      color: LightCyan;
-      display: none; /* Hide h1 globally */
+      display: none;
     }
 
     h2 {
@@ -55,24 +55,6 @@
     #header {
       text-align: center;
       max-width: 80%;
-    }
-
-    .header-row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header-row h1,
-    .header-row h2 {
-      margin: 5px 0;
-    }
-
-    #header .content {
-      display: block;
-    }
-
-    #header {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -82,8 +64,10 @@
       background-color: #030e1a;
     }
 
+    /* Only make h1 inside the #header visible */
     #header h1 {
-      display: block; /* Make h1 visible only in header */
+      display: block;
+      color: LightCyan;
     }
 
     #header h2 {
