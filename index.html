@@ -101,43 +101,46 @@
     }
 
     nav.nav-menu {
-      display: flex;
-      justify-content: space-around; /* Spread items across the width */
-      align-items: center;
-      width: 100%; /* Make the navigation menu span the entire width */
-      background-color: #030e1a; /* Ensure it matches the section background */
-      padding: 10px 20px; /* Add padding for a balanced look */
-      position: relative; /* Ensure proper positioning */
-    }
-    
-    nav.nav-menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: space-between; /* Spread items across the available space */
-      width: 100%; /* Ensure menu items take up the full width */
-    }
-    
-    nav.nav-menu ul li {
-      margin: 0 15px; /* Space between menu items */
-    }
-    
-    nav.nav-menu ul li a {
-      text-decoration: none;
-      color: LightCyan;
-      font-size: 18px;
-      transition: 0.3s;
-    }
-    
-    nav.nav-menu ul li a:hover {
-      color: #ffffff; /* Ensure hover changes to white */
-    }
-    
-    nav.nav-menu ul li.active a {
-      color: LightCyan; /* Highlight the active menu link */
-      cursor: default;
-    }
+  display: flex;
+  justify-content: space-evenly; /* Distribute menu items evenly across the width */
+  align-items: center;
+  width: 100%; /* Span the entire width of the page */
+  background-color: #030e1a; /* Consistent background color */
+  padding: 10px 0; /* Add vertical padding for better appearance */
+  position: relative; /* Ensure proper positioning */
+  margin: 0; /* Remove any default margins */
+  text-align: center; /* Center align the content */
+}
+
+nav.nav-menu ul {
+  display: flex;
+  justify-content: space-evenly; /* Spread items evenly across the menu bar */
+  list-style: none;
+  width: 100%; /* Full width for even distribution */
+  padding: 0;
+  margin: 0; /* Remove any default spacing */
+}
+
+nav.nav-menu ul li {
+  margin: 0 15px; /* Space between each menu item */
+}
+
+nav.nav-menu ul li a {
+  text-decoration: none;
+  color: LightCyan;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav.nav-menu ul li a:hover {
+  color: #ffffff; /* Highlight link color on hover */
+}
+
+nav.nav-menu ul li.active a {
+  color: LightCyan; /* Active menu item stays highlighted */
+  cursor: default;
+}
+
 
     .social-links {
       display: flex;
