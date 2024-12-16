@@ -933,21 +933,24 @@
  <!-- Start Skills Section -->
 <section id="skills" class="services">
   <div class="container">
-    <div class="row" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-
-      <!-- Languages Box (Thinner and Reduced Height) -->
-      <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; text-align: center; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px; height: 120px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <!-- Languages Box on Top -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px; height: 120px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
           <h4>Languages</h4>
           <p style="font-size: 1rem; margin: 0;">
             Python, R, SQL
           </p>
         </div>
       </div>
+    </div>
+
+    <!-- Rest of the Boxes in a Straight Line -->
+    <div class="row" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
 
       <!-- Data Engineering & Data Management -->
       <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Data Engineering & Data Management</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Amazon Web Services (AWS): S3, EC2, RDS, DynamoDB, Athena</li>
@@ -966,7 +969,7 @@
 
       <!-- Business Intelligence and Data Visualization -->
       <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Business Intelligence and Data Visualization</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Tableau</li>
@@ -980,7 +983,7 @@
 
       <!-- Open-source libraries -->
       <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Open-source libraries</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Pandas</li>
@@ -995,7 +998,7 @@
 
       <!-- Statistical Analysis, Machine Learning and Predictive Analytics -->
       <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Statistical Analysis, Machine Learning and Predictive Analytics</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>Hypothesis testing</li>
@@ -1011,7 +1014,7 @@
 
       <!-- Development Tools -->
       <div class="col-lg-2">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Development Tools</h4>
           <ul style="font-size: 1rem; list-style-type: disc; margin-left: 20px;">
             <li>VS Code</li>
@@ -1026,7 +1029,7 @@
     <div class="row" style="text-align: center; margin-top: 40px;">
       <div class="col-lg-12">
         <div class="skills-image">
-          <img src="assets/img/skills.jpg" alt="Skills Image" style="max-width: 100%; height: auto;">
+          <img src="assets/img/skills.jpg" alt="Skills Image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
         </div>
       </div>
     </div>
@@ -1039,7 +1042,7 @@
 <style>
   /* Skills Box Styles */
   .skills-box {
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #e0f7fa;
@@ -1074,8 +1077,6 @@
     }
   }
 </style>
-
-
 
   <!-- Start Links section -->
   <section id="links" class="services">
