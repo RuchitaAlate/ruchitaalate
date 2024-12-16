@@ -167,11 +167,15 @@
     color: white; /* Ensures readability */
     min-height: 100vh; /* Ensure sections fill the screen height */
   }
-  /* Hide the h1 of header in all sections except the home section */
-  section:not(#header) h1 {
-    display: none;
+  
+  /* Ensure h1 is only visible in the header section */
+  header#header h1 {
+    display: block; /* Display h1 in the header */
   }
-
+  
+  section h1 {
+    display: none; /* Hide h1 in all other sections */
+  }
 
 /* Hide Navigation Menu on Mobile Screens */
 @media screen and (max-width: 768px) {
