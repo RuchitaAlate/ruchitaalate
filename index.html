@@ -168,29 +168,13 @@
     min-height: 100vh; /* Ensure sections fill the screen height */
   }
 
-  /* Mobile Responsive Navigation */
+/* Hide Navigation Menu on Mobile Screens */
 @media screen and (max-width: 768px) {
   nav.nav-menu {
-    flex-direction: column; /* Stack menu vertically */
-    height: auto;
-    padding: 10px 0; /* Adjust padding */
-  }
-
-  nav.nav-menu ul {
-    flex-direction: column; /* Stack list items vertically */
-    align-items: center; /* Center items */
-    gap: 10px; /* Add spacing between items */
-  }
-
-  nav.nav-menu ul li {
-    margin: 5px 0; /* Reduce vertical margin */
-  }
-
-  nav.nav-menu ul li a {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    display: none; /* Hide the navigation menu */
   }
 }
-  
+ 
 </style>
 
 
