@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  transition: ease-in-out 0s;
+  transition: ease-in-out 0.3s; /* Smooth transition effect for visibility changes */
   position: relative;
   height: 100vh;
   display: flex;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header * {
-  transition: ease-in-out 0s;
+  transition: ease-in-out 0.3s;
 }
 
 #header h1 {
@@ -69,9 +69,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  opacity: 1; /* Default visibility */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
 }
 
-#header h1 a, #header h1 a:hover {
+#header.hidden h1 {
+  opacity: 0; /* Hide the <h1> */
+  pointer-events: none; /* Ensure no interaction when hidden */
+}
+
+#header h1 a,
+#header h1 a:hover {
   color: #e0ffff;
   line-height: 1;
   display: inline-block;
@@ -84,8 +92,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 span {
-  color: #fffff;
-  border-bottom: 2px solid #fffff;
+  color: #ffffff; /* Corrected color to white */
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 6px;
 }
 
@@ -111,10 +119,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: background 0.3s ease-in-out;
 }
 
 #header .social-links a:hover {
-  background: #fffff;
+  background: #ffffff;
 }
 
 @media (max-width: 992px) {
