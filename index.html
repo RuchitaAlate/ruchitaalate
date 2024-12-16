@@ -167,6 +167,11 @@
     color: white; /* Ensures readability */
     min-height: 100vh; /* Ensure sections fill the screen height */
   }
+  /* Hide the h1 of header in all sections except the home section */
+  section:not(#header) h1 {
+    display: none;
+  }
+
 
 /* Hide Navigation Menu on Mobile Screens */
 @media screen and (max-width: 768px) {
