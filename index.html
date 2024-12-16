@@ -652,7 +652,7 @@
 
 
 
-    /* Main styles for certifications section */
+        /* Main styles for certifications section */
     #certifications {
       padding: 60px 0;
       box-sizing: border-box;
@@ -661,42 +661,44 @@
     .certifications .icon-box {
       background-color: #e0f7fa; /* Light cyan background */
       display: flex;
-      flex-direction: row;
+      flex-direction: row; /* Horizontal layout for desktop */
       align-items: stretch;
-      padding: 0;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       color: #030e1a;
       width: 100%; /* Ensure full width */
       max-width: 1000px; /* Cap width */
       margin: 0 auto;
-      box-sizing: border-box;
       overflow: hidden;
+      box-sizing: border-box;
     }
     
+    /* Image container on the left */
     .image-container {
-      flex: 1;
-      height: 100%; /* Ensure the image container covers full height */
+      flex: 0 0 150px; /* Fix the width of the image container */
+      height: 100%; /* Full height of the box */
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden; /* Prevent overflow */
     }
     
     .certification-image {
-      width: 100%; /* Full width for mobile */
-      height: 100%; /* Cover the height of the box */
-      object-fit: cover; /* Ensure the image covers the container */
-      border-radius: 10px 0 0 10px; /* Round only left corners */
+      width: 100%; /* Ensure the image fits horizontally */
+      height: 100%; /* Ensure the image fits vertically */
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+      border-radius: 10px 0 0 10px; /* Round only the left corners */
     }
     
+    /* Text content on the right */
     .certifications .text-content {
-      flex: 1; /* Expand text content */
+      flex: 1; /* Take the remaining space */
       padding: 20px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      text-align: left; /* Left align the text */
+      text-align: left; /* Align text to the left */
     }
     
     .certifications h3 {
@@ -740,33 +742,32 @@
     @media (max-width: 768px) {
       .certifications .icon-box {
         flex-direction: column; /* Stack vertically */
-        align-items: stretch; /* Stretch items fully */
+        align-items: stretch;
         padding: 0;
         width: 100%;
-        box-sizing: border-box;
       }
     
       .image-container {
-        height: auto; /* Adjust height to accommodate stacked layout */
         flex: none;
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Adjust height dynamically */
       }
     
       .certification-image {
-        width: 100%; /* Full width for mobile */
+        width: 100%; /* Ensure the image fills the width */
         height: auto; /* Maintain aspect ratio */
         border-radius: 10px 10px 0 0; /* Adjust rounded corners for vertical layout */
       }
     
       .certifications .text-content {
-        width: 100%; /* Ensure full width for text */
-        padding: 15px; /* Add space inside text content */
-        text-align: left;
+        width: 100%; /* Full width for text */
+        padding: 15px; /* Add spacing inside text content */
       }
     
       .certifications h3,
       .certifications p,
       .certifications ul {
-        font-size: 16px; /* Adjust font sizes */
+        font-size: 16px; /* Adjust font sizes for smaller screens */
         margin-bottom: 10px;
       }
     
@@ -776,6 +777,7 @@
         text-align: center;
       }
     }
+
 
   <!-- Experience Section -->
 <section id="experience" class="services">
