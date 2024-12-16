@@ -168,13 +168,14 @@
     min-height: 100vh; /* Ensure sections fill the screen height */
   }
   
-  /* Ensure h1 is only visible in the header section */
-  header#header h1 {
-    display: block; /* Display h1 in the header */
+    /* Initially hide all h1 elements */
+  h1 {
+    display: none;
   }
   
-  section h1 {
-    display: none; /* Hide h1 in all other sections */
+  /* Ensure h1 is visible only inside the #header section */
+  #header h1 {
+    display: block;
   }
 
 /* Hide Navigation Menu on Mobile Screens */
