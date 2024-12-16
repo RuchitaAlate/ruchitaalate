@@ -44,7 +44,7 @@
   }
 
   h2 {
-    color: white !important; /* Ensure 'Welcome to My Portfolio' is white */
+    color: white !important;
   }
 
   h3 {
@@ -59,8 +59,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #030e1a; /* Ensure consistent background */
+    height: 100vh;
+    background-color: #030e1a;
   }
 
   #header h1,
@@ -70,7 +70,7 @@
   }
 
   #header h2 {
-    font-size: 20px; /* Adjust subtitle font size */
+    font-size: 20px;
   }
 
   .header-row {
@@ -84,10 +84,6 @@
     margin: 5px 0;
   }
 
-  #header .content {
-    display: block; /* Default for home section */
-  }
-
   #dynamic-role {
     background-color: LightCyan;
     color: #030e1a !important;
@@ -99,23 +95,22 @@
 
   nav.nav-menu {
     display: flex;
-    justify-content: space-evenly; /* Distribute menu items evenly across the width */
+    justify-content: center; /* Center the entire menu */
     align-items: center;
-    width: 100%; /* Span the entire width of the page */
+    width: 100%; /* Ensure the menu spans the full width */
     background-color: #030e1a; /* Consistent background color */
-    padding: 10px 0; /* Add vertical padding for better appearance */
+    padding: 15px 0; /* Add vertical padding for better appearance */
+    margin: 0 auto; /* Center the entire block on the page */
     position: relative; /* Ensure proper positioning */
-    margin: 0; /* Remove any default margins */
-    text-align: center; /* Center align the content */
   }
 
   nav.nav-menu ul {
     display: flex;
-    justify-content: space-evenly; /* Spread items evenly across the menu bar */
+    justify-content: space-evenly; /* Spread items evenly across the width */
     list-style: none;
     width: 100%; /* Full width for even distribution */
     padding: 0;
-    margin: 0; /* Remove any default spacing */
+    margin: 0;
   }
 
   nav.nav-menu ul li {
@@ -126,15 +121,15 @@
     text-decoration: none;
     color: LightCyan;
     font-size: 18px;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    transition: color 0.3s ease;
   }
 
   nav.nav-menu ul li a:hover {
-    color: #ffffff; /* Highlight link color on hover */
+    color: #ffffff;
   }
 
   nav.nav-menu ul li.active a {
-    color: LightCyan; /* Active menu item stays highlighted */
+    color: LightCyan;
     cursor: default;
   }
 
@@ -156,17 +151,17 @@
   }
 
   section {
-    padding-top: 80px; /* Adjust this based on the height of your header */
+    padding-top: 80px;
     background-color: #030e1a;
-    color: white; /* Ensures readability with the dark background */
+    color: white;
+  }
+
+  body, header, section {
+    background-color: #030e1a !important;
   }
 
   section:not(#header) .content {
     display: none;
-  }
-
-  body, header, section {
-    background-color: #030e1a !important; /* Ensures no unwanted background color */
   }
 
   #about {
@@ -202,7 +197,6 @@
     text-align: justify;
   }
 </style>
-
 </head>
 <body>
 
