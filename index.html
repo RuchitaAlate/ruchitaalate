@@ -930,21 +930,21 @@
 
 
 
-  <!-- Start Skills Section -->
+ <!-- Start Skills Section -->
 <section id="skills" class="services">
   <div class="container">
     <div class="row">
-      <!-- Languages Box -->
+      <!-- Languages Box (Thinner) -->
       <div class="col-lg-12">
-        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
+        <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px; max-width: 300px; margin-left: auto; margin-right: auto;">
           <h4>Languages</h4>
-          <p style="font-size: 1.1rem;">
+          <p style="font-size: 1rem;">
             Python, R, SQL
           </p>
         </div>
       </div>
 
-      <!-- Three Skills Boxes Below Languages -->
+      <!-- Three Skills Boxes Below Languages (Aesthetic Arrangement) -->
       <div class="col-lg-4">
         <div class="skills-box" style="background-color: #e0f7fa; color: #030e1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 30px;">
           <h4>Data Engineering & Data Management</h4>
@@ -1018,9 +1018,9 @@
       </div>
 
       <!-- Image Below the Boxes -->
-      <div class="col-lg-12">
-        <div class="skills-image" style="text-align: center; margin-top: 40px;">
-          <img src="assets/img/skills.jpg" alt="Skills Image" style="max-width: 100%; height: auto;">
+      <div class="col-lg-12" style="text-align: center; margin-top: 40px;">
+        <div class="skills-image">
+          <img src="assets/img/skills.jpg" alt="Skills Image" style="max-width: 100%; height: auto; margin: 0 auto;">
         </div>
       </div>
     </div>
@@ -1041,7 +1041,7 @@
   }
   .skills-box h4 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 15px;
   }
   .skills-box ul {
@@ -1050,7 +1050,7 @@
     text-align: left;
   }
   .skills-box ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 8px;
   }
   /* Small Screen Responsiveness */
@@ -1059,8 +1059,14 @@
       width: 100%;
       margin-bottom: 20px;
     }
+    /* Center Align Image */
+    .skills-image img {
+      margin: 0 auto;
+      display: block;
+    }
   }
 </style>
+
 
 
   <!-- Start Links section -->
