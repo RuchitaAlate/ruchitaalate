@@ -102,21 +102,25 @@
 
     nav.nav-menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-around; /* Spread items across the width */
       align-items: center;
-      margin-top: 20px; /* Adjust margin as needed */
+      width: 100%; /* Make the navigation menu span the entire width */
+      background-color: #030e1a; /* Ensure it matches the section background */
+      padding: 10px 20px; /* Add padding for a balanced look */
+      position: relative; /* Ensure proper positioning */
     }
     
     nav.nav-menu ul {
       list-style: none;
       padding: 0;
+      margin: 0;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: space-between; /* Spread items across the available space */
+      width: 100%; /* Ensure menu items take up the full width */
     }
 
     nav.nav-menu ul li {
-      margin: 10px 20px;
+      margin: 0px 15px;
     }
 
     nav.nav-menu ul li a {
