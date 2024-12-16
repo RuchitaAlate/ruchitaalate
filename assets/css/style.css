@@ -74,8 +74,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.hidden h1 {
-  opacity: 0; /* Hide the <h1> */
-  pointer-events: none; /* Ensure no interaction when hidden */
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 #header h1 a,
@@ -124,13 +126,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .social-links a:hover {
   background: #ffffff;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
 }
 
 @media (max-width: 992px) {
