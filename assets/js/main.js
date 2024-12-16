@@ -20,12 +20,8 @@
           $(this).closest('li').addClass('active');
         }
 
-        // === UPDATED: Show or hide the h1 in #header based on the section ===
-        if (hash == '#header') {
-          $('#header h1').removeClass('hidden'); // Show the h1
-        } else {
-          $('#header h1').addClass('hidden'); // Hide the h1
-        }
+        // === Ensure Header Visibility ===
+        toggleHeaderVisibility(hash);
 
         if (hash == '#header') {
           $('#header').removeClass('header-top');
@@ -67,12 +63,17 @@
         $(initial_nav).addClass('section-show');
       }, 350);
 
-      // === UPDATED: Hide h1 if not on #header ===
-      if (initial_nav === '#header') {
-        $('#header h1').removeClass('hidden'); // Show the h1
-      } else {
-        $('#header h1').addClass('hidden'); // Hide the h1
-      }
+      // === Ensure Header Visibility on Load ===
+      toggleHeaderVisibility(initial_nav);
+    }
+  }
+
+  // Function to Toggle Header Visibility
+  function toggleHeaderVisibility(currentHash) {
+    if (currentHash === '#header') {
+      $('#header h1').fadeIn(); // Show the h1
+    } else {
+      $('#header h1').fadeOut(); // Hide the h1
     }
   }
 
