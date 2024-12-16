@@ -681,155 +681,152 @@
 
 
 <style>
-      /* Main styles for certifications section */
-    #certifications {
-      padding: 60px 0;
-      box-sizing: border-box;
-    }
-    
+  /* Main styles for certifications section */
+  #certifications {
+    padding: 60px 0;
+    box-sizing: border-box;
+  }
+
+  .certifications .icon-box {
+    background-color: #e0f7fa; /* Light cyan background */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #030e1a;
+    width: 100%; /* Ensure full width */
+    max-width: 1000px; /* Cap width */
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .certifications img {
+    width: 100%; /* Full width for mobile */
+    max-width: 400px; /* Restrict size on desktop */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* Round only left corners */
+    display: block; /* Remove any inline spacing */
+  }
+
+  .certifications .text-content {
+    flex: 1; /* Expand text content */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Left align the text */
+  }
+
+  .certifications h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #030e1a;
+  }
+
+  .certifications p {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #030e1a;
+  }
+
+  .certifications .gpa {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: #030e1a;
+  }
+
+  .view-credentials {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #030e1a;
+    color: #e0ffff;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .view-credentials:hover {
+    transform: translateY(-2px);
+  }
+
+    /* Ensure image covers the full height of the box */
+  .certifications .icon-box {
+    background-color: #e0f7fa; /* Light cyan background */
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #030e1a;
+    width: 100%; /* Ensure full width */
+    max-width: 1000px; /* Cap width */
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    flex: 1;
+    height: 100%; /* Ensure the image container covers full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .certification-image {
+    width: 100%; /* Full width for mobile */
+    height: 100%; /* Cover the height of the box */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 10px 0 0 10px; /* Round only left corners */
+  }
+
+
+  /* Mobile-specific changes */
+  @media (max-width: 768px) {
     .certifications .icon-box {
-      background-color: #e0f7fa; /* Light cyan background */
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
+      flex-direction: column; /* Stack vertically */
+      align-items: stretch; /* Stretch items fully */
       padding: 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      color: #030e1a;
-      width: 100%; /* Ensure full width */
-      max-width: 1000px; /* Cap width */
-      margin: 0 auto;
+      width: 100%;
       box-sizing: border-box;
-      overflow: hidden;
     }
-    
-    /* Image styling */
+
     .certifications img {
-      width: 100%; /* Full width for mobile */
-      max-width: 400px; /* Restrict size on desktop */
+      width: 100%; /* Image takes full width */
       height: auto; /* Maintain aspect ratio */
-      object-fit: cover;
-      border-radius: 10px 0 0 10px; /* Round only left corners */
-      display: block; /* Remove any inline spacing */
+      border-radius: 10px 10px 0 0; /* Round top corners */
     }
-    
-    /* Image Container */
-    .image-container {
-      margin-right: 20px;
-    }
-    
-    /* Certification Image Styling */
-    .certification-image {
-      width: 60px; /* Adjust the width as needed */
-      height: auto;
-    }
-    
-    /* Text Content Styling */
+
     .certifications .text-content {
-      flex: 1; /* Expand text content */
-      padding: 20px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: left; /* Left align the text */
+      width: 100%; /* Ensure full width for text */
+      padding: 15px; /* Add space inside text content */
+      text-align: left;
     }
-    
-    /* Header Style */
-    .certifications h3 {
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0 0 10px;
-      color: #030e1a;
+
+    .certifications h3, .certifications p, .certifications .gpa {
+      font-size: 16px; /* Adjust font sizes */
+      margin-bottom: 10px;
     }
-    
-    /* Paragraph Style */
-    .certifications p {
-      font-size: 16px;
-      margin: 0 0 10px;
-      color: #030e1a;
-    }
-    
-    /* GPA/Additional Info Style */
-    .certifications .gpa {
-      font-size: 15px;
-      font-weight: bold;
-      margin: 0;
-      color: #030e1a;
-    }
-    
-    /* Button Styling for View Credentials */
+
     .view-credentials {
-      display: inline-block;
       margin-top: 10px;
-      padding: 10px 16px;
-      background-color: #030e1a;
-      color: #e0ffff;
-      border: none;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 5px;
+      width: 100%; /* Make the button full-width on mobile */
       text-align: center;
     }
-    
-    .view-credentials:hover {
-      transform: translateY(-2px);
-    }
-    
-    /* Mobile-specific changes */
-    @media (max-width: 768px) {
-      .certifications .icon-box {
-        flex-direction: column; /* Stack vertically */
-        align-items: stretch; /* Stretch items fully */
-        padding: 0;
-        width: 100%;
-        box-sizing: border-box;
-      }
-    
-      /* Image on mobile */
-      .certifications img {
-        width: 100%; /* Image takes full width */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 10px 10px 0 0; /* Round top corners */
-      }
-    
-      /* Text content on mobile */
-      .certifications .text-content {
-        width: 100%; /* Ensure full width for text */
-        padding: 15px; /* Add space inside text content */
-        text-align: left;
-      }
-    
-      /* Header and text font size adjustments */
-      .certifications h3, .certifications p, .certifications .gpa {
-        font-size: 16px; /* Adjust font sizes */
-        margin-bottom: 10px;
-      }
-    
-      /* Button adjustments on mobile */
-      .view-credentials {
-        margin-top: 10px;
-        width: 100%; /* Make the button full-width on mobile */
-        text-align: center;
-      }
-    }
-    
-    /* Styling for credentials button */
-    .view-credentials {
-      color: #007BFF;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .view-credentials:hover {
-      text-decoration: underline;
-    }
-
   }
 </style>
-
-
 
   <!-- Experience Section -->
 <section id="experience" class="services">
