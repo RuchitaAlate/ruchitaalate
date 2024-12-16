@@ -22,172 +22,158 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 <style>
-  body {
-    background: url('assets/img/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    body {
+      background: url('assets/img/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
-  h1, h2, h3, p {
-    margin: 10px;
-  }
+    h1, h2, h3, p {
+      margin: 10px;
+    }
 
-  h1 {
-    color: LightCyan;
-  }
+    h1 {
+      color: LightCyan;
+      display: none; /* Hide h1 globally */
+    }
 
-  h2 {
-    color: white !important; /* Ensure 'Welcome to My Portfolio' is white */
-  }
+    h2 {
+      color: white !important;
+    }
 
-  h3 {
-    color: LightCyan;
-  }
+    h3 {
+      color: LightCyan;
+    }
 
-  #header {
-    text-align: center;
-    max-width: 80%;
-  }
+    #header {
+      text-align: center;
+      max-width: 80%;
+    }
 
-  .header-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .header-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .header-row h1,
-  .header-row h2 {
-    margin: 5px 0;
-  }
+    .header-row h1,
+    .header-row h2 {
+      margin: 5px 0;
+    }
 
-  #header .content {
-    display: block; /* Default for home section */
-  }
+    #header .content {
+      display: block;
+    }
 
-  #header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #030e1a; /* Ensure consistent background */
-  }
+    #header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background-color: #030e1a;
+    }
 
-  #header h1,
-  #header h2 {
-    margin: 10px 0;
-    color: LightCyan;
-  }
+    #header h1 {
+      display: block; /* Make h1 visible only in header */
+    }
 
-  #header h2 {
-    font-size: 20px; /* Adjust subtitle font size */
-  }
+    #header h2 {
+      font-size: 20px;
+    }
 
-  #dynamic-role {
-    background-color: LightCyan;
-    color: #030e1a !important;
-    padding: 5px;
-    border-radius: 0px;
-    display: inline-block;
-    margin-top: 20px;
-  }
+    #dynamic-role {
+      background-color: LightCyan;
+      color: #030e1a !important;
+      padding: 5px;
+      border-radius: 0px;
+      display: inline-block;
+      margin-top: 20px;
+    }
 
-/* Initially hide all h1 elements */
-  h1 {
-    display: none;
-  }
+    /* Navigation Bar Styles */
+    nav.nav-menu {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      background-color: #030e1a;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
 
-    /* Ensure h1 is visible only inside the #header section */
-  #header h1 {
-    display: block;
-  }
+    nav.nav-menu ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
 
-  /* Navigation Bar Styles */
-  nav.nav-menu {
-    display: flex;
-    justify-content: space-evenly; /* Spread menu items evenly */
-    align-items: center;
-    width: 100%; /* Full screen width */
-    background-color: #030e1a; /* Consistent background color */
-    padding: 15px 0; /* Space above and below menu items */
-    position: fixed; /* Fix to top of the viewport */
-    top: 0; /* Align to the top */
-    left: 0; /* Reset left alignment */
-    z-index: 1000; /* Ensure it's above all content */
-    box-sizing: border-box; /* Include padding in width calculations */
-  }
+    nav.nav-menu ul li {
+      margin: 0 15px;
+    }
 
-  nav.nav-menu ul {
-    display: flex;
-    justify-content: space-evenly; /* Spread items across the full width */
-    width: 100%; /* Ensure the list spans the full width of the nav bar */
-    padding: 0;
-    margin: 0; /* Remove default margin and padding */
-    list-style: none; /* Remove bullet points */
-  }
+    nav.nav-menu ul li a {
+      text-decoration: none;
+      color: LightCyan;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
 
-  nav.nav-menu ul li {
-    margin: 0 15px; /* Add space between items */
-  }
+    nav.nav-menu ul li a:hover {
+      color: #ffffff;
+    }
 
-  nav.nav-menu ul li a {
-    text-decoration: none;
-    color: LightCyan;
-    font-size: 18px;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-  }
+    nav.nav-menu ul li.active a {
+      color: LightCyan;
+      cursor: default;
+    }
 
-  nav.nav-menu ul li a:hover {
-    color: #ffffff;
-  }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-  nav.nav-menu ul li.active a {
-    color: LightCyan;
-    cursor: default;
-  }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: LightCyan;
+      transition: 0.3s;
+    }
 
-  .social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
+    .social-links a:hover {
+      color: white !important;
+    }
 
-  .social-links a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: LightCyan;
-    transition: 0.3s;
-  }
+    section {
+      padding-top: 80px;
+      background-color: #030e1a;
+      color: white;
+      min-height: 100vh;
+    }
 
-  .social-links a:hover {
-    color: white !important;
-  }
-
-  section {
-    padding-top: 80px; /* Adjust this based on the height of your header */
-    background-color: #030e1a; /* Consistent background */
-    color: white; /* Ensures readability */
-    min-height: 100vh; /* Ensure sections fill the screen height */
-  }
-  
-
-/* Hide Navigation Menu on Mobile Screens */
-@media screen and (max-width: 768px) {
-  nav.nav-menu {
-    display: none; /* Hide the navigation menu */
-  }
-}
- 
-</style>
-
+    /* Hide Navigation Menu on Mobile Screens */
+    @media screen and (max-width: 768px) {
+      nav.nav-menu {
+        display: none;
+      }
+    }
+  </style>
 
 </head>
 <body>
