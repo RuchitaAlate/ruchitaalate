@@ -79,13 +79,15 @@
   // Function to Toggle Header Visibility
   function toggleHeaderVisibility(currentHash) {
     const header = $("#header");
-
+    const headerContent = $("#header .header-content"); // Assuming .header-content wraps header content
+    
     if (currentHash === "#header") {
-      header.removeClass("hidden"); // Ensure header is visible
+      headerContent.removeClass("hidden"); // Show header content
     } else {
-      header.addClass("hidden"); // Hide header completely
+      headerContent.addClass("hidden"); // Hide header content
     }
   }
+
 
   // Mobile Navigation
   if ($(".nav-menu").length) {
