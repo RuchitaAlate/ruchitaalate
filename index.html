@@ -74,6 +74,10 @@
       font-size: 20px;
     }
 
+    #header, section {
+      position: relative; /* Ensures proper stacking order */
+    }
+
     #dynamic-role {
       background-color: LightCyan;
       color: #030e1a !important;
@@ -149,6 +153,11 @@
       background-color: #030e1a;
       color: white;
       min-height: 100vh;
+    }
+
+    section {
+      position: relative;
+      z-index: 1001;
     }
 
     /* Hide Navigation Menu on Mobile Screens */
