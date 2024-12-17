@@ -219,7 +219,7 @@
         flex-direction: row; /* Side-by-side layout */
         align-items: stretch; /* Match height */
         justify-content: space-between;
-        gap: 0px;
+        gap: 20px; /* Add gap between the image and text */
     }
 
     /* Image Wrapper */
@@ -228,7 +228,6 @@
         max-width: 35%; /* Limit image width */
         display: flex;
         justify-content: center;
-        margin-left: 20px; 
     }
 
     /* Profile Image */
@@ -247,17 +246,18 @@
 
     /* Text Box Styling */
     #about .text-box {
-      background-color: LightCyan;
-      color: #030e1a;
-      padding: 20px;
-      border-radius: 5px;
-      text-align: justify;
-      max-width: 65%; /* Decrease the width of the text box */
-      margin: 0 auto; /* Center the text box horizontally */
+        background-color: LightCyan;
+        color: #030e1a;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: justify;
+        max-width: 65%; /* Decrease the width of the text box */
+        margin: 0 auto; /* Center the text box horizontally */
     }
 
-    /* Info Row: Three Boxes */
+    /* Gap between text and info containers */
     #about .info-container {
+        margin-top: 30px; /* Add space between text box and info boxes */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -278,10 +278,11 @@
 
     /* Additional Two Boxes */
     #about .additional-container {
+        margin-top: 20px; /* Add space between info containers and additional boxes */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 15px;
+        gap: 20px; /* Add space between the languages and hobbies boxes */
     }
 
     #about .additional-box {
@@ -301,7 +302,7 @@
         #about .info-container,
         #about .additional-container {
             flex-direction: column; /* Stack vertically */
-            gap: 10px;
+            gap: 20px; /* Add space between stacked items */
         }
 
         #about .image-wrapper,
@@ -370,7 +371,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
