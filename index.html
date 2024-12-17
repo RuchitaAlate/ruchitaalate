@@ -782,23 +782,22 @@
   }
 
   .view-credentials {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 16px;
-    background-color: #030e1a;
-    color: #e0ffff;
-    border: none;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    min-width: 150px; /* Set a minimum width for the button */
-    width: auto;
+    display: block; /* Make the button a block element to center it */
+    margin: 20px auto; /* Center horizontally and add space above/below */
+    padding: 10px 0; /* Adjust vertical padding */
+    background-color: #030e1a; /* Dark background color */
+    color: #e0ffff; /* Light cyan text */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Optional rounded corners */
+    width: 180px; /* Fixed width for consistency */
   }
 
   .view-credentials:hover {
-    transform: translateY(-2px);
+      background-color: #1a2b3c; /* Slightly lighter dark shade on hover */
+      transform: translateY(-2px); /* Hover effect */
   }
 
   @media (max-width: 768px) {
