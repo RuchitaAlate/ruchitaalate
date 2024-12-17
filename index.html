@@ -207,6 +207,12 @@
         gap: 30px; /* Space between content rows */
     }
 
+    /* Container for Margins */
+    #about .container {
+        max-width: 1200px; /* Set a max width for the content */
+        margin: 0 auto; /* Center the container */
+    }
+
     /* First Row: Image and Text */
     #about .content-row {
         display: flex;
@@ -307,62 +313,63 @@
     }
   </style>
 
-  <!-- Content Row: Image and Text -->
-  <div class="content-row">
-    <div class="image-wrapper">
-      <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+  <div class="container">
+    <!-- Content Row: Image and Text -->
+    <div class="content-row">
+      <div class="image-wrapper">
+        <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
+      </div>
+
+      <div class="text-content">
+        <div class="text-box">
+          <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
+          <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
+          <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at 
+            <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'">ralate2@illinois.edu</a> 
+            to explore potential opportunities.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="text-content">
-      <div class="text-box">
-        <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
-        <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-        <p>I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at 
-          <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'">ralate2@illinois.edu</a> 
-          to explore potential opportunities.
-        </p>
+    <!-- Info Row -->
+    <div class="info-container">
+      <div class="info-box">
+        <strong>Birthdate:</strong><br>24 December 1997
+      </div>
+      <div class="info-box">
+        <strong>Address:</strong><br>Champaign, Illinois
+      </div>
+      <div class="info-box">
+        <strong>Phone:</strong><br>+1 (217)-766-0323
+      </div>
+    </div>
+
+    <!-- Additional Two Boxes -->
+    <div class="additional-container">
+      <div class="additional-box">
+        <strong>Languages:</strong>
+        <ul>
+          <li>English</li>
+          <li>Marathi</li>
+          <li>Hindi</li>
+          <li>French (Elementary Level)</li>
+        </ul>
+      </div>
+      <div class="additional-box">
+        <strong>Hobbies:</strong>
+        <ul>
+          <li>Traveling</li>
+          <li>Art and Craft</li>
+          <li>Dancing</li>
+          <li>Music</li>
+          <li>Baking</li>
+          <li>Cooking</li>
+        </ul>
       </div>
     </div>
   </div>
-
-  <!-- Info Row -->
-  <div class="info-container">
-    <div class="info-box">
-      <strong>Birthdate:</strong><br>24 December 1997
-    </div>
-    <div class="info-box">
-      <strong>Address:</strong><br>Champaign, Illinois
-    </div>
-    <div class="info-box">
-      <strong>Phone:</strong><br>+1 (217)-766-0323
-    </div>
-  </div>
-
-  <!-- Additional Two Boxes -->
-  <div class="additional-container">
-    <div class="additional-box">
-      <strong>Languages:</strong>
-      <ul>
-        <li>English</li>
-        <li>Marathi</li>
-        <li>Hindi</li>
-        <li>French (Elementary Level)</li>
-      </ul>
-    </div>
-    <div class="additional-box">
-      <strong>Hobbies:</strong>
-      <ul>
-        <li>Traveling</li>
-        <li>Art and Craft</li>
-        <li>Dancing</li>
-        <li>Music</li>
-        <li>Baking</li>
-        <li>Cooking</li>
-      </ul>
-    </div>
-  </div>
 </section>
-
 
 
 <!-- Interests Section -->
