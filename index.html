@@ -201,12 +201,19 @@
     /* About Section Layout */
     #about {
         display: flex; /* Flex layout for side-by-side alignment */
-        flex-direction: row; /* Horizontal alignment */
-        align-items: flex-start; /* Align content to the top */
-        justify-content: space-between; /* Space between image and text */
+        flex-direction: column; /* Stack rows vertically */
         padding: 20px;
         background-color: #030e1a; /* Dark background */
-        gap: 20px; /* Space between the image and text */
+        gap: 20px; /* Space between rows */
+    }
+
+    /* First Row: Image and Text */
+    #about .content-row {
+        display: flex; /* Flexbox for image and text */
+        flex-direction: row; /* Side-by-side on large screens */
+        align-items: flex-start;
+        justify-content: space-between; /* Space between image and text */
+        gap: 20px;
     }
 
     /* Image Wrapper */
@@ -220,7 +227,6 @@
     /* Profile Image */
     #about .profile-image {
         width: 100%; /* Responsive width */
-        max-height: 100%; /* Maintain aspect ratio */
         object-fit: cover; /* Ensure proper scaling */
         border-radius: 0; /* No rounded corners */
     }
@@ -240,31 +246,50 @@
         text-align: justify; /* Justify text */
     }
 
+    /* Second Row: Info Container */
+    #about .info-container {
+        display: flex; /* Flexbox layout for info boxes */
+        flex-direction: row; /* Align info boxes in a row */
+        justify-content: space-between; /* Even spacing */
+        background-color: LightCyan; /* Background color */
+        color: #030e1a; /* Text color */
+        padding: 15px;
+        border-radius: 5px;
+        gap: 10px;
+    }
+
+    #about .info-box {
+        flex: 1; /* Equal width for each box */
+        text-align: center; /* Center align the text */
+        font-size: 16px;
+    }
+
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
-        #about {
+        #about .content-row {
             flex-direction: column; /* Stack image and text vertically */
             text-align: center;
         }
 
         #about .image-wrapper,
         #about .text-content {
-            max-width: 100%; /* Full width for both sections */
-        }
-
-        #about .text-content {
-            padding: 0; /* Remove side padding */
+            max-width: 100%; /* Full width */
         }
 
         #about .profile-image {
             border-radius: 10px; /* Add rounded edges on small screens */
         }
+
+        #about .info-container {
+            flex-direction: column; /* Stack info boxes vertically */
+            text-align: center; /* Center align text */
+            gap: 10px;
+        }
     }
-</style>
+  </style>
 
-
-  
-  <div class="container">
+  <!-- Content Row: Image and Text -->
+  <div class="content-row">
     <div class="image-wrapper">
       <img src="assets/img/profile.jpg" alt="Profile Image" class="profile-image">
     </div>
@@ -273,24 +298,28 @@
       <div class="text-box">
         <p>In today's data-driven landscape, I commit to unlocking the transformative power of data to drive organizational success. With a Master's in Information Management from the University of Illinois Urbana Champaign and an MBA in Business Analytics from Narsee Monjee Institute of Management Studies, I offer a blend of technical proficiency and strategic insight.</p>
         <p>Dedicated to leveraging data for innovation and informed decision-making, I have a track record of delivering tangible results. My skills in Python, SQL, R-studio, and data visualization tools such as Tableau and Power BI, combined with a strong foundation in statistical analysis and machine learning algorithms, enable me to navigate complex data challenges and drive strategic decision-making.</p>
-        <p> I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'"> ralate2@illinois.edu </a> to explore potential opportunities. </p>
-      </div>
-    </div>
-
-    <!-- Info Section -->
-    <div class="info-container">
-      <div class="info-box">
-        <strong>Birthdate:</strong> 24 December 1997
-      </div>
-      <div class="info-box">
-        <strong>Address:</strong> Champaign, Illinois
-      </div>
-      <div class="info-box">
-        <strong>Phone:</strong> +1 (217)-766-0323
+        <p> I prioritize continuous learning, staying updated with industry trends and technologies. If your organization seeks expertise aligned with my skill set, connect with me at 
+          <a href="mailto:ralate2@illinois.edu" style="color: #030e1a; text-decoration: none;" onmouseover="this.style.color='#575757'" onmouseout="this.style.color='#030e1a'">ralate2@illinois.edu</a> 
+          to explore potential opportunities.
+        </p>
       </div>
     </div>
   </div>
+
+  <!-- Info Row -->
+  <div class="info-container">
+    <div class="info-box">
+      <strong>Birthdate:</strong> 24 December 1997
+    </div>
+    <div class="info-box">
+      <strong>Address:</strong> Champaign, Illinois
+    </div>
+    <div class="info-box">
+      <strong>Phone:</strong> +1 (217)-766-0323
+    </div>
+  </div>
 </section>
+
 
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
