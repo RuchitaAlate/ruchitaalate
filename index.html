@@ -736,21 +736,22 @@
     background-color: #e0f7fa;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Padding around the content */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 800px; /* Reduce max-width for a smaller box */
+    margin: 0 auto; /* Center the box */
     box-sizing: border-box;
     overflow: hidden;
   }
 
   .certifications img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px; /* Adjust width for smaller image */
     height: auto;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
@@ -761,7 +762,10 @@
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    text-align: left;
+    text-align: center; /* Center text content for better alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .certifications h3 {
@@ -773,7 +777,8 @@
 
   .certifications ul {
     padding-left: 20px;
-    margin: 0;
+    margin: 0 auto;
+    text-align: left;
   }
 
   .certifications ul li {
@@ -783,7 +788,7 @@
 
   .view-credentials {
     display: inline-block;
-    margin-top: 10px;
+    margin: 20px auto 0; /* Add space above the button */
     padding: 10px 16px;
     background-color: #030e1a;
     color: #e0ffff;
@@ -793,6 +798,7 @@
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   .view-credentials:hover {
@@ -812,6 +818,7 @@
 
     .certifications .text-content {
       padding: 15px;
+      text-align: center;
     }
 
     .certifications h3, .certifications ul li {
@@ -819,11 +826,12 @@
     }
 
     .view-credentials {
-      width: 100%;
+      width: 100%; /* Full width for small screens */
       text-align: center;
     }
   }
 </style>
+
 
 
   <!-- Experience Section -->
