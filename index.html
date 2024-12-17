@@ -761,10 +761,7 @@
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
   }
 
   .certifications h3 {
@@ -772,14 +769,11 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #030e1a;
-    text-align: center;
   }
 
   .certifications ul {
-    padding: 0;
-    list-style: none;
+    padding-left: 20px;
     margin: 0;
-    text-align: center;
   }
 
   .certifications ul li {
@@ -800,23 +794,17 @@
     border-radius: 5px;
     text-align: center;
     min-width: 150px; /* Set a minimum width for the button */
-    width: auto; /* Allow the width to adjust dynamically if content grows */
+    width: auto;
   }
 
   .view-credentials:hover {
     transform: translateY(-2px);
   }
 
-  .certifications .text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   @media (max-width: 768px) {
     .certifications .icon-box {
       flex-direction: column;
+      align-items: stretch;
     }
 
     .certifications img {
@@ -833,7 +821,7 @@
     }
 
     .view-credentials {
-      width: auto;
+      width: 100%;
       text-align: center;
     }
   }
