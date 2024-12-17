@@ -782,24 +782,26 @@
   }
 
   .view-credentials {
-    display: block; /* Make the button a block element to center it */
-    margin: 20px auto; /* Center horizontally and add space above/below */
-    padding: 10px 0; /* Adjust vertical padding */
+    display: block; /* Block-level element to take full width */
+    margin: 20px auto; /* Center horizontally with spacing */
+    padding: 10px 0; /* Vertical padding */
     background-color: #030e1a; /* Dark background color */
     color: #e0ffff; /* Light cyan text */
     text-decoration: none; /* Remove underline */
-    text-align: center; /* Center the text */
+    text-align: center; /* Center text */
     font-size: 14px; /* Font size */
     font-weight: bold; /* Bold text */
     border-radius: 5px; /* Optional rounded corners */
-    width: 180px; /* Fixed width for consistency */
+    width: 90%; /* Button width relative to container */
+    max-width: 400px; /* Optional maximum width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
   }
 
   .view-credentials:hover {
       background-color: #1a2b3c; /* Slightly lighter dark shade on hover */
-      transform: translateY(-2px); /* Hover effect */
+      transform: translateY(-2px); /* Lift effect */
   }
-
+  
   @media (max-width: 768px) {
     .certifications .icon-box {
       flex-direction: column;
