@@ -1525,9 +1525,9 @@
   }
 </style>
 
- <!-- Start Skills Section -->
+<!-- Start Skills Section -->
 <section id="skills" class="skills-section">
-  <div class="container">
+  <div class="container-fluid px-4">
     <!-- Languages Box on Top -->
     <div class="row">
       <div class="col-lg-12">
@@ -1636,9 +1636,14 @@
     box-sizing: border-box;
   }
 
+  .container-fluid {
+    max-width: 1400px; /* Restrict overall container width */
+    margin: 0 auto; /* Center the section */
+  }
+
   .skills-box {
-    background-color: #e0f7fa; /* Light cyan background */
-    color: #030e1a; /* Dark text color */
+    background-color: #e0f7fa;
+    color: #030e1a;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -1646,13 +1651,7 @@
     margin-bottom: 30px;
   }
 
-  .large-box {
-    height: auto;
-    text-align: left;
-  }
-
-  .small-box {
-    height: auto;
+  .large-box, .small-box {
     text-align: left;
   }
 
@@ -1660,11 +1659,6 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-
-  .skills-box p {
-    font-size: 1rem;
-    margin: 0;
   }
 
   .skills-box ul {
@@ -1683,17 +1677,23 @@
     border-radius: 10px;
   }
 
-  /* Mobile-specific changes */
+  /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
-    .large-box ul, .small-box ul {
-      font-size: 0.9rem; /* Reduce font size on smaller screens */
-    }
-
     .skills-box {
       padding: 15px;
     }
+
+    .large-box ul, .small-box ul {
+      font-size: 0.9rem;
+    }
+
+    .container-fluid {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 </style>
+
 
 
 
