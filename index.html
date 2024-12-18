@@ -1111,13 +1111,13 @@
       }
 
       .experience-text h4 {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
         margin-bottom: 5px;
       }
 
       .experience-text h5 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 15px; /* Add spacing between role and description */
       }
 
@@ -1445,25 +1445,25 @@
   .projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
-    flex-direction: row; /* Display image and content side by side */
+    flex-direction: row; /* Image and text side by side */
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 30px; /* Increased padding for a bigger feel */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a;
     box-sizing: border-box;
-    width: 95%; /* Increase width further */
-    max-width: 1000px; /* Max width increased to 1000px */
-    min-height: 350px; /* Consistent height for all project boxes */
+    width: 97%; /* Slightly bigger container */
+    max-width: 1100px; /* Increased maximum width */
+    min-height: 370px; /* Slightly taller container */
     overflow: hidden; /* Prevent content overflow */
   }
 
   .projects .image-box {
-    flex: 0 0 150px; /* Fix image width to 150px */
-    margin-right: 20px; /* Add spacing between image and text */
+    flex: 0 0 130px; /* Reduced image width to 130px */
+    margin-right: 25px; /* Spacing between image and text */
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center; /* Center image horizontally */
     align-items: center;
   }
 
@@ -1476,14 +1476,14 @@
   .projects .text-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Start content from the top */
+    justify-content: flex-start; /* Align text from the top */
     flex-grow: 1; /* Fill remaining horizontal space */
     text-align: justify; /* Justify the text */
     color: #030e1a; /* Text color */
   }
 
   .projects h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0 0 10px;
     color: #030e1a;
@@ -1529,8 +1529,9 @@
     }
 
     .projects .image-box {
+      flex: 0 0 auto; /* Allow image to resize dynamically */
       margin-right: 0;
-      margin-bottom: 15px; /* Add spacing below the image */
+      margin-bottom: 15px; /* Spacing below image */
     }
   }
 </style>
