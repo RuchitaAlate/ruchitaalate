@@ -1367,25 +1367,25 @@
     padding: 60px 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Align project sections vertically */
-    align-items: center; /* Center the content horizontally */
+    flex-direction: column; /* Stack the projects vertically */
+    align-items: center; /* Center content horizontally */
+    gap: 30px; /* Add spacing between project boxes */
   }
 
   .projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure consistent alignment */
-    align-items: center; /* Center text and image horizontally */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a;
-    margin-bottom: 30px;
     box-sizing: border-box;
-    width: 100%; /* Take full width of the container */
-    max-width: 400px; /* Set a maximum width for uniformity */
-    height: auto; /* Adjust height to fit content */
+    width: 100%; /* Full width inside container */
+    max-width: 400px; /* Ensure uniform width for all boxes */
+    min-height: 350px; /* Consistent height for all project boxes */
   }
 
   .projects .image-box {
@@ -1403,7 +1403,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    text-align: center; /* Align text content centrally */
+    text-align: center; /* Center align the text */
   }
 
   .projects h3 {
@@ -1431,26 +1431,24 @@
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
+    transition: transform 0.2s ease-in-out;
   }
 
   .view-project:hover {
     transform: translateY(-2px);
   }
 
-  /* Ensure consistent sizing */
-  .projects .icon-box {
-    flex: 0 0 400px; /* Fix the size of the boxes */
-  }
-
-  /* Mobile-specific changes */
+  /* Responsive design */
   @media (max-width: 768px) {
+    #projects {
+      padding: 30px 10px;
+    }
     .projects .icon-box {
-      max-width: 100%; /* Full width for smaller screens */
+      max-width: 100%; /* Full width on small screens */
+      min-height: auto; /* Adjust height dynamically */
     }
   }
 </style>
-
-
 
  <!-- Start Skills Section -->
 <section id="skills" class="services">
