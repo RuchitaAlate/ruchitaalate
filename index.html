@@ -1630,25 +1630,21 @@
 <!-- End Skills Section -->
 
 <style>
-  /* Main styles for the skills section */
+    /* Main styles for the skills section */
   .skills-section {
     padding: 60px 0;
     box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
   }
-  .container #skills {
-    padding-left: 0 !important;
-  }
-  .skills-section { 
-    padding-left: 0 !important; /* Remove left padding */
-    margin-left: auto; /* Align content properly */
-    margin-right: auto; /* Keep content centered */
-    max-width: 100%; /* Ensure it doesn't overflow */
-  }
+  
   .container-fluid {
-    max-width: 1400px; /* Restrict overall container width */
+    max-width: 100%; /* Ensure container doesn't exceed the screen width */
     margin: 0 auto; /* Center the section */
+    padding-left: 0;
+    padding-right: 0;
   }
-
+  
   .skills-box {
     background-color: #e0f7fa;
     color: #030e1a;
@@ -1657,18 +1653,19 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    width: 100%; /* Make sure the boxes span the full width of their parent */
   }
-
+  
   .large-box, .small-box {
     text-align: left;
   }
-
+  
   .skills-box h4 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
   }
-
+  
   .skills-box ul {
     font-size: 1rem;
     list-style-type: disc;
@@ -1676,7 +1673,7 @@
     padding: 0;
     text-align: left;
   }
-
+  
   .skills-image img {
     max-width: 100%;
     height: auto;
@@ -1684,17 +1681,17 @@
     margin: 0 auto;
     border-radius: 10px;
   }
-
+  
   /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
     }
-
+  
     .large-box ul, .small-box ul {
       font-size: 0.9rem;
     }
-
+  
     .container-fluid {
       padding-left: 10px;
       padding-right: 10px;
