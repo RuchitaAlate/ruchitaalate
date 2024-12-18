@@ -1117,7 +1117,7 @@
       }
 
       .experience-text h5 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 15px; /* Add spacing between role and description */
       }
 
@@ -1442,12 +1442,12 @@
     gap: 30px; /* Add spacing between project boxes */
   }
 
-.projects .icon-box {
+  .projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Display image and content side by side */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1457,45 +1457,46 @@
     max-width: 1000px; /* Max width increased to 1000px */
     min-height: 350px; /* Consistent height for all project boxes */
     overflow: hidden; /* Prevent content overflow */
-}
+  }
 
-.projects .image-box {
-    margin-bottom: 15px;
-    width: 100%;
+  .projects .image-box {
+    flex: 0 0 150px; /* Fix image width to 150px */
+    margin-right: 20px; /* Add spacing between image and text */
     display: flex;
     justify-content: center; /* Center the image horizontally */
-}
+    align-items: center;
+  }
 
-.projects .project-image {
+  .projects .project-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
+  }
 
-.projects .text-content {
+  .projects .text-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Start content from the top */
-    flex-grow: 1; /* Fill remaining vertical space to ensure uniform height */
+    flex-grow: 1; /* Fill remaining horizontal space */
     text-align: justify; /* Justify the text */
     color: #030e1a; /* Text color */
-}
+  }
 
-.projects h3 {
+  .projects h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 10px;
     color: #030e1a;
-}
+  }
 
-.projects p {
+  .projects p {
     font-size: 16px;
     margin: 0 0 10px;
     color: #030e1a;
     text-align: justify; /* Justify the paragraph text */
-}
+  }
 
-.view-project {
+  .view-project {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 16px;
@@ -1508,26 +1509,32 @@
     border-radius: 5px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-}
+  }
 
-.view-project:hover {
+  .view-project:hover {
     transform: translateY(-2px);
-}
+  }
 
-/* Responsive design */
-@media (max-width: 768px) {
+  /* Responsive design */
+  @media (max-width: 768px) {
     #projects {
-        padding: 30px 10px;
+      padding: 30px 10px;
     }
 
     .projects .icon-box {
-        max-width: 100%; /* Full width on small screens */
-        min-height: auto; /* Adjust height dynamically */
-        width: 100%; /* Ensure project box takes full width */
+      flex-direction: column; /* Stack image and content vertically */
+      max-width: 100%; /* Full width on small screens */
+      min-height: auto; /* Adjust height dynamically */
+      width: 100%; /* Ensure project box takes full width */
     }
-}
 
+    .projects .image-box {
+      margin-right: 0;
+      margin-bottom: 15px; /* Add spacing below the image */
+    }
+  }
 </style>
+
 
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
