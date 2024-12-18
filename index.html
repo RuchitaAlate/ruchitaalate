@@ -156,19 +156,74 @@
       color: LightCyan;
       transition: 0.3s;
     }
-
     .social-links a:hover {
       color: white !important;
     }
-
+    
     section {
-      padding-top: 80px;
-      background-color: #030e1a;
-      color: white;
-      min-height: 100vh;
+    padding-top: 80px; /* Adjust this based on the height of your header */
+    }
+    section {
+    background-color: #030e1a;
+    color: white; /* Ensures readability with the dark background */
+    }
+    
+    section:not(#header) .content {
+      display: none;
     }
 
+    body, header, section {
+      background-color: #030e1a !important; /* Ensures no unwanted background color */
+    }
     
+
+    #about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 50px 20px;
+    }
+
+    .about-section .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .image-wrapper {
+      flex: 1;
+      max-width: 40%;
+      text-align: center;
+    }
+
+    .profile-image {
+      max-width: 100%;
+      border-radius: 0%;
+    }
+
+    .text-content {
+      flex: 2;
+      max-width: 55%;
+      padding-left: 20px;
+      color: white;
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 768px) {
+      #about {
+        flex-direction: column;
+      }
+
+      .text-content {
+        padding-left: 0;
+        max-width: 100%;
+      }
+
+      .image-wrapper {
+        margin-bottom: 20px;
+      }
+    }
 
     /* Hide Navigation Menu on Mobile Screens */
     @media screen and (max-width: 768px) {
