@@ -1439,9 +1439,9 @@
     flex-direction: column !important; /* Stack the projects vertically */
     align-items: center; /* Center content horizontally */
     gap: 30px; /* Add spacing between project boxes */
-  }
-  
-  .projects .icon-box {
+}
+
+.projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
     flex-direction: column;
@@ -1452,47 +1452,47 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a;
     box-sizing: border-box;
-    width: 100%; /* Full width inside container */
-    max-width: 400px; /* Ensure uniform width for all boxes */
+    width: 90%; /* Make project boxes wider */
+    max-width: 800px; /* Max width for larger screens */
     min-height: 350px; /* Consistent height for all project boxes */
     overflow: hidden; /* Prevent content overflow */
-  }
-  
-  .projects .image-box {
+}
+
+.projects .image-box {
     margin-bottom: 15px;
     width: 100%;
     display: flex;
     justify-content: center; /* Center the image horizontally */
-  }
-  
-  .projects .project-image {
+}
+
+.projects .project-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  .projects .text-content {
+}
+
+.projects .text-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Start content from the top */
     flex-grow: 1; /* Fill remaining vertical space to ensure uniform height */
     text-align: center; /* Center align the text */
-  }
-  
-  .projects h3 {
+}
+
+.projects h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 10px;
     color: #030e1a;
-  }
-  
-  .projects p {
+}
+
+.projects p {
     font-size: 16px;
     margin: 0 0 10px;
     color: #030e1a;
-  }
-  
-  .view-project {
+}
+
+.view-project {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 16px;
@@ -1505,22 +1505,24 @@
     border-radius: 5px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  .view-project:hover {
+}
+
+.view-project:hover {
     transform: translateY(-2px);
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
     #projects {
-      padding: 30px 10px;
+        padding: 30px 10px;
     }
+
     .projects .icon-box {
-      max-width: 100%; /* Full width on small screens */
-      min-height: auto; /* Adjust height dynamically */
+        max-width: 100%; /* Full width on small screens */
+        min-height: auto; /* Adjust height dynamically */
+        width: 100%; /* Ensure project box takes full width */
     }
-  }
+}
 </style>
 
 <!-- Start Skills Section -->
