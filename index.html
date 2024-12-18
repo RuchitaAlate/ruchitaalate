@@ -209,27 +209,25 @@
         text-align: justify;
     }
 
-    @media screen and (max-width: 768px) {
-        #about {
-            flex-direction: column;
-        }
-
-        .text-content {
-            padding-left: 0;
-            max-width: 100%;
-        }
-
-        .image-wrapper {
-            margin-bottom: 20px;
-        }
-    }
-
-    /* Hide Navigation Menu on Mobile Screens */
-    @media screen and (max-width: 768px) {
-        nav.nav-menu {
-            display: flex;
-        }
-    }
+      @media screen and (max-width: 768px) {
+      #about {
+          flex-direction: column;
+      }
+  
+      .text-content {
+          padding-left: 0;
+          max-width: 100%;
+      }
+  
+      .image-wrapper {
+          margin-bottom: 20px;
+      }
+  
+      /* Hide Navigation Menu on Mobile Screens */
+      nav.nav-menu {
+          display: none;
+      }
+  }
 </style>
 
 </head>
