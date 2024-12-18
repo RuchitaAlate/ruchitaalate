@@ -1653,7 +1653,8 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
-    width: 100%; /* Make sure the boxes span the full width of their parent */
+    width: 100%; /* Ensure boxes take full width */
+    box-sizing: border-box; /* Prevent boxes from overflowing */
   }
   
   .large-box, .small-box {
@@ -1682,6 +1683,25 @@
     border-radius: 10px;
   }
   
+  /* Ensure Flexbox or Grid works correctly */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-lg-6, .col-lg-4 {
+    box-sizing: border-box;
+    padding: 15px; /* Ensure padding isn't pushing elements out */
+  }
+  
+  .col-lg-6 {
+    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
+  }
+  
+  .col-lg-4 {
+    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
+  }
+  
   /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
@@ -1695,6 +1715,10 @@
     .container-fluid {
       padding-left: 10px;
       padding-right: 10px;
+    }
+  
+    .col-lg-6, .col-lg-4 {
+      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
     }
   }
 </style>
