@@ -1366,22 +1366,31 @@
   #projects {
     padding: 60px 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Align project sections vertically */
+    align-items: center; /* Center the content horizontally */
   }
 
   .projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Ensure consistent alignment */
+    align-items: center; /* Center text and image horizontally */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #030e1a;
     margin-bottom: 30px;
     box-sizing: border-box;
+    width: 100%; /* Take full width of the container */
+    max-width: 400px; /* Set a maximum width for uniformity */
+    height: auto; /* Adjust height to fit content */
   }
 
   .projects .image-box {
     margin-bottom: 15px;
+    width: 100%;
   }
 
   .projects .project-image {
@@ -1394,6 +1403,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center; /* Align text content centrally */
   }
 
   .projects h3 {
@@ -1427,10 +1437,15 @@
     transform: translateY(-2px);
   }
 
+  /* Ensure consistent sizing */
+  .projects .icon-box {
+    flex: 0 0 400px; /* Fix the size of the boxes */
+  }
+
   /* Mobile-specific changes */
   @media (max-width: 768px) {
-    .projects .col-lg-4 {
-      max-width: 100%;
+    .projects .icon-box {
+      max-width: 100%; /* Full width for smaller screens */
     }
   }
 </style>
