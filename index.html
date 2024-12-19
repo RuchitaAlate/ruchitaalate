@@ -1476,25 +1476,26 @@
   }
 
   .projects .image-box {
-    flex: 0 0 200px; /* Increased image width */
-    margin-right: 25px; /* Spacing between image and text */
+    flex: 1; /* Allow the image to fill the remaining space */
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center;
   }
 
   .projects .project-image {
-    width: 100%;
-    height: auto;
-    max-height: 250px; /* Added maximum height for better responsiveness */
-    border-radius: 8px;
+    width: 100%; /* Image will fill the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Prevent image from overflowing vertically */
+    object-fit: cover; /* Ensure the image fills its container */
+    border-radius: 8px; /* Optional: add rounded corners */
   }
 
   .projects .text-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align text from the top */
-    flex-grow: 1; /* Fill remaining horizontal space */
+    flex: 2; /* Text takes twice the space of the image */
+    margin-right: 20px; /* Add spacing between text and image */
     text-align: justify; /* Justify the text */
     color: #030e1a; /* Text color */
   }
@@ -1556,6 +1557,7 @@
     }
   }
 </style>
+
 
 
 
