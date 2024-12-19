@@ -316,16 +316,14 @@
     }
 
     /* Text Box Styling */
-   #about .additional-box {
-        flex: 1;
+    #about .text-box {
         background-color: LightCyan;
         color: #030e1a;
-        padding: 15px;
+        padding: 10px;
         border-radius: 5px;
-        font-size: 16px;
-        text-align: left; /* Align text to the left */
-        line-height: 1.8; /* Adjust line spacing */
-        margin-left: -10px; /* Shift the boxes slightly to the left */
+        text-align: justify;
+        max-width: 90%; /* Decrease the width of the text box */
+        margin: 0 auto; /* Center the text box horizontally */
     }
 
     /* Gap between text and info containers */
@@ -356,10 +354,9 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 20px; /* Add space between the languages and hobbies boxes */
-        margin-left: -10px;
     }
 
-      #about .additional-box {
+    #about .additional-box {
         flex: 1;
         background-color: LightCyan;
         color: #030e1a;
@@ -369,7 +366,7 @@
         text-align: left; /* Align text to the left */
         line-height: 1.8; /* Adjust line spacing */
     }
-    
+
     /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
         #about .content-row,
@@ -387,7 +384,7 @@
         }
     }
   </style>
-
+  
   <div class="container">
     <!-- Content Row: Image and Text -->
     <div class="content-row">
