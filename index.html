@@ -371,20 +371,27 @@
         line-height: 1.8; /* Adjust line spacing */
     }
 
-    /* Responsive Design for Smaller Screens */
+        /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
         #about .content-row,
         #about .info-container,
         #about .additional-container {
             flex-direction: column; /* Stack vertically */
             gap: 20px; /* Add space between stacked items */
+            align-items: center; /* Center align all boxes */
         }
-
+    
         #about .image-wrapper,
         #about .text-content,
         #about .info-box,
         #about .additional-box {
-            max-width: 100%; /* Full width */
+            max-width: 90%; /* Increase width slightly but keep some margin */
+            margin: 0 auto; /* Center align horizontally */
+        }
+    
+        #about .text-content {
+            max-width: 95%; /* Slightly wider for the main text box */
+            text-align: justify; /* Optional: Align text neatly */
         }
     }
   </style>
