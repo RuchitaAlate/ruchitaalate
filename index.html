@@ -225,8 +225,10 @@
   
       /* Hide Navigation Menu on Mobile Screens */
       nav.nav-menu {
-          display: none;
-      }
+        max-height: 200px; /* Set the maximum height for the menu */
+        overflow-y: auto; /* Enable vertical scrolling */
+        display: block; /* Ensure it remains visible */
+    }
   }
 </style>
 
