@@ -364,12 +364,7 @@ section .container {
 }
 
 .section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #e0ffff;
-  margin: 4px 10px;
+  content: none; /* Removed the line */
 }
 
 .section-title p {
@@ -381,6 +376,7 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # About
