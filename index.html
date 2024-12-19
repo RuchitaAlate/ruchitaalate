@@ -1480,12 +1480,13 @@
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center;
+    max-width: 60%; /* Set the image box to take up 60% of the width */
   }
   
   .projects .project-image {
-    width: 500px; /* Set the width to 500px */
-    height: 600px; /* Set the height to 600px */
-    object-fit: cover; /* Ensure the image fills the specified size */
+    width: 100%; /* Make image fill its container */
+    height: 100%; /* Make image fill its container */
+    object-fit: cover; /* Ensure the image fills the available space */
     border-radius: 8px; /* Optional: add rounded corners */
   }
   
