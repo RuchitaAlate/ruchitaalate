@@ -1476,7 +1476,7 @@
   }
 
   .projects .image-box {
-    flex: 0 0 130px; /* Reduced image width to 130px */
+    flex: 0 0 200px; /* Increased image width */
     margin-right: 25px; /* Spacing between image and text */
     display: flex;
     justify-content: center; /* Center image horizontally */
@@ -1486,6 +1486,7 @@
   .projects .project-image {
     width: 100%;
     height: auto;
+    max-height: 250px; /* Added maximum height for better responsiveness */
     border-radius: 8px;
   }
 
@@ -1549,8 +1550,13 @@
       margin-right: 0;
       margin-bottom: 15px; /* Spacing below image */
     }
+
+    .projects .project-image {
+      max-height: 200px; /* Adjusted for small screens */
+    }
   }
 </style>
+
 
 
 <!-- Start Skills Section -->
