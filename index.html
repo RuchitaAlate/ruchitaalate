@@ -1457,7 +1457,7 @@
     align-items: center; /* Center content horizontally */
     gap: 30px; /* Add spacing between project boxes */
   }
-
+  
   .projects .icon-box {
     background-color: lightcyan; /* Updated background color */
     display: flex;
@@ -1474,22 +1474,21 @@
     min-height: 370px; /* Slightly taller container */
     overflow: hidden; /* Prevent content overflow */
   }
-
+  
   .projects .image-box {
     flex: 1; /* Allow the image to fill the remaining space */
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center;
   }
-
+  
   .projects .project-image {
-    width: 100%; /* Image will fill the width of its container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Prevent image from overflowing vertically */
-    object-fit: cover; /* Ensure the image fills its container */
+    width: 500px; /* Set the width to 500px */
+    height: 600px; /* Set the height to 600px */
+    object-fit: cover; /* Ensure the image fills the specified size */
     border-radius: 8px; /* Optional: add rounded corners */
   }
-
+  
   .projects .text-content {
     display: flex;
     flex-direction: column;
@@ -1499,21 +1498,21 @@
     text-align: justify; /* Justify the text */
     color: #030e1a; /* Text color */
   }
-
+  
   .projects h3 {
     font-size: 22px;
     font-weight: bold;
     margin: 0 0 10px;
     color: #030e1a;
   }
-
+  
   .projects p {
     font-size: 16px;
     margin: 0 0 10px;
     color: #030e1a;
     text-align: justify; /* Justify the paragraph text */
   }
-
+  
   .view-project {
     display: inline-block;
     margin-top: 10px;
@@ -1528,34 +1527,35 @@
     text-align: center;
     transition: transform 0.2s ease-in-out;
   }
-
+  
   .view-project:hover {
     transform: translateY(-2px);
   }
-
+  
   /* Responsive design */
   @media (max-width: 768px) {
     #projects {
       padding: 30px 10px;
     }
-
+  
     .projects .icon-box {
       flex-direction: column; /* Stack image and content vertically */
       max-width: 100%; /* Full width on small screens */
       min-height: auto; /* Adjust height dynamically */
       width: 100%; /* Ensure project box takes full width */
     }
-
+  
     .projects .image-box {
       flex: 0 0 auto; /* Allow image to resize dynamically */
       margin-right: 0;
       margin-bottom: 15px; /* Spacing below image */
     }
-
+  
     .projects .project-image {
       max-height: 200px; /* Adjusted for small screens */
     }
   }
+
 </style>
 
 
