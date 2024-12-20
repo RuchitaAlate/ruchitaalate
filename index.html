@@ -377,27 +377,32 @@
   }
 
         /* Responsive Design for Smaller Screens */
-    @media screen and (max-width: 768px) {
-        #about .content-row,
-        #about .info-container,
-        #about .additional-container {
-            flex-direction: column; /* Stack vertically */
-            gap: 20px; /* Add space between stacked items */
-            align-items: center; /* Center align all boxes */
-        }
-    
-        #about .image-wrapper,
-        #about .text-content,
-        #about .info-box,
-        #about .additional-box {
-            max-width: 100%; /* Increase width slightly but keep some margin */
-            margin: 0 auto; /* Center align horizontally */
-        }
-    
-        #about .text-content {
-            max-width: 110%; /* Slightly wider for the main text box */
-            text-align: justify; /* Optional: Align text neatly */
-        }
+  @media screen and (max-width: 768px) {
+      #about .content-row,
+      #about .info-container,
+      #about .additional-container {
+          flex-direction: column; /* Stack vertically */
+          gap: 20px; /* Space between stacked items */
+          align-items: stretch; /* Make items take full width */
+      }
+  
+      #about .image-wrapper,
+      #about .text-content,
+      #about .info-box,
+      #about .additional-box {
+          max-width: 100%; /* Make boxes take full width */
+          margin: 0; /* Remove horizontal centering margin */
+      }
+  
+      #about .text-content,
+      #about .info-box,
+      #about .additional-box {
+          text-align: justify; /* Justify text for better readability */
+      }
+  
+      #about .text-box {
+          margin: 0; /* Remove auto-centering for the text box */
+      }
     }
   </style>
   
