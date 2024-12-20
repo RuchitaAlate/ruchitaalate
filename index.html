@@ -377,7 +377,7 @@
   }
 
        
-      /* Responsive Design for Smaller Screens */
+          /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
         #about {
             padding: 20px; /* Reduce padding for better use of space */
@@ -404,13 +404,17 @@
             margin: 0; /* Remove extra margins */
         }
     
-        #about .text-box {
-            margin: 0; /* Remove centering margin */
+        #about .languages-box,
+        #about .hobbies-box {
+            max-width: 100%; /* Ensure languages and hobbies take full width */
+            margin: 0 auto; /* Center them horizontally */
         }
     
         #about .text-content,
         #about .info-box,
-        #about .additional-box {
+        #about .additional-box,
+        #about .languages-box,
+        #about .hobbies-box {
             text-align: justify; /* Justify text for better readability */
         }
     
@@ -424,6 +428,7 @@
             height: auto; /* Maintain aspect ratio */
         }
     }
+
 
   </style>
   
