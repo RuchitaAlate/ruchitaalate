@@ -376,34 +376,55 @@
       line-height: 1.8; /* Adjust line spacing */
   }
 
-        /* Responsive Design for Smaller Screens */
-  @media screen and (max-width: 768px) {
-      #about .content-row,
-      #about .info-container,
-      #about .additional-container {
-          flex-direction: column; /* Stack vertically */
-          gap: 20px; /* Space between stacked items */
-          align-items: stretch; /* Make items take full width */
-      }
-  
-      #about .image-wrapper,
-      #about .text-content,
-      #about .info-box,
-      #about .additional-box {
-          max-width: 100%; /* Make boxes take full width */
-          margin: 0; /* Remove horizontal centering margin */
-      }
-  
-      #about .text-content,
-      #about .info-box,
-      #about .additional-box {
-          text-align: justify; /* Justify text for better readability */
-      }
-  
-      #about .text-box {
-          margin: 0; /* Remove auto-centering for the text box */
-      }
+       
+      /* Responsive Design for Smaller Screens */
+    @media screen and (max-width: 768px) {
+        #about {
+            padding: 20px; /* Reduce padding for better use of space */
+        }
+    
+        #about .container {
+            max-width: 100%; /* Make the container span the full width */
+            padding: 0; /* Remove side padding */
+        }
+    
+        #about .content-row,
+        #about .info-container,
+        #about .additional-container {
+            flex-direction: column; /* Stack all items vertically */
+            gap: 20px; /* Space between stacked items */
+            align-items: stretch; /* Ensure items span full width */
+        }
+    
+        #about .image-wrapper,
+        #about .text-content,
+        #about .info-box,
+        #about .additional-box {
+            max-width: 100%; /* Ensure all boxes take full width */
+            margin: 0; /* Remove extra margins */
+        }
+    
+        #about .text-box {
+            margin: 0; /* Remove centering margin */
+        }
+    
+        #about .text-content,
+        #about .info-box,
+        #about .additional-box {
+            text-align: justify; /* Justify text for better readability */
+        }
+    
+        #about .image-wrapper {
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+        }
+    
+        #about .profile-image {
+            max-width: 100%; /* Ensure the image doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
+        }
     }
+
   </style>
   
   <div class="container">
