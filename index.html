@@ -849,12 +849,17 @@
 
 
 <style>
-  /* Main styles for education section */
+    /* Section title styling */
+  .section-title {
+    text-align: left; /* Align the title to the left */
+    margin-bottom: 30px; /* Optional: Adds space below the title */
+  }
+  
   #education {
     padding: 60px 0;
     box-sizing: border-box;
   }
-
+  
   .education .icon-box {
     background-color: #e0f7fa; /* Light cyan background */
     display: flex;
@@ -870,7 +875,7 @@
     box-sizing: border-box;
     overflow: hidden;
   }
-
+  
   .education img {
     width: 100%; /* Full width for mobile */
     max-width: 400px; /* Restrict size on desktop */
@@ -879,7 +884,7 @@
     border-radius: 10px 0 0 10px; /* Round only left corners */
     display: block; /* Remove any inline spacing */
   }
-
+  
   .education .text-content {
     flex: 1; /* Expand text content */
     padding: 20px;
@@ -889,27 +894,27 @@
     justify-content: center;
     text-align: left; /* Left align the text */
   }
-
+  
   .education h3 {
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 10px;
     color: #030e1a;
   }
-
+  
   .education p {
     font-size: 16px;
     margin: 0 0 10px;
     color: #030e1a;
   }
-
+  
   .education .gpa {
     font-size: 15px;
     font-weight: bold;
     margin: 0;
     color: #030e1a;
   }
-
+  
   .view-transcript {
     display: inline-block;
     margin-top: 10px;
@@ -923,11 +928,11 @@
     border-radius: 5px;
     text-align: center;
   }
-
+  
   .view-transcript:hover {
     transform: translateY(-2px);
   }
-
+  
   /* Mobile-specific changes */
   @media (max-width: 768px) {
     .education .icon-box {
@@ -937,24 +942,24 @@
       width: 100%;
       box-sizing: border-box;
     }
-
+  
     .education img {
       width: 100%; /* Image takes full width */
       height: auto; /* Maintain aspect ratio */
       border-radius: 10px 10px 0 0; /* Round top corners */
     }
-
+  
     .education .text-content {
       width: 100%; /* Ensure full width for text */
       padding: 15px; /* Add space inside text content */
       text-align: left;
     }
-
+  
     .education h3, .education p, .education .gpa {
       font-size: 16px; /* Adjust font sizes */
       margin-bottom: 10px;
     }
-
+  
     .view-transcript {
       margin-top: 10px;
       width: 100%; /* Make the button full-width on mobile */
