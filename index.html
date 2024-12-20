@@ -352,24 +352,29 @@
     }
 
     /* Additional Two Boxes */
-    #about .additional-container {
-        margin-top: 10px; /* Add space between info containers and additional boxes */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px; /* Add space between the languages and hobbies boxes */
-    }
-
-    #about .additional-box {
-        flex: 1;
-        background-color: LightCyan;
-        color: #030e1a;
-        padding: 15px;
-        border-radius: 5px;
-        font-size: 16px;
-        text-align: left; /* Align text to the left */
-        line-height: 1.8; /* Adjust line spacing */
-    }
+   /* Updated Additional Two Boxes Layout */
+  #about .additional-container {
+      margin-top: 10px; /* Space between info and additional boxes */
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; /* Align boxes to the start */
+      gap: 20px; /* Space between the two boxes */
+      max-width: 90%; /* Match width with the text box */
+      margin-left: auto; /* Center the container */
+      margin-right: auto; /* Center the container */
+  }
+  
+  /* Keep individual additional boxes unchanged */
+  #about .additional-box {
+      flex: 1;
+      background-color: LightCyan;
+      color: #030e1a;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: left; /* Align text to the left */
+      line-height: 1.8; /* Adjust line spacing */
+  }
 
         /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
