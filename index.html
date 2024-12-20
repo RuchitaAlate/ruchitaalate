@@ -377,7 +377,7 @@
   }
 
        
-          /* Responsive Design for Smaller Screens */
+              /* Responsive Design for Smaller Screens */
     @media screen and (max-width: 768px) {
         #about {
             padding: 20px; /* Reduce padding for better use of space */
@@ -427,9 +427,19 @@
             max-width: 100%; /* Ensure the image doesn't overflow */
             height: auto; /* Maintain aspect ratio */
         }
+    
+        #about .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center-align birthdate, address, phone */
+            text-align: center; /* Center text within the container */
+        }
+    
+        #about .info-box {
+            margin: 0 auto; /* Center-align individual boxes */
+        }
     }
-
-
+    
   </style>
   
   <div class="container">
