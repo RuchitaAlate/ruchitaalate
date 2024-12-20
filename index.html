@@ -429,15 +429,18 @@
         }
     
         #about .info-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center-align birthdate, address, phone */
-            text-align: center; /* Center text within the container */
-        }
-    
+          display: flex;
+          flex-direction: column; /* Stack Birthdate, Address, and Phone vertically */
+          align-items: center; /* Center-align content horizontally */
+          justify-content: center; /* Center-align content vertically */
+          text-align: center; /* Center text for uniformity */
+          width: 100%; /* Ensure it spans full width */
+      }
+      
         #about .info-box {
-            margin: 0 auto; /* Center-align individual boxes */
-        }
+          max-width: 100%; /* Full width for each info box */
+          margin: 10px 0; /* Add vertical spacing */
+      }
     }
     
   </style>
