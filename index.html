@@ -1771,101 +1771,111 @@
 <!-- End Skills Section -->
 
 <style>
-    /* Main styles for the skills section */
-  .skills-section {
-    padding: 60px 0;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  
-  .container-fluid {
-    max-width: 75%; /* Adjust the width to 90% of the page */
-    margin: 0 auto; /* Center the section with equal margins on both sides */
-    padding-left: 15px; /* Add a little padding for spacing */
-    padding-right: 15px;
-  }
-  
-  .skills-box {
-    background-color: #e0f7fa;
-    color: #030e1a;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px; /* This margin controls the gap between boxes */
-    width: 100%; /* Ensure boxes take full width */
-    box-sizing: border-box; /* Prevent boxes from overflowing */
-  }
-  
-  .large-box, .small-box {
-    text-align: left;
-  }
-  
-  .skills-box h4 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .skills-box ul {
-    font-size: 1rem;
-    list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
-    text-align: left;
-  }
-  
-  .skills-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-  
-  /* Ensure Flexbox or Grid works correctly */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -5px; /* Remove the gap between rows */
-  }
-  
-  .col-lg-6, .col-lg-4 {
-    box-sizing: border-box;
-    padding: 10px; /* Ensure padding inside columns is consistent */
-  }
-  
-  .col-lg-6 {
-    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
-  }
-  
-  .col-lg-4 {
-    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
-  }
-  
-  /* Reduce spacing on mobile devices */
-  @media (max-width: 768px) {
-    .skills-box {
-      padding: 15px;
-      margin-bottom: 0; /* Ensure margin is also zero on mobile */
+    //* Main styles for the skills section */
+    .skills-section {
+      padding: 60px 0;
+      box-sizing: border-box;
+      width: 100%;
+      overflow-x: hidden; /* Prevent horizontal overflow */
     }
-  
-    .large-box ul, .small-box ul {
-      font-size: 0.9rem;
-    }
-  
+    
     .container-fluid {
-      padding-left: 10px;
-      padding-right: 10px;
+      max-width: 75%; /* Adjust the width to 90% of the page */
+      margin: 0 auto; /* Center the section with equal margins on both sides */
+      padding-left: 15px; /* Add a little padding for spacing */
+      padding-right: 15px;
     }
-  
+    
+    .skills-box {
+      background-color: #e0f7fa;
+      color: #030e1a;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 5px; /* Reduced margin to reduce gap between rows */
+      width: 100%; /* Ensure boxes take full width */
+      box-sizing: border-box; /* Prevent boxes from overflowing */
+    }
+    
+    .large-box, .small-box {
+      text-align: left;
+    }
+    
+    .skills-box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .skills-box ul {
+      font-size: 1rem;
+      list-style-type: disc;
+      margin: 10px 0 0 20px;
+      padding: 0;
+      text-align: left;
+    }
+    
+    .skills-image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    
+    /* Ensure Flexbox or Grid works correctly */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0; /* No gap between rows */
+    }
+    
     .col-lg-6, .col-lg-4 {
-      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
-      padding-bottom: 10px; /* Adjust bottom padding for mobile */
+      box-sizing: border-box;
+      padding: 10px; /* Ensure padding inside columns is consistent */
     }
-  }
-
+    
+    .col-lg-6 {
+      flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
+    }
+    
+    .col-lg-4 {
+      flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
+    }
+    
+    /* Adjust gap between rows */
+    .col-lg-6:nth-child(4), .col-lg-4:nth-child(4), 
+    .col-lg-6:nth-child(5), .col-lg-4:nth-child(5) {
+      margin-top: 0 !important; /* Remove any unwanted top margin on 4th and 5th columns */
+    }
+    
+    .col-lg-6:nth-child(6), .col-lg-4:nth-child(6) {
+      margin-top: 0 !important; /* Remove any unwanted top margin on 6th column */
+    }
+    
+    /* Reduce spacing on mobile devices */
+    @media (max-width: 768px) {
+      .skills-box {
+        padding: 15px;
+        margin-bottom: 0; /* Ensure margin is also zero on mobile */
+      }
+    
+      .large-box ul, .small-box ul {
+        font-size: 0.9rem;
+      }
+    
+      .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      .col-lg-6, .col-lg-4 {
+        flex: 1 1 100%; /* Make columns take up full width on smaller screens */
+        padding-bottom: 10px; /* Adjust bottom padding for mobile */
+      }
+    }
+    
 
 </style>
 
