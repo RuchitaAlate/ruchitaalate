@@ -1771,7 +1771,6 @@
 <!-- End Skills Section -->
 
 <style>
-    
   /* Main styles for the skills section */
   .skills-section {
     padding: 60px 0;
@@ -1794,7 +1793,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px; /* Reduce gap between individual boxes */
+    margin-bottom: 5px; /* Reduced margin to reduce gap between rows */
     width: 100%; /* Ensure boxes take full width */
     box-sizing: border-box; /* Prevent boxes from overflowing */
   }
@@ -1825,33 +1824,31 @@
     border-radius: 10px;
   }
   
-  /* Flexbox row spacing */
+  /* Ensure Flexbox or Grid works correctly */
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Use gap to control spacing between rows and columns */
-    margin: 0; /* Remove extra margins from the row */
-    padding: 0; /* Ensure no extra padding is added */
+    margin-bottom: 10px; /* Reduced gap between rows */
   }
   
   .col-lg-6, .col-lg-4 {
     box-sizing: border-box;
-    padding: 5px; /* Reduce padding inside columns */
+    padding: 10px; /* Ensure padding inside columns is consistent */
   }
   
   .col-lg-6 {
-    flex: 1 1 48%; /* Each column takes up 48% of the width */
+    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
   }
   
   .col-lg-4 {
-    flex: 1 1 30%; /* Each column in the second row takes up 30% of the width */
+    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
   }
   
   /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
-      margin-bottom: 5px; /* Further reduce gap between boxes */
+      margin-bottom: 0; /* Ensure margin is also zero on mobile */
     }
   
     .large-box ul, .small-box ul {
@@ -1864,18 +1861,15 @@
     }
   
     .col-lg-6, .col-lg-4 {
-      flex: 1 1 100%; /* Full width for smaller screens */
-      padding-bottom: 5px;
+      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
+      padding-bottom: 10px; /* Adjust bottom padding for mobile */
     }
   
     .row {
-      gap: 5px; /* Further reduce gap on smaller screens */
-      margin-bottom: 0; /* Ensure no added margin at row level */
+      margin-bottom: 5px; /* Further reduce row spacing on smaller screens */
     }
   }
 </style>
-
-
 
 
   <!-- Start Contact Section -->
