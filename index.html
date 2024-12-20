@@ -1771,7 +1771,7 @@
 <!-- End Skills Section -->
 
 <style>
-    /* Main styles for the skills section */
+  /* Main styles for the skills section */
   .skills-section {
     padding: 60px 0;
     box-sizing: border-box;
@@ -1784,6 +1784,7 @@
     margin: 0 auto; /* Center the section with equal margins on both sides */
     padding-left: 15px; /* Add a little padding for spacing */
     padding-right: 15px;
+    padding-bottom: 0; /* Remove bottom padding */
   }
   
   .skills-box {
@@ -1793,7 +1794,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
+    margin-bottom: 0; /* Remove bottom margin to reduce gap */
     width: 100%; /* Ensure boxes take full width */
     box-sizing: border-box; /* Prevent boxes from overflowing */
   }
@@ -1828,11 +1829,12 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0; /* Remove any margin between rows */
   }
   
   .col-lg-6, .col-lg-4 {
     box-sizing: border-box;
-    padding: 15px; /* Ensure padding isn't pushing elements out */
+    padding: 10px; /* Reduce padding inside columns */
   }
   
   .col-lg-6 {
@@ -1847,6 +1849,7 @@
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
+      margin-bottom: 0; /* Ensure margin is also zero on mobile */
     }
   
     .large-box ul, .small-box ul {
@@ -1860,8 +1863,10 @@
   
     .col-lg-6, .col-lg-4 {
       flex: 1 1 100%; /* Make columns take up full width on smaller screens */
+      padding-bottom: 10px; /* Adjust bottom padding for mobile */
     }
   }
+
 </style>
 
 
