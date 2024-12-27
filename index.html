@@ -1642,13 +1642,14 @@
     transform: translateY(-2px);
   }
   
-  /* Responsive design */
+    /* Responsive design */
   @media (max-width: 768px) {
     #projects {
       padding: 30px 10px;
     }
   
     .projects .icon-box {
+      display: flex;
       flex-direction: column; /* Stack image and content vertically */
       max-width: 100%; /* Full width on small screens */
       min-height: auto; /* Adjust height dynamically */
@@ -1656,18 +1657,17 @@
     }
   
     .projects .image-box {
-      flex: 0 0 100%; /* Ensure image box takes full width */
+      width: 100%; /* Make sure the image container takes the full width of its parent */
       margin-right: 0;
-      margin-bottom: 15px; /* Spacing below image */
-      justify-content: center !important;
-      width: 100%; /* Ensure the container takes full width */
-      display: flex; /* To control alignment */
+      margin-bottom: 15px; /* Space below image */
+      display: block; /* Ensures the container is a block-level element */
     }
   
     .projects .project-image {
+      width: 100% !important; /* Force the image to take the full width of its container */
+      height: auto !important; /* Maintain aspect ratio */
       max-height: 150px; /* Adjusted for small screens */
-      width: 100%; /* Make the image fill the width of the container */
-      object-fit: cover; /* Ensures image scales without distortion */
+      object-fit: cover; /* Ensures image covers its container without distortion */
     }
   }
 </style>
