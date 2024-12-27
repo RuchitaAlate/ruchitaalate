@@ -692,7 +692,7 @@
 
   .section-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .section-title h2 {
@@ -713,7 +713,7 @@
     color: #030e1a;
     width: 100%; /* Ensure full width */
     max-width: 1000px; /* Cap width */
-    margin: 10px auto; /* Align to center */
+    margin: 20px auto; /* Align to center */
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -1661,10 +1661,9 @@
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
   <div class="container-fluid py-5">
-    <div class="section-title">
-      <h2>Technical Skills</h2>
+    <div class="section-title" >
+      <h2>Technical Skills </h2>
     </div>
-
     <!-- Languages Box on Top -->
     <div class="row">
       <div class="col-lg-12">
@@ -1779,9 +1778,9 @@
   }
   
   .container-fluid {
-    max-width: 75%;
-    margin: 0 auto;
-    padding-left: 15px;
+    max-width: 75%; /* Adjust the width to 90% of the page */
+    margin: 0 auto; /* Center the section with equal margins on both sides */
+    padding-left: 15px; /* Add a little padding for spacing */
     padding-right: 15px;
   }
   
@@ -1792,7 +1791,9 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 5px; /* Reduced margin to reduce gap between rows */
+    width: 100%; /* Ensure boxes take full width */
+    box-sizing: border-box; /* Prevent boxes from overflowing */
   }
   
   .large-box, .small-box {
@@ -1820,31 +1821,32 @@
     margin: 0 auto;
     border-radius: 10px;
   }
-
-  /* Align rows with consistent gaps and widths */
+  
+  /* Ensure Flexbox or Grid works correctly */
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Equal spacing between all rows and columns */
-    margin: 0; /* Ensure no additional margins from default styles */
+    margin-bottom: 10px; /* Reduced gap between rows */
   }
   
-  .col-lg-12 {
-    flex: 1 1 100%;
+  .col-lg-6, .col-lg-4 {
+    box-sizing: border-box;
+    padding: 10px; /* Ensure padding inside columns is consistent */
   }
   
   .col-lg-6 {
-    flex: 1 1 calc(50% - 10px); /* Adjust widths to align with gaps */
+    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
   }
   
   .col-lg-4 {
-    flex: 1 1 calc(33.33% - 13.33px); /* Adjust widths for three columns */
+    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
   }
   
-  /* Mobile responsiveness */
+  /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
+      margin-bottom: 0; /* Ensure margin is also zero on mobile */
     }
   
     .large-box ul, .small-box ul {
@@ -1857,11 +1859,15 @@
     }
   
     .col-lg-6, .col-lg-4 {
-      flex: 1 1 100%; /* Make columns take full width on smaller screens */
+      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
+      padding-bottom: 10px; /* Adjust bottom padding for mobile */
+    }
+  
+    .row {
+      margin-bottom: 5px; /* Further reduce row spacing on smaller screens */
     }
   }
-</style>
-
+</style> 
 
 
   <!-- Start Contact Section -->
