@@ -1658,8 +1658,6 @@
 </style>
 
 
-
-
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
   <div class="container-fluid py-5">
@@ -1667,7 +1665,7 @@
       <h2>Technical Skills</h2>
     </div>
 
-    <!-- Languages Box on Top -->
+    <!-- Languages Box (Row 1) -->
     <div class="row">
       <div class="col-lg-12">
         <div class="skills-box">
@@ -1677,10 +1675,10 @@
       </div>
     </div>
 
-    <!-- Two Boxes in the First Row -->
+    <!-- Two Boxes in Row 2 -->
     <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+      <div class="col-lg-6">
+        <div class="skills-box">
           <h4>Data Engineering & Data Management</h4>
           <ul>
             <li>Amazon Web Services (AWS): S3, EC2, RDS, DynamoDB, Athena</li>
@@ -1697,8 +1695,8 @@
         </div>
       </div>
 
-      <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+      <div class="col-lg-6">
+        <div class="skills-box">
           <h4>Statistical Analysis, Machine Learning, and Predictive Analytics</h4>
           <ul>
             <li>Hypothesis testing</li>
@@ -1716,10 +1714,10 @@
       </div>
     </div>
 
-    <!-- Remaining Boxes in the Second Row -->
+    <!-- Three Boxes in Row 3 -->
     <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+      <div class="col-lg-4">
+        <div class="skills-box">
           <h4>Business Intelligence and Data Visualization</h4>
           <ul>
             <li>Tableau</li>
@@ -1731,8 +1729,8 @@
         </div>
       </div>
 
-      <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+      <div class="col-lg-4">
+        <div class="skills-box">
           <h4>Open-source libraries</h4>
           <ul>
             <li>Pandas</li>
@@ -1745,8 +1743,8 @@
         </div>
       </div>
 
-      <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+      <div class="col-lg-4">
+        <div class="skills-box">
           <h4>Development Tools</h4>
           <ul>
             <li>VS Code</li>
@@ -1755,15 +1753,6 @@
             <li>Anaconda</li>
             <li>RStudio</li>
           </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Image Below the Boxes -->
-    <div class="row text-center mt-4">
-      <div class="col-lg-12">
-        <div class="skills-image">
-          <img src="assets/img/skills.jpg" alt="Skills Image">
         </div>
       </div>
     </div>
@@ -1790,15 +1779,13 @@
   .skills-box {
     background-color: #e0f7fa;
     color: #030e1a;
-    text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .large-box, .small-box {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures boxes stretch evenly */
   }
   
   .skills-box h4 {
@@ -1814,43 +1801,30 @@
     padding: 0;
     text-align: left;
   }
-  
-  .skills-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
 
-  /* Align rows with consistent gaps and widths */
+  /* Row and column styling */
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Equal spacing between all rows and columns */
-    margin: 0; /* Ensure no additional margins from default styles */
+    gap: 20px; /* Consistent gap between rows and columns */
   }
-  
+
   .col-lg-12 {
     flex: 1 1 100%;
   }
-  
+
   .col-lg-6 {
-    flex: 1 1 calc(50% - 10px); /* Adjust widths to align with gaps */
+    flex: 1 1 calc(50% - 10px); /* Two boxes side by side */
   }
-  
+
   .col-lg-4 {
-    flex: 1 1 calc(33.33% - 13.33px); /* Adjust widths for three columns */
+    flex: 1 1 calc(33.33% - 13.33px); /* Three boxes side by side */
   }
-  
-  /* Mobile responsiveness */
+
+  /* Responsive adjustments */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
-    }
-  
-    .large-box ul, .small-box ul {
-      font-size: 0.9rem;
     }
   
     .container-fluid {
