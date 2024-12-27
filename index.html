@@ -1643,31 +1643,42 @@
   }
   
   /* Responsive design */
-  @media (max-width: 768px) {
-    #projects {
-      padding: 30px 10px;
-    }
-  
-    .projects .icon-box {
-      flex-direction: column; /* Stack image and content vertically */
-      max-width: 100%; /* Full width on small screens */
-      min-height: auto; /* Adjust height dynamically */
-      width: 100%; /* Ensure project box takes full width */
-    }
-  
-    .projects .image-box {
-      flex: 0 0 auto; /* Allow image to resize dynamically */
-      margin-right: 0;
-      margin-bottom: 15px; /* Spacing below image */
-    }
-  
-    .projects .project-image {
-      max-height: 150px; /* Adjusted for small screens */
-    }
+@media (max-width: 768px) {
+  #projects {
+    padding: 30px 10px;
   }
 
-</style>
+  .projects .icon-box {
+    flex-direction: column; /* Stack image and content vertically */
+    max-width: 100%; /* Full width on small screens */
+    min-height: auto; /* Adjust height dynamically */
+    width: 100%; /* Ensure project box takes full width */
+  }
 
+  .projects .image-box {
+    flex: 0 0 auto; /* Allow image to resize dynamically */
+    margin-right: 0;
+    margin-bottom: 15px; /* Add some space between image and text */
+    width: 100%; /* Ensure image box takes full width */
+  }
+
+  .projects .project-image {
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Let the height adjust automatically */
+    object-fit: cover; /* Ensure the image fills the available space */
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+
+  .projects .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text from the top */
+    flex: 1; /* Allow text to take up the available space */
+    margin-right: 0; /* Remove any right margin */
+    text-align: justify; /* Justify the text */
+    color: #030e1a; /* Text color */
+  }
+}
 
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
