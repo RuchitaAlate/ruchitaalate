@@ -104,7 +104,7 @@
     /* Navigation Bar Styles */
     nav.nav-menu {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         background-color: #030e1a;
@@ -114,17 +114,15 @@
         left: 0;
         z-index: 1000;
         box-sizing: border-box;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        white-space: nowrap; /* Prevent wrapping */
     }
 
     nav.nav-menu ul {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        width: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
-        overflow-x: auto; /* Enable horizontal scrolling */
     }
 
     nav.nav-menu ul li {
@@ -147,14 +145,25 @@
         cursor: default;
     }
 
-    /* Hide scrollbar but allow horizontal scrolling */
-    nav.nav-menu::-webkit-scrollbar {
-        display: none;
-    }
+    /* Make the navigation scrollable horizontally on smaller screens */
+    @media screen and (max-width: 768px) {
+        nav.nav-menu ul {
+            overflow-x: auto;
+            white-space: nowrap; /* Prevent line breaks */
+        }
 
-    nav.nav-menu {
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-        scrollbar-width: none; /* Firefox */
+        nav.nav-menu ul::-webkit-scrollbar {
+            display: none; /* Hide scrollbar in WebKit browsers */
+        }
+
+        nav.nav-menu ul {
+            -ms-overflow-style: none; /* Hide scrollbar in IE */
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+        }
+
+        nav.nav-menu ul li {
+            flex-shrink: 0; /* Prevent items from shrinking */
+        }
     }
 
     .social-links {
@@ -234,13 +243,9 @@
         .image-wrapper {
             margin-bottom: 20px;
         }
-
-        nav.nav-menu {
-            max-height: 60px; /* Limit the height */
-            overflow-x: auto; /* Enable horizontal scrolling */
-        }
     }
 </style>
+
 </head>
 <body>
 
