@@ -1661,13 +1661,13 @@
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
   <div class="container-fluid py-5">
-    <div class="section-title">
+    <div class="section-title text-center">
       <h2>Technical Skills</h2>
     </div>
 
-    <!-- Languages Box (Row 1) -->
-    <div class="row skills-row">
-      <div class="col-lg-12 skills-col">
+    <!-- Row 1: Languages -->
+    <div class="row justify-content-center skills-row">
+      <div class="col-lg-8 col-md-10 skills-col">
         <div class="skills-box">
           <h4>Languages</h4>
           <p>Python, R, SQL</p>
@@ -1675,9 +1675,9 @@
       </div>
     </div>
 
-    <!-- Two Boxes in Row 2 -->
-    <div class="row skills-row">
-      <div class="col-lg-6 skills-col">
+    <!-- Row 2: Two Boxes -->
+    <div class="row justify-content-center skills-row">
+      <div class="col-lg-5 col-md-6 skills-col">
         <div class="skills-box">
           <h4>Data Engineering & Data Management</h4>
           <ul>
@@ -1695,7 +1695,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6 skills-col">
+      <div class="col-lg-5 col-md-6 skills-col">
         <div class="skills-box">
           <h4>Statistical Analysis, Machine Learning, and Predictive Analytics</h4>
           <ul>
@@ -1714,9 +1714,9 @@
       </div>
     </div>
 
-    <!-- Three Boxes in Row 3 -->
-    <div class="row skills-row">
-      <div class="col-lg-4 skills-col">
+    <!-- Row 3: Three Boxes -->
+    <div class="row justify-content-center skills-row">
+      <div class="col-lg-3 col-md-6 skills-col">
         <div class="skills-box">
           <h4>Business Intelligence and Data Visualization</h4>
           <ul>
@@ -1729,9 +1729,9 @@
         </div>
       </div>
 
-      <div class="col-lg-4 skills-col">
+      <div class="col-lg-3 col-md-6 skills-col">
         <div class="skills-box">
-          <h4>Open-source libraries</h4>
+          <h4>Open-source Libraries</h4>
           <ul>
             <li>Pandas</li>
             <li>NumPy</li>
@@ -1743,7 +1743,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 skills-col">
+      <div class="col-lg-3 col-md-6 skills-col">
         <div class="skills-box">
           <h4>Development Tools</h4>
           <ul>
@@ -1756,94 +1756,73 @@
         </div>
       </div>
     </div>
-
-    <!-- Image Section -->
-    <div class="row image-section">
-      <div class="col-lg-12">
-        <div class="image-box">
-          <img src="path-to-image.jpg" alt="Skills Image" class="img-fluid">
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 <!-- End Skills Section -->
 
 <style>
-  /* Scoped styles for skills section */
+  /* Scoped styles for the skills section */
   #skills {
     padding: 60px 0;
+    background-color: #f5f5f5;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #030e1a;
   }
 
   .skills-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Equal gap between rows and columns */
+    margin-bottom: 30px;
   }
 
   .skills-col {
-    flex: 1 1 calc(33.33% - 20px); /* For 3 columns */
-    max-width: calc(33.33% - 20px); /* Consistent sizing */
-  }
-
-  .skills-row:first-of-type .skills-col {
-    flex: 1 1 100%; /* Languages box spans full width */
-    max-width: 100%;
-  }
-
-  .skills-row:nth-of-type(2) .skills-col {
-    flex: 1 1 calc(50% - 20px); /* Two boxes side by side */
-    max-width: calc(50% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
   }
 
   .skills-box {
     background-color: #e0f7fa;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%; /* Ensure equal heights */
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .skills-box h4 {
-    margin-bottom: 10px;
     font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #030e1a;
+  }
+
+  .skills-box p,
+  .skills-box ul li {
+    color: #030e1a;
+    font-size: 1rem;
+    margin-bottom: 5px;
   }
 
   .skills-box ul {
-    margin-top: 0;
-    padding-left: 20px;
-    list-style: disc;
+    padding-left: 15px;
+    list-style-type: disc;
   }
 
-  .image-section {
-    margin-top: 40px;
+  /* Ensure consistent gap between rows */
+  .skills-row:not(:last-child) {
+    margin-bottom: 40px;
   }
 
-  .image-box {
-    text-align: center;
-  }
-
-  .image-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  /* Responsive design */
+  /* Responsive Design */
   @media (max-width: 768px) {
     .skills-col {
-      flex: 1 1 100%;
-      max-width: 100%; /* Stack all boxes on smaller screens */
-    }
-
-    .skills-row {
-      gap: 15px; /* Reduce gaps for smaller screens */
+      margin-bottom: 20px;
     }
   }
 </style>
-
 
 
   <!-- Start Contact Section -->
