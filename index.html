@@ -1656,17 +1656,18 @@
     }
   
     .projects .image-box {
-      flex: 0 0 auto; /* Allow image to resize dynamically */
+      flex: 0 0 100%; /* Ensure image box takes full width */
       margin-right: 0;
       margin-bottom: 15px; /* Spacing below image */
       justify-content: center !important;
-      width: 100% !important;
+      width: 100%; /* Ensure the container takes full width */
+      display: flex; /* To control alignment */
     }
   
     .projects .project-image {
       max-height: 150px; /* Adjusted for small screens */
-      width: 100% !important; /* Image takes full width of its container */
-      object-fit: cover !important;
+      width: 100%; /* Make the image fill the width of the container */
+      object-fit: cover; /* Ensures image scales without distortion */
     }
   }
 </style>
