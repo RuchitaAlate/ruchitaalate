@@ -1856,8 +1856,32 @@
   .col-lg-4 {
     flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
   }
+
+    /* Ensure Flexbox or Grid works correctly for the third row */
+  .row-adjust {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+  }
   
-  /* Reduce spacing on mobile devices */
+  /* Make each .col-lg-4 box grow to the same height in row 3 */
+  .col-lg-4 {
+    box-sizing: border-box;
+    padding: 10px; /* Ensure padding inside columns is consistent */
+    flex-grow: 1; /* Allow boxes to grow to the same height */
+    display: flex; /* Allow inner elements to align flexibly */
+    flex-direction: column; /* Ensure the content stacks vertically */
+  }
+  
+  /* Ensure Flexbox alignment inside the boxes */
+  .skills-box.small-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread out content to fill the space */
+    height: 100%; /* Ensure it takes the full height of the column */
+  }
+
+    /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
