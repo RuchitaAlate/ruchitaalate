@@ -349,11 +349,7 @@ section .container {
   section.section-show {
     top: 80px;
   }
-
-  .section-title h2 {
-    font-size: 16px; /* Slightly adjust font size for smaller screens */
-    line-height: 1.4; /* Adjust line height for mobile screens */
-  }
+}
 
 .section-title h2 {
   font-size: 18px;
@@ -365,8 +361,6 @@ section .container {
   text-transform: uppercase;
   color: #e0ffff;
   font-family: "Poppins", sans-serif;
-  word-wrap: break-word; /* Allow the title to wrap onto multiple lines */
-  word-break: break-word; /* Break long words if necessary */
 }
 
 .section-title h2::after {
@@ -382,8 +376,6 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
-
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
