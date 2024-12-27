@@ -222,7 +222,26 @@
       .image-wrapper {
           margin-bottom: 20px;
       }
+      .navbar-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
   
+      .nav-link {
+        white-space: nowrap;
+      }
+  
+      /* Hide scrollbar but allow horizontal scrolling */
+      .navbar-nav::-webkit-scrollbar {
+        display: none;
+      }
+
+      .navbar-nav {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+    
       /* Hide Navigation Menu on Mobile Screens */
       nav.nav-menu {
         max-height: 200px; /* Set the maximum height for the menu */
