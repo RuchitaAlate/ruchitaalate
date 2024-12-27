@@ -1658,8 +1658,11 @@
   .projects .image-box {
     flex: 0 0 auto; /* Allow image to resize dynamically */
     margin-right: 0;
-    margin-bottom: 15px; /* Add some space between image and text */
+    margin-bottom: 15px; /* Add space between image and text */
     width: 100%; /* Ensure image box takes full width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Align the image vertically */
   }
 
   .projects .project-image {
@@ -1667,6 +1670,7 @@
     height: auto; /* Let the height adjust automatically */
     object-fit: cover; /* Ensure the image fills the available space */
     border-radius: 8px; /* Optional: add rounded corners */
+    max-width: 100%; /* Ensure image takes full width of its container */
   }
 
   .projects .text-content {
@@ -1677,8 +1681,10 @@
     margin-right: 0; /* Remove any right margin */
     text-align: justify; /* Justify the text */
     color: #030e1a; /* Text color */
+    width: 100%; /* Ensure text takes the full width below the image */
   }
 }
+
 </style>
 
 <!-- Start Skills Section -->
