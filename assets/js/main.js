@@ -78,33 +78,42 @@
   }
 
   // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-    $('body').append('<div class="mobile-nav-overly"></div>');
+if ($('.nav-menu').length) {
+  // Clone the navigation menu for mobile (optional; can remove if not needed)
+  var $mobile_nav = $('.nav-menu').clone().prop({
+    class: 'mobile-nav d-lg-none'
+  });
+  $('body').append($mobile_nav);
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      $('.mobile-nav-overly').toggle();
-    });
+  // Remove the following lines to prevent the toggle button and overlay from being added
+  /*
+  $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+  $('body').append('<div class="mobile-nav-overly"></div>');
+  */
 
-    $(document).click(function(e) {
-      var container = $(".mobile-nav, .mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
+  // Remove event listeners related to the toggle button
+  /*
+  $(document).on('click', '.mobile-nav-toggle', function(e) {
+    $('body').toggleClass('mobile-nav-active');
+    $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+    $('.mobile-nav-overly').toggle();
+  });
+
+  $(document).click(function(e) {
+    var container = $(".mobile-nav, .mobile-nav-toggle");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      if ($('body').hasClass('mobile-nav-active')) {
+        $('body').removeClass('mobile-nav-active');
+        $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+        $('.mobile-nav-overly').fadeOut();
       }
-    });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
-  }
+    }
+  });
+  */
+} else if ($(".mobile-nav, .mobile-nav-toggle").length) {
+  // Hide the mobile navigation elements if they exist
+  $(".mobile-nav, .mobile-nav-toggle").hide();
+}
 
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
