@@ -104,7 +104,7 @@
     /* Navigation Bar Styles */
     nav.nav-menu {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
         background-color: #030e1a;
@@ -114,15 +114,17 @@
         left: 0;
         z-index: 1000;
         box-sizing: border-box;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent wrapping */
     }
 
     nav.nav-menu ul {
         display: flex;
-        justify-content: space-evenly;
-        width: 100%;
+        justify-content: flex-start;
         padding: 0;
         margin: 0;
         list-style: none;
+        overflow-x: auto; /* Enable horizontal scrolling */
     }
 
     nav.nav-menu ul li {
@@ -143,6 +145,16 @@
     nav.nav-menu ul li.active a {
         color: LightCyan;
         cursor: default;
+    }
+
+    /* Hide scrollbar but allow horizontal scrolling */
+    nav.nav-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav.nav-menu {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
     }
 
     .social-links {
@@ -209,50 +221,26 @@
         text-align: justify;
     }
 
-      @media screen and (max-width: 768px) {
-      #about {
-          flex-direction: column;
-      }
-  
-      .text-content {
-          padding-left: 0;
-          max-width: 100%;
-      }
-  
-      .image-wrapper {
-          margin-bottom: 20px;
-      }
-      .navbar-nav {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-      }
-  
-      .nav-link {
-        white-space: nowrap;
-      }
-  
-      /* Hide scrollbar but allow horizontal scrolling */
-      .navbar-nav::-webkit-scrollbar {
-        display: none;
-      }
+    @media screen and (max-width: 768px) {
+        #about {
+            flex-direction: column;
+        }
 
-      .navbar-nav {
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-        scrollbar-width: none; /* Firefox */
-      }
-    
-      /* Hide Navigation Menu on Mobile Screens */
-      nav.nav-menu {
-        max-height: 200px; /* Set the maximum height for the menu */
-        overflow-y: auto; /* Enable vertical scrolling */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        display: block; /* Ensure it remains visible */
-        white-space: nowrap; /* Prevent line breaks for menu items */
-      }
-  }
+        .text-content {
+            padding-left: 0;
+            max-width: 100%;
+        }
+
+        .image-wrapper {
+            margin-bottom: 20px;
+        }
+
+        nav.nav-menu {
+            max-height: 60px; /* Limit the height */
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+    }
 </style>
-
 </head>
 <body>
 
