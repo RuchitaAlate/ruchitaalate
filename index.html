@@ -1792,7 +1792,10 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures boxes stretch evenly */
   }
   
   .large-box, .small-box {
@@ -1826,7 +1829,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Equal spacing between all rows and columns */
-    margin: 0; /* Ensure no additional margins from default styles */
   }
   
   .col-lg-12 {
