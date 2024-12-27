@@ -1663,8 +1663,8 @@
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
   <div class="container-fluid py-5">
-    <div class="section-title" >
-      <h2>Technical Skills </h2>
+    <div class="section-title">
+      <h2>Technical Skills</h2>
     </div>
     <!-- Languages Box on Top -->
     <div class="row">
@@ -1679,7 +1679,7 @@
     <!-- Two Boxes in the First Row -->
     <div class="row">
       <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+        <div class="skills-box">
           <h4>Data Engineering & Data Management</h4>
           <ul>
             <li>Amazon Web Services (AWS): S3, EC2, RDS, DynamoDB, Athena</li>
@@ -1697,7 +1697,7 @@
       </div>
 
       <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+        <div class="skills-box">
           <h4>Statistical Analysis, Machine Learning, and Predictive Analytics</h4>
           <ul>
             <li>Hypothesis testing</li>
@@ -1718,7 +1718,7 @@
     <!-- Remaining Boxes in the Second Row -->
     <div class="row">
       <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+        <div class="skills-box">
           <h4>Business Intelligence and Data Visualization</h4>
           <ul>
             <li>Tableau</li>
@@ -1731,7 +1731,7 @@
       </div>
 
       <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+        <div class="skills-box">
           <h4>Open-source libraries</h4>
           <ul>
             <li>Pandas</li>
@@ -1745,7 +1745,7 @@
       </div>
 
       <div class="col-lg-4 mb-4">
-        <div class="skills-box small-box">
+        <div class="skills-box">
           <h4>Development Tools</h4>
           <ul>
             <li>VS Code</li>
@@ -1774,99 +1774,71 @@
   /* Main styles for the skills section */
   .skills-section {
     padding: 60px 0;
-    box-sizing: border-box;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
   }
-  
+
   .container-fluid {
-    max-width: 75%; /* Adjust the width to 90% of the page */
-    margin: 0 auto; /* Center the section with equal margins on both sides */
-    padding-left: 15px; /* Add a little padding for spacing */
-    padding-right: 15px;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 15px;
   }
-  
+
   .skills-box {
     background-color: #e0f7fa;
     color: #030e1a;
-    text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px; /* Reduced margin to reduce gap between rows */
-    width: 100%; /* Ensure boxes take full width */
-    box-sizing: border-box; /* Prevent boxes from overflowing */
+    text-align: center;
+    height: 100%;
   }
-  
-  .large-box, .small-box {
-    text-align: left;
-  }
-  
+
   .skills-box h4 {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
-  
+
   .skills-box ul {
-    font-size: 1rem;
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
+    margin: 0;
+    padding-left: 20px;
     text-align: left;
   }
-  
-  .skills-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-  
-  /* Ensure Flexbox or Grid works correctly */
+
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px; /* Reduced gap between rows */
+    gap: 20px; /* Equal spacing between all rows and columns */
   }
-  
+
   .col-lg-6, .col-lg-4 {
+    flex: 1 1 calc(50% - 20px); /* For 2 columns, minus gap */
+    max-width: calc(50% - 20px);
     box-sizing: border-box;
-    padding: 10px; /* Ensure padding inside columns is consistent */
   }
-  
-  .col-lg-6 {
-    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
-  }
-  
+
   .col-lg-4 {
-    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
+    flex: 1 1 calc(33.333% - 20px); /* For 3 columns, minus gap */
+    max-width: calc(33.333% - 20px);
   }
-  
-  /* Reduce spacing on mobile devices */
+
+  .skills-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Responsive adjustments for smaller screens */
   @media (max-width: 768px) {
-    .skills-box {
-      padding: 15px;
-      margin-bottom: 0; /* Ensure margin is also zero on mobile */
-    }
-  
-    .large-box ul, .small-box ul {
-      font-size: 0.9rem;
-    }
-  
-    .container-fluid {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  
     .col-lg-6, .col-lg-4 {
-      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
-      padding-bottom: 10px; /* Adjust bottom padding for mobile */
+      flex: 1 1 100%; /* Full width on smaller screens */
+      max-width: 100%;
     }
-  
+
     .row {
-      margin-bottom: 5px; /* Further reduce row spacing on smaller screens */
+      gap: 10px; /* Reduce gap on smaller screens */
     }
   }
 </style>
