@@ -22,18 +22,18 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
 <style>
-    /* Original Styles */
     body {
         background: url('assets/img/background.jpg') no-repeat center center fixed;
         background-size: cover;
         color: white;
         margin: 0;
         padding: 0;
-        min-height: 100vh;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        overflow-x: hidden;
+        flex-direction: column;
+        overflow-x: hidden; /* Prevent horizontal scroll */
     }
 
     h1, h2, h3, p {
@@ -42,21 +42,19 @@
 
     h1 {
         color: LightCyan;
-        font-size: 3em; /* Keep original font size for desktop */
-        line-height: 1.2; /* Slightly adjusted for better spacing */
-        text-align: center;
     }
 
     h2 {
-        color: white;
-        font-size: 2.5em;
-        line-height: 1.2;
-        text-align: center;
+        color: white !important; /* Ensure 'Welcome to My Portfolio' is white */
+    }
+
+    h3 {
+        color: LightCyan;
     }
 
     #header {
         text-align: center;
-        padding: 20px;
+        max-width: 80%;
     }
 
     .header-row {
@@ -65,53 +63,120 @@
         align-items: center;
     }
 
-    .header-row h1, .header-row h2 {
+    .header-row h1,
+    .header-row h2 {
         margin: 5px 0;
+        word-wrap: break-word !important; /* Ensures text wraps */
+        overflow-wrap: break-word !important; /* Modern alternative */
+        white-space: normal; /* Allows text to wrap to the next line */
+        max-width: 80%; /* Prevents overflow */
+        text-align: center; /* Centers text */
+    }
+
+    #header .content {
+        display: block; /* Default for home section */
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto; /* Allow dynamic height */
+        padding: 20px; /* Add padding for spacing */
+        background-color: #030e1a; /* Ensure consistent background */
+    }
+
+    #header h1,
+    #header h2 {
+        margin: 10px 0;
+        color: LightCyan;
+    }
+
+    #header h2 {
+        font-size: 20px; /* Adjust subtitle font size */
     }
 
     #dynamic-role {
         background-color: LightCyan;
-        color: #030e1a;
+        color: #030e1a !important;
         padding: 5px;
-        border-radius: 5px;
-        margin-top: 20px;
+        border-radius: 0px;
         display: inline-block;
+        margin-top: 20px;
     }
 
+    /* Navigation Bar Styles */
     nav.nav-menu {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         background-color: #030e1a;
-        padding: 10px 0;
+        padding: 15px 0;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1000;
+        box-sizing: border-box;
     }
 
     nav.nav-menu ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
         padding: 0;
         margin: 0;
         list-style: none;
     }
 
     nav.nav-menu ul li {
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
     nav.nav-menu ul li a {
         text-decoration: none;
         color: LightCyan;
-        font-size: 16px;
+        font-size: 18px;
         transition: color 0.3s ease;
     }
 
     nav.nav-menu ul li a:hover {
-        color: white;
+        color: #ffffff;
+    }
+
+    nav.nav-menu ul li.active a {
+        color: LightCyan;
+        cursor: default;
+    }
+
+    /* Make the navigation scrollable horizontally on smaller screens */
+    @media screen and (max-width: 768px) {
+        nav.nav-menu ul {
+            overflow-x: auto;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        nav.nav-menu ul::-webkit-scrollbar {
+            display: none; /* Hide scrollbar in WebKit browsers */
+        }
+
+        nav.nav-menu ul {
+            -ms-overflow-style: none; /* Hide scrollbar in IE */
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+        }
+
+        nav.nav-menu ul li {
+            flex-shrink: 0; /* Prevent items from shrinking */
+        }
+
+        #header h1, #header h2 {
+          font-size: 24px; /* Smaller font size for mobile devices */
+          word-wrap: break-word !important; /* Ensures text wraps */
+          overflow-wrap: break-word !important;
+          line-height: 1.5; /* Add spacing between lines */
+        }
     }
 
     .social-links {
@@ -128,88 +193,72 @@
     }
 
     .social-links a:hover {
-        color: white;
+        color: white !important;
     }
 
     section {
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
+        padding-top: 80px; /* Adjust this based on the height of your header */
+        background-color: #030e1a;
+        color: white; /* Ensures readability with the dark background */
+    }
+
+    section:not(#header) .content {
+        display: none;
+    }
+
+    body, header, section {
+        background-color: #030e1a !important; /* Ensures no unwanted background color */
     }
 
     #about {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
         padding: 50px 20px;
-        flex-wrap: wrap; /* Ensure content wraps on smaller screens */
     }
 
     .about-section .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     .image-wrapper {
         flex: 1;
-        max-width: 50%; /* Retain current styling for desktop */
-        margin-bottom: 20px;
+        max-width: 40%;
+        text-align: center;
     }
 
     .profile-image {
         max-width: 100%;
-        border-radius: 0;
+        border-radius: 0%;
     }
 
     .text-content {
-        flex: 1;
-        max-width: 50%;
+        flex: 2;
+        max-width: 55%;
+        padding-left: 20px;
         color: white;
+        text-align: justify;
     }
 
-    /* Responsive Fixes */
     @media screen and (max-width: 768px) {
-        h1 {
-            font-size: 2em; /* Adjust font size for small screens */
-        }
-
-        h2 {
-            font-size: 1.8em; /* Adjust subtitle size */
-        }
-
-        .header-row {
-            padding: 0 15px; /* Add padding to prevent overflow */
-        }
-
-        .header-row h1, .header-row h2 {
-            text-align: center; /* Ensure proper alignment */
-            word-wrap: break-word; /* Prevent overlap */
-        }
-
-        nav.nav-menu ul {
-            flex-wrap: wrap; /* Ensure menu wraps */
-        }
-
-        nav.nav-menu ul li {
-            margin: 5px;
-        }
-
         #about {
-            flex-direction: column; /* Stack sections vertically */
-        }
-
-        .image-wrapper, .text-content {
-            max-width: 90%; /* Ensure full width usage on mobile */
+            flex-direction: column;
         }
 
         .text-content {
-            text-align: center;
-            margin-top: 10px;
+            padding-left: 0;
+            max-width: 100%;
+        }
+
+        .image-wrapper {
+            margin-bottom: 20px;
         }
     }
 </style>
+
 
 
 </head>
