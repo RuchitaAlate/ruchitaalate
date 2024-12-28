@@ -66,6 +66,11 @@
     .header-row h1,
     .header-row h2 {
         margin: 5px 0;
+        word-wrap: break-word; /* Ensures text wraps */
+        overflow-wrap: break-word; /* Modern alternative */
+        white-space: normal; /* Allows text to wrap to the next line */
+        max-width: 80%; /* Prevents overflow */
+        text-align: center; /* Centers text */
     }
 
     #header .content {
@@ -78,7 +83,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 100vh; /* Full viewport height */
+        height: auto; /* Allow dynamic height */
+        padding: 20px; /* Add padding for spacing */
         background-color: #030e1a; /* Ensure consistent background */
     }
 
@@ -164,6 +170,11 @@
         nav.nav-menu ul li {
             flex-shrink: 0; /* Prevent items from shrinking */
         }
+
+        #header h1, #header h2 {
+            font-size: 24px; /* Smaller font size for mobile devices */
+            line-height: 1.5; /* Add spacing between lines */
+        }
     }
 
     .social-links {
@@ -245,6 +256,7 @@
         }
     }
 </style>
+
 </head>
 <body>
 
