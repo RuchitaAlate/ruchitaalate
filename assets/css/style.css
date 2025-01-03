@@ -329,6 +329,9 @@ section {
   opacity: 0;
   z-index: 2;
 }
+section.section-title {
+  margin-top: 50px !important;
+}
 
 section.section-show {
   top: 70px;
