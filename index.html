@@ -301,7 +301,7 @@
     #about {
         display: flex;
         flex-direction: column;
-        padding: 30px;  /* Page margins */
+        padding: 30px !important;  /* Page margins */
         background-color: #030e1a; /* Dark background */
         gap: 30px; /* Space between content rows */
     }
@@ -546,11 +546,15 @@
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
   <head>
+    
   <style>
+    #interests {
+        padding: 30px !important;  /* Page margins */
+    }
+
     .icon-box h3 {
       color: #030e1a !important;
       text-align: center; /* Center-align the text */
-      padding: 30px !important;
     }
   </style>
 </head>
@@ -1203,6 +1207,10 @@
     </div>
     <style>
       /* Experience Section Styles */
+      #experience {
+        padding: 30px !important;  /* Page margins */
+    }
+
       .experience-box {
         display: flex;
         align-items: stretch; /* Stretch items to match height */
@@ -1804,6 +1812,10 @@
 
 <style>
   /* Main styles for the skills section */
+  #skills {
+        padding: 30px !important;  /* Page margins */
+    }
+
   .skills-section {
     padding: 60px 0;
     padding: 30px !important;
@@ -1988,6 +2000,11 @@
 
 <!-- CSS for Contact Section -->
 <style>
+  #contact {
+        
+        padding: 30px !important;  /* Page margins */
+        
+  }
   .contact .info-box {
   background-color: lightcyan;
   border-radius: 8px;
