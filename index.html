@@ -544,6 +544,7 @@
 </section>
 
 <!-- Interests Section -->
+<!-- Interests Section -->
 <section id="interests" class="interests-section">
   <head>
     <style>
@@ -571,36 +572,41 @@
         margin-bottom: 10px;
       }
 
-      /* Responsive design for smaller screens */
+      /* Ensure proper layout on smaller screens */
       @media (max-width: 768px) {
-        .icon-box {
-          padding: 15px;
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; /* Center-align boxes */
         }
 
-        .icon-box h3 {
-          font-size: 16px; /* Adjust font size for better fit */
+        .col-lg-3, .col-md-4 {
+          flex: 0 0 50%; /* Take 50% width on medium screens */
+          max-width: 50%;
+          margin-bottom: 15px; /* Add spacing between rows */
         }
 
         .icon-box i {
-          font-size: 32px; /* Scale down icon size */
+          font-size: 32px; /* Slightly reduce icon size */
         }
 
-        #interests {
-          padding: 20px !important; /* Reduce section padding for smaller screens */
+        .icon-box h3 {
+          font-size: 16px; /* Reduce text size for better fit */
         }
       }
 
       @media (max-width: 576px) {
-        .icon-box {
-          padding: 10px;
-        }
-
-        .icon-box h3 {
-          font-size: 14px; /* Further reduce font size for mobile */
+        .col-lg-3, .col-md-4 {
+          flex: 0 0 100%; /* Take full width on small screens */
+          max-width: 100%;
         }
 
         .icon-box i {
           font-size: 28px; /* Adjust icon size for very small screens */
+        }
+
+        .icon-box h3 {
+          font-size: 14px; /* Adjust text size for smaller screens */
         }
       }
     </style>
