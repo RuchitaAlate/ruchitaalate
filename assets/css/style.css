@@ -359,14 +359,14 @@ section .container {
     font-size: 14px; /* Reduced font size for mobile */
     letter-spacing: 1px; /* Adjusted letter spacing */
     white-space: normal; /* Allow wrapping */
-    word-wrap: break-word; /* Ensure long words break */
+    word-wrap: break-word !important; /* Ensure long words break */
   }
 
   .section-title p {
     font-size: 28px; /* Reduced font size for mobile */
     margin: -10px 0 10px 0; /* Adjusted margin */
     white-space: normal; /* Allow wrapping */
-    word-wrap: break-word; /* Ensure long words break */
+    word-wrap: break-word !important; /* Ensure long words break */
   }
 }
 
