@@ -1682,35 +1682,48 @@
   }
   
     /* Responsive design */
-  @media (max-width: 768px) {
-    #projects {
-      padding: 30px 10px;
-    }
-  
-    .projects .icon-box {
-      display: flex;
-      flex-direction: column; /* Stack image and content vertically */
-      max-width: 100%; /* Full width on small screens */
-      min-height: auto; /* Adjust height dynamically */
-      width: 100%; /* Ensure project box takes full width */
-    }
-  
-    .projects .image-box {
-      display: flex; /* Use flexbox for alignment */
-      justify-content: center; /* Center the image horizontally */
-      align-items: center; /* Center the image vertically */
-      width: 100%; /* Ensure full width */
-      margin-bottom: 15px; /* Add spacing below the image */
-    }
+  /* Mobile-specific changes */
+@media (max-width: 768px) {
+  .projects .icon-box {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: stretch; /* Stretch items to full width */
+    padding: 0; /* Remove padding for better mobile spacing */
+    width: 100%; /* Ensure the project box takes full width */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    min-height: auto; /* Adjust height dynamically for mobile */
+  }
+
+  .projects .image-box {
+    width: 100%; /* Make the image container take full width */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 15px; /* Add space below image */
+    display: block; /* Ensure it's treated as a block-level element */
+  }
 
   .projects .project-image {
-    width: auto !important; /* Let the image size adjust based on its aspect ratio */
-    height: auto !important; /* Maintain the original aspect ratio */
-    max-width: 100%; /* Prevent the image from exceeding container width */
-    object-fit: contain; /* Ensure the image looks good in its container */
+    width: 100% !important; /* Make the image take full width */
+    height: auto !important; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit height to ensure a good look on mobile */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
   }
 
+  .projects .text-content {
+    width: 100%; /* Ensure full width for text content */
+    padding: 15px; /* Add space inside text content */
+    text-align: left; /* Align text to the left */
   }
+
+  .projects h3, .projects p {
+    font-size: 16px; /* Adjust font size for better readability */
+    margin-bottom: 10px; /* Add margin between elements */
+  }
+
+  .view-project {
+    font-size: 14px; /* Adjust button size */
+    padding: 12px 18px; /* Adjust padding for button */
+  }
+}
+
 </style>
 
   
