@@ -358,11 +358,15 @@ section .container {
   .section-title h2 {
     font-size: 14px; /* Reduced font size for mobile */
     letter-spacing: 1px; /* Adjusted letter spacing */
+    white-space: normal; /* Allow wrapping */
+    word-wrap: break-word; /* Ensure long words break */
   }
 
   .section-title p {
     font-size: 28px; /* Reduced font size for mobile */
     margin: -10px 0 10px 0; /* Adjusted margin */
+    white-space: normal; /* Allow wrapping */
+    word-wrap: break-word; /* Ensure long words break */
   }
 }
 
@@ -391,6 +395,7 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 
 /*--------------------------------------------------------------
 # About
