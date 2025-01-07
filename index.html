@@ -1683,30 +1683,28 @@
   
     /* Responsive design */
   /* Mobile-specific changes */
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .projects .icon-box {
+      display: flex;
       flex-direction: column; /* Stack image and content vertically */
-      align-items: stretch; /* Stretch items to full width */
-      padding: 0; /* Remove padding for better mobile spacing */
-      width: 100%; /* Ensure the project box takes full width */
-      box-sizing: border-box; /* Ensure padding and borders are included in the width */
-      min-height: auto; /* Adjust height dynamically for mobile */
+      align-items: center; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+      width: 100%; /* Ensure project box takes full width */
+      padding: 15px; /* Adjust padding as needed */
     }
   
     .projects .image-box {
-      width: 100%; /* Make the image container take full width */
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 15px; /* Add space below image */
-      display: flex; /* Use flexbox to center the content */
-      justify-content: center !important; /* Center image horizontally */
-      align-items: center !important; /* Center image vertically */
+      width: 100%; /* Ensure the image container takes full width */
+      display: flex;
+      justify-content: center; /* Center image horizontally */
+      align-items: center; /* Center image vertically */
+      margin-bottom: 15px; /* Space below image */
     }
   
     .projects .project-image {
-      width: 100% !important; /* Make the image take full width */
-      height: auto !important; /* Maintain aspect ratio */
-      max-height: 150px; /* Limit height to ensure a good look on mobile */
-      object-fit: cover; /* Ensure the image covers the container without distortion */
+      width: 100%; /* Make image fill its container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure image covers its container without distortion */
     }
   
     .projects .text-content {
