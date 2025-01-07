@@ -1996,120 +1996,131 @@
 
 <!-- CSS for Contact Section -->
 <style>
+  /* Contact Section Styles */
+#contacts {
+  padding: 30px !important; /* Page margins */
+}
+
+.contact .info-box {
+  background-color: lightcyan;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #030e1a;
+  text-align: left; /* Align all text to the left */
+  word-wrap: break-word; /* Ensure long words or URLs break to fit */
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #030e1a;
+  margin-bottom: 10px;
+  text-align: left; /* Align heading to the left */
+}
+
+.contact .info-box p {
+  color: #030e1a;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left; /* Align paragraph text to the left */
+}
+
+/* Fix for icons on the left side of the boxes */
+.contact .info-box i {
+  color: #030e1a; /* Ensure left icons use the correct color */
+  font-size: 24px; /* Adjust icon size for better visibility */
+  margin-right: 10px; /* Maintain spacing between icon and text */
+}
+
+/* Social links styling */
+.contact .social-links a {
+  color: #030e1a; /* Set default icon color */
+  margin: 0 8px;
+  font-size: 24px; /* Default icon size */
+  transition: color 0.3s;
+  display: inline-block; /* Ensure proper layout */
+}
+
+.contact .social-links a:hover {
+  color: #007bff; /* Optional hover color for links */
+}
+
+/* Explicitly set color for icons inside social-links */
+.contact .social-links a .bx {
+  color: #030e1a; /* Ensure icons have the correct color */
+}
+
+.contact .social-links {
+  text-align: left; /* Align social icons to the left */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 10px; /* Add spacing between icons */
+  justify-content: center; /* Center icons on smaller screens */
+  margin-top: 15px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
   #contacts {
-    padding: 30px !important; /* Page margins */
+    padding: 20px !important; /* Reduce padding for smaller screens */
   }
 
   .contact .info-box {
-    background-color: lightcyan;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #030e1a;
-    text-align: left; /* Align all text to the left */
-    word-wrap: break-word; /* Ensure long words or URLs break to fit */
+    padding: 15px; /* Reduce padding inside boxes */
+    font-size: 14px; /* Adjust font size for better fit */
   }
 
   .contact .info-box h3 {
-    font-size: 20px;
-    color: #030e1a;
-    margin-bottom: 10px;
-    text-align: left; /* Align heading to the left */
+    font-size: 18px; /* Reduce heading size */
   }
 
   .contact .info-box p {
-    color: #030e1a;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left; /* Align paragraph text to the left */
+    font-size: 14px; /* Reduce paragraph text size */
   }
 
-  /* Fix for icons on the left side of the boxes */
   .contact .info-box i {
-    color: #030e1a; /* Ensure left icons use the correct color */
-    font-size: 24px; /* Adjust icon size for better visibility */
-    margin-right: 10px; /* Maintain spacing between icon and text */
+    font-size: 20px; /* Scale down icon size */
   }
 
-  /* Social links styling */
   .contact .social-links a {
-    color: #030e1a; /* Set default icon color */
-    margin: 0 8px;
-    font-size: 24px;
-    transition: color 0.3s;
-  }
-
-  .contact .social-links a:hover {
-    color: #007bff; /* Optional hover color for links */
-  }
-
-  /* Explicitly set color for icons inside social-links */
-  .contact .social-links a .bx {
-    color: #030e1a; /* Ensure icons have the correct color */
+    font-size: 20px; /* Scale down icon size */
+    margin: 0 6px; /* Adjust spacing */
   }
 
   .contact .social-links {
-    text-align: left; /* Align social icons to the left */
+    justify-content: center; /* Center-align icons */
+    margin-top: 20px; /* Add more space above icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact .info-box {
+    padding: 10px; /* Further reduce padding for very small screens */
   }
 
-  /* Add responsive design for mobile devices */
-  @media (max-width: 768px) {
-    #contacts {
-      padding: 20px !important; /* Reduce padding for smaller screens */
-    }
-
-    .contact .info-box {
-      padding: 15px; /* Reduce padding inside boxes */
-      font-size: 14px; /* Adjust font size for better fit */
-    }
-
-    .contact .info-box h3 {
-      font-size: 18px; /* Reduce heading size */
-    }
-
-    .contact .info-box p {
-      font-size: 14px; /* Reduce paragraph text size */
-    }
-
-    .contact .info-box i {
-      font-size: 20px; /* Scale down icon size */
-    }
-
-    .contact .social-links a {
-      font-size: 10px; /* Adjust social icon size */
-    }
-
-    .contact .social-links {
-      text-align: center; /* Center social icons on small screens */
-      margin-top: 15px; /* Add spacing above social icons */
-    }
+  .contact .info-box h3 {
+    font-size: 16px; /* Scale down heading size */
   }
 
-  @media (max-width: 480px) {
-    .contact .info-box {
-      padding: 10px; /* Further reduce padding for very small screens */
-    }
-
-    .contact .info-box h3 {
-      font-size: 16px; /* Scale down heading size */
-    }
-
-    .contact .info-box p {
-      font-size: 13px; /* Scale down text size */
-    }
-
-    .contact .info-box i {
-      font-size: 18px; /* Adjust icon size */
-    }
-
-    .contact .social-links a {
-      font-size: 18px; /* Scale down social icons */
-    }
-
-    .contact .social-links {
-      margin-top: 10px; /* Reduce spacing above social icons */
-    }
+  .contact .info-box p {
+    font-size: 13px; /* Scale down text size */
   }
+
+  .contact .info-box i {
+    font-size: 18px; /* Adjust icon size */
+  }
+
+  .contact .social-links a {
+    font-size: 18px; /* Further reduce icon size */
+    margin: 0 4px; /* Reduce spacing */
+  }
+
+  .contact .social-links {
+    justify-content: center; /* Ensure proper alignment */
+    gap: 8px; /* Adjust spacing between icons */
+    margin-top: 10px; /* Reduce spacing above icons */
+  }
+}
 </style>
 
 
