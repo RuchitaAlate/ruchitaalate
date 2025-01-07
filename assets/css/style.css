@@ -329,6 +329,7 @@ section {
   opacity: 0;
   z-index: 2;
 }
+
 section.section-title {
   margin-top: 50px !important;
 }
@@ -349,8 +350,19 @@ section .container {
   section {
     top: 120px;
   }
+
   section.section-show {
     top: 80px;
+  }
+
+  .section-title h2 {
+    font-size: 14px; /* Reduced font size for mobile */
+    letter-spacing: 1px; /* Adjusted letter spacing */
+  }
+
+  .section-title p {
+    font-size: 28px; /* Reduced font size for mobile */
+    margin: -10px 0 10px 0; /* Adjusted margin */
   }
 }
 
@@ -379,6 +391,7 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
