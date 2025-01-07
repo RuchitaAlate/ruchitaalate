@@ -52,9 +52,14 @@
         color: LightCyan;
     }
 
-    #header {
-        text-align: center;
-        max-width: 80%;
+    
+    #header h1 {
+      white-space: nowrap; /* Prevents text wrapping */
+      max-width: 100%; /* Ensure the text container can expand fully */
+      font-size: 2.5rem; /* Adjust font size as needed */
+      line-height: 1.2; /* Adjust line height for better spacing */
+      text-align: center; /* Keeps the text centered */
+      margin: 10px 0; /* Optional: Adjust margin */
     }
 
     .header-row {
@@ -62,8 +67,9 @@
         flex-direction: column;
         align-items: center;
     }
-
+  
     .header-row h1,
+  
     .header-row h2 {
         margin: 5px 0;
         white-space: normal; /* Allows text to wrap to the next line */
