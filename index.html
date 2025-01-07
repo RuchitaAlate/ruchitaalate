@@ -1702,8 +1702,8 @@
 <!-- Start Skills Section -->
 <section id="skills" class="skills-section">
   <div class="container-fluid py-5">
-    <div class="section-title" >
-      <h2>Technical Skills </h2>
+    <div class="section-title">
+      <h2>Technical Skills</h2>
     </div>
     <!-- Languages Box on Top -->
     <div class="row">
@@ -1718,7 +1718,7 @@
     <!-- Two Boxes in the First Row -->
     <div class="row">
       <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+        <div class="skills-box large-box same-height-box">
           <h4>Data Engineering & Data Management</h4>
           <ul>
             <li>Amazon Web Services (AWS): S3, EC2, RDS, DynamoDB, Athena</li>
@@ -1736,7 +1736,7 @@
       </div>
 
       <div class="col-lg-6 mb-4">
-        <div class="skills-box large-box">
+        <div class="skills-box large-box same-height-box">
           <h4>Statistical Analysis, Machine Learning, and Predictive Analytics</h4>
           <ul>
             <li>Hypothesis testing</li>
@@ -1797,7 +1797,7 @@
       </div>
     </div>
 
-    <!-- Image Below the Boxes -->
+    <!-- Images Below the Boxes -->
     <div class="row text-center mt-4">
       <div class="col-lg-12">
         <div class="skills-image">
@@ -1805,13 +1805,11 @@
         </div>
       </div>
     </div>
-  </div>
-  
-    <!-- Image Below the Boxes -->
+
     <div class="row text-center mt-4">
-      <div class="col-lg-22">
-        <div class="skills1-image">
-          <img src="assets/img/softskills.jpg" alt="Skills1 Image">
+      <div class="col-lg-12">
+        <div class="skills-image">
+          <img src="assets/img/softskills.jpg" alt="Soft Skills Image">
         </div>
       </div>
     </div>
@@ -1822,24 +1820,23 @@
 <style>
   /* Main styles for the skills section */
   #skills {
-        padding: 30px !important;  /* Page margins */
-    }
+    padding: 30px !important;
+  }
 
   .skills-section {
     padding: 60px 0;
-    padding: 30px !important;
     box-sizing: border-box;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
   }
-  
+
   .container-fluid {
-    max-width: 75%; /* Adjust the width to 90% of the page */
-    margin: 0 auto; /* Center the section with equal margins on both sides */
-    padding-left: 15px; /* Add a little padding for spacing */
+    max-width: 75%;
+    margin: 0 auto;
+    padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .skills-box {
     background-color: #e0f7fa;
     color: #030e1a;
@@ -1847,21 +1844,28 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px !important; /* Reduced margin to reduce gap between rows */
-    width: 100%; /* Ensure boxes take full width */
-    box-sizing: border-box; /* Prevent boxes from overflowing */
+    margin-bottom: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
+
   .large-box, .small-box {
     text-align: left;
   }
-  
+
+  .same-height-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   .skills-box h4 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
   .skills-box ul {
     font-size: 1rem;
     list-style-type: disc;
@@ -1869,7 +1873,7 @@
     padding: 0;
     text-align: left;
   }
-  
+
   .skills-image img {
     max-width: 100%;
     height: auto;
@@ -1878,89 +1882,56 @@
     border-radius: 10px;
   }
 
-  skills1-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
-
   .row-adjust {
-    margin-top: -15px !important; /* Adjust this value to shift the row upwards */
+    margin-top: -15px !important;
   }
-  
-  /* Ensure Flexbox or Grid works correctly */
+
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 10px; /* Reduced gap between rows */
+    margin-bottom: 10px;
   }
-  
+
   .col-lg-6, .col-lg-4 {
     box-sizing: border-box;
-    padding: 10px; /* Ensure padding inside columns is consistent */
+    padding: 10px;
   }
-  
+
   .col-lg-6 {
-    flex: 1 1 48%; /* Ensure each column in the first row is 48% of the width */
-  }
-  
-  .col-lg-4 {
-    flex: 1 1 30%; /* Ensure each column in the second row is 30% of the width */
+    flex: 1 1 48%;
   }
 
-    /* Ensure Flexbox or Grid works correctly for the third row */
-  .row-adjust {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribute items evenly */
-  }
-  
-  /* Make each .col-lg-4 box grow to the same height in row 3 */
   .col-lg-4 {
-    box-sizing: border-box;
-    padding: 10px; /* Ensure padding inside columns is consistent */
-    flex-grow: 1; /* Allow boxes to grow to the same height */
-    display: flex; /* Allow inner elements to align flexibly */
-    flex-direction: column; /* Ensure the content stacks vertically */
-  }
-  
-  /* Ensure Flexbox alignment inside the boxes */
-  .skills-box.small-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Spread out content to fill the space */
-    height: 100%; /* Ensure it takes the full height of the column */
+    flex: 1 1 30%;
   }
 
-    /* Reduce spacing on mobile devices */
+  /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
     .skills-box {
       padding: 15px;
-      margin-bottom: 0; /* Ensure margin is also zero on mobile */
+      margin-bottom: 0;
     }
-  
+
     .large-box ul, .small-box ul {
       font-size: 0.9rem;
     }
-  
+
     .container-fluid {
       padding-left: 10px;
       padding-right: 10px;
     }
-  
+
     .col-lg-6, .col-lg-4 {
-      flex: 1 1 100%; /* Make columns take up full width on smaller screens */
-      padding-bottom: 10px; /* Adjust bottom padding for mobile */
+      flex: 1 1 100%;
+      padding-bottom: 10px;
     }
-  
+
     .row {
-      margin-bottom: 5px; /* Further reduce row spacing on smaller screens */
+      margin-bottom: 5px;
     }
   }
-</style> 
+</style>
+
 
 
   <!-- Start Contact Section -->
