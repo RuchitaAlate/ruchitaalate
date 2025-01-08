@@ -315,6 +315,22 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top h1 {
     font-size: 26px;
   }
+
+@media (max-width: 1024px) {
+    .nav-menu {
+        overflow-x: auto; /* Enables horizontal scrolling */
+        white-space: nowrap; /* Prevents items from wrapping */
+    }
+
+    .nav-menu ul {
+        display: inline-flex; /* Aligns items in a row */
+    }
+
+    .nav-menu li {
+        flex: 0 0 auto; /* Prevents items from shrinking */
+    }
+}
+
 }
 
 /*--------------------------------------------------------------
