@@ -512,7 +512,70 @@
           margin: 10px 0; /* Add vertical spacing */
       }
     }
+    @media screen and (max-width: 1024px) {
+        #about {
+            padding: 20px; /* Reduce padding for better use of space */
+        }
     
+        #about .container {
+            max-width: 100%; /* Make the container span the full width */
+            padding: 0; /* Remove side padding */
+        }
+    
+        #about .content-row,
+        #about .info-container,
+        #about .additional-container {
+            flex-direction: column; /* Stack all items vertically */
+            gap: 20px; /* Space between stacked items */
+            align-items: stretch; /* Ensure items span full width */
+        }
+    
+        #about .image-wrapper,
+        #about .text-content,
+        #about .info-box,
+        #about .additional-box {
+            max-width: 100%; /* Ensure all boxes take full width */
+            margin: 0; /* Remove extra margins */
+        }
+    
+        #about .languages-box,
+        #about .hobbies-box {
+            max-width: 100%; /* Ensure languages and hobbies take full width */
+            margin: 0 auto; /* Center them horizontally */
+        }
+    
+        #about .text-content,
+        #about .info-box,
+        #about .additional-box,
+        #about .languages-box,
+        #about .hobbies-box {
+            text-align: justify; /* Justify text for better readability */
+        }
+    
+        #about .image-wrapper {
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+        }
+    
+        #about .profile-image {
+            max-width: 100%; /* Ensure the image doesn't overflow */
+            height: auto; /* Maintain aspect ratio */
+        }
+    
+        #about .info-container {
+          display: flex;
+          flex-direction: column; /* Stack Birthdate, Address, and Phone vertically */
+          align-items: center; /* Center-align content horizontally */
+          justify-content: center; /* Center-align content vertically */
+          text-align: center; /* Center text for uniformity */
+          width: 100%; /* Ensure it spans full width */
+      }
+      
+        #about .info-box {
+          max-width: 100%; /* Full width for each info box */
+          margin: 10px 0; /* Add vertical spacing */
+      }
+    }
   </style>
   
   <div class="container">
@@ -589,7 +652,6 @@
   </div>
 </section>
 
-<!-- Interests Section -->
 <!-- Interests Section -->
 <section id="interests" class="interests-section">
   <head>
@@ -872,6 +934,32 @@
       margin-bottom: 10px;
     }
   }
+  @media (max-width: 1024px) {
+    .leadership .icon-box {
+      flex-direction: column; /* Stack vertically */
+      align-items: stretch; /* Stretch items fully */
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .leadership img {
+      width: 100%; /* Image takes full width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px 10px 0 0; /* Round top corners */
+    }
+
+    .leadership .text-content {
+      width: 100%; /* Ensure full width for text */
+      padding: 15px; /* Add space inside text content */
+      text-align: left;
+    }
+
+    .leadership h3, .leadership p, .leadership ul li {
+      font-size: 16px; /* Adjust font sizes */
+      margin-bottom: 10px;
+    }
+  }
 </style>
 
   <!-- ======= Education Section ======= -->
@@ -1021,6 +1109,38 @@
   
   /* Mobile-specific changes */
   @media (max-width: 768px) {
+    .education .icon-box {
+      flex-direction: column; /* Stack vertically */
+      align-items: stretch; /* Stretch items fully */
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .education img {
+      width: 100%; /* Image takes full width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px 10px 0 0; /* Round top corners */
+    }
+  
+    .education .text-content {
+      width: 100%; /* Ensure full width for text */
+      padding: 15px; /* Add space inside text content */
+      text-align: left;
+    }
+  
+    .education h3, .education p, .education .gpa {
+      font-size: 16px; /* Adjust font sizes */
+      margin-bottom: 10px;
+    }
+  
+    .view-transcript {
+      margin-top: 10px;
+      width: 100%; /* Make the button full-width on mobile */
+      text-align: center;
+    }
+  }
+  @media (max-width: 1024px) {
     .education .icon-box {
       flex-direction: column; /* Stack vertically */
       align-items: stretch; /* Stretch items fully */
@@ -1248,6 +1368,31 @@
       text-align: center;
     }
   }
+  @media (max-width: 1024px) {
+    .certifications .icon-box {
+      flex-direction: column;
+      align-items: stretch;
+      margin-left: 0; /* Remove any centering */
+    }
+
+    .certifications img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .certifications .text-content {
+      padding: 15px;
+    }
+
+    .certifications h3, .certifications ul li {
+      font-size: 16px;
+    }
+
+    .view-credentials {
+      width: 100%;
+      text-align: center;
+    }
+  }
 </style>
 
 
@@ -1331,6 +1476,27 @@
 
       /* Responsive Design */
       @media (max-width: 768px) {
+        .experience-box {
+          flex-direction: column;
+          height: auto; /* Allow variable height on smaller screens */
+        }
+
+        .experience-img {
+          width: 100%; /* Full width for smaller screens */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
+        }
+
+        .experience-text {
+          border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
+        }
+
+        .section-title h2 {
+          word-wrap: break-word; /* Ensure long words wrap to the next line */
+        }
+      }
+
+      @media (max-width: 1024px) {
         .experience-box {
           flex-direction: column;
           height: auto; /* Allow variable height on smaller screens */
@@ -1763,6 +1929,47 @@
       padding: 12px 18px; /* Adjust padding for button */
     }
   }
+
+  @media (max-width: 1024px) {
+    .projects .icon-box {
+      display: flex;
+      flex-direction: column; /* Stack image and content vertically */
+      align-items: center; /* Center content horizontally */
+      justify-content: center; /* Center content vertically */
+      width: 100%; /* Ensure project box takes full width */
+      padding: 15px; /* Adjust padding as needed */
+    }
+  
+    .projects .image-box {
+      width: 100%; /* Ensure the image container takes full width */
+      display: flex;
+      justify-content: center; /* Center image horizontally */
+      align-items: center; /* Center image vertically */
+      margin-bottom: 15px; /* Space below image */
+    }
+  
+    .projects .project-image {
+      width: 100%; /* Make image fill its container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure image covers its container without distortion */
+    }
+  
+    .projects .text-content {
+      width: 100% !important ; /* Ensure full width for text content */
+      padding: 15px; /* Add space inside text content */
+      text-align: justify !important; /* Align text to the left */
+    }
+  
+    .projects h3, .projects p {
+      font-size: 16px; /* Adjust font size for better readability */
+      margin-bottom: 10px; /* Add margin between elements */
+    }
+  
+    .view-project {
+      font-size: 14px; /* Adjust button size */
+      padding: 12px 18px; /* Adjust padding for button */
+    }
+  }
 </style>
 
   
@@ -1974,6 +2181,31 @@
 
   /* Reduce spacing on mobile devices */
   @media (max-width: 768px) {
+    .skills-box {
+      padding: 15px;
+      margin-bottom: 0;
+    }
+
+    .large-box ul, .small-box ul {
+      font-size: 0.9rem;
+    }
+
+    .container-fluid {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .col-lg-6, .col-lg-4 {
+      flex: 1 1 100%;
+      padding-bottom: 10px;
+    }
+
+    .row {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 1024px) {
     .skills-box {
       padding: 15px;
       margin-bottom: 0;
