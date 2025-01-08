@@ -359,14 +359,16 @@ section .container {
     font-size: 14px; /* Reduced font size for mobile */
     letter-spacing: 1px; /* Adjusted letter spacing */
     white-space: normal; /* Allow wrapping */
-    word-wrap: break-word !important; /* Ensure long words break */
+    word-wrap: break-word; /* Ensure long words break */
+    line-height: 1.2; /* Adjusted line height */
+    margin-bottom: 10px; /* Add some margin to separate lines */
   }
 
   .section-title p {
     font-size: 28px; /* Reduced font size for mobile */
     margin: -10px 0 10px 0; /* Adjusted margin */
     white-space: normal; /* Allow wrapping */
-    word-wrap: break-word !important; /* Ensure long words break */
+    word-wrap: break-word; /* Ensure long words break */
   }
 }
 
@@ -374,7 +376,7 @@ section .container {
   font-size: 18px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  line-height: 1.5; /* Adjusted line height */
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -395,6 +397,7 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
 
 
 /*--------------------------------------------------------------
