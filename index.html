@@ -181,6 +181,33 @@
         }
     }
 
+  /* Make the navigation scrollable horizontally on smaller screens */
+    @media screen and (max-width: 1024px) {
+        nav.nav-menu ul {
+            overflow-x: auto;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        nav.nav-menu ul::-webkit-scrollbar {
+            display: none; /* Hide scrollbar in WebKit browsers */
+        }
+
+        nav.nav-menu ul {
+            -ms-overflow-style: none; /* Hide scrollbar in IE */
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+        }
+
+        nav.nav-menu ul li {
+            flex-shrink: 0; /* Prevent items from shrinking */
+        }
+
+        #header h1, #header h2 {
+          font-size: 22px; /* Smaller font size for mobile devices */
+          line-height: 1.5; /* Add spacing between lines */
+        }
+    }
+
+
     .social-links {
         display: flex;
         justify-content: center;
@@ -246,6 +273,19 @@
     }
 
     @media screen and (max-width: 768px) {
+        #about {
+            flex-direction: column;
+        }
+
+        .text-content {
+            padding-left: 0;
+            max-width: 100%;
+        }
+
+        .image-wrapper {
+            margin-bottom: 20px;
+        }
+    @media screen and (max-width: 1024px) {
         #about {
             flex-direction: column;
         }
