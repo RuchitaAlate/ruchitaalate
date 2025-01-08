@@ -942,7 +942,11 @@
       width: 100%;
       box-sizing: border-box;
     }
-
+    .leadership-container {
+      display: flex;
+      justify-content: center; /* Horizontal centering */
+      align-items: center; /* Vertical centering, if needed */
+    }
     .leadership img {
       width: 100%; /* Image takes full width */
       height: auto; /* Maintain aspect ratio */
@@ -952,7 +956,7 @@
     .leadership .text-content {
       width: 100%; /* Ensure full width for text */
       padding: 15px; /* Add space inside text content */
-      text-align: left;
+      text-align: center;
     }
 
     .leadership h3, .leadership p, .leadership ul li {
@@ -1148,8 +1152,13 @@
       width: 100%;
       box-sizing: border-box;
     }
-  
-    .education img {
+
+    .education-container {
+      display: flex;
+      justify-content: center; /* Horizontal centering */
+      align-items: center; /* Vertical centering, if needed */
+    }
+        .education img {
       width: 100%; /* Image takes full width */
       height: auto; /* Maintain aspect ratio */
       border-radius: 10px 10px 0 0; /* Round top corners */
@@ -1158,7 +1167,7 @@
     .education .text-content {
       width: 100%; /* Ensure full width for text */
       padding: 15px; /* Add space inside text content */
-      text-align: left;
+      text-align: center;
     }
   
     .education h3, .education p, .education .gpa {
