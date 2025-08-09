@@ -362,7 +362,7 @@
     #about .content-row {
         display: flex;
         flex-direction: row; /* Side-by-side layout */
-        align-items: stretch; /* Match height */
+        align-items: stretch; /* Match height of image & text box */
         justify-content: space-between;
         gap: 20px; /* Add gap between the image and text */
     }
@@ -373,13 +373,14 @@
         max-width: 55%; /* Limit image width */
         display: flex;
         justify-content: center;
+        align-items: stretch; /* Stretch image to match text height */
     }
 
     /* Profile Image */
     #about .profile-image {
         width: 100%;
-        height: 100%;
-        object-fit: cover; /* Scale image */
+        height: 100%; /* Match text box height */
+        object-fit: cover; /* Scale image without distortion */
         border-radius: 5px;
     }
 
@@ -387,6 +388,9 @@
     #about .text-content {
         flex: 2;
         max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     /* Text Box Styling */
@@ -398,6 +402,7 @@
         text-align: justify;
         max-width: 90%; /* Decrease the width of the text box */
         margin: 0 auto; /* Center the text box horizontally */
+        flex: 1; /* Let the text box stretch to fill height */
     }
 
     /* Gap between text and info containers */
