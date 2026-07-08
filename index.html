@@ -1373,50 +1373,50 @@
 
 
 
-  <!-- Experience Section -->
+ <!-- Experience Section -->
 <section id="experience" class="services">
   <div class="container">
-    <div class="section-title" >
-      <h2>Professional Experience </h2>
+
+    <div class="section-title">
+      <h2>Professional Experience</h2>
     </div>
+
     <style>
-      /* Experience Section Styles */
       #experience {
-        padding: 30px !important;  /* Page margins */
+        padding: 30px !important;
       }
 
       .experience-box {
         display: flex;
-        align-items: stretch; /* Stretch items to match height */
-        justify-content: flex-start; /* Left-align content */
-        background-color: #e0ffff; /* Light cyan background */
-        padding: 0; /* Remove padding */
+        align-items: stretch;
+        justify-content: flex-start;
+        background-color: #e0ffff;
+        padding: 0;
         margin-bottom: 20px;
-        border: 1px solid #cce7e8; /* Border for definition */
-        border-radius: 10px; /* Rounded edges */
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        height: 300px; /* Fixed height for uniform size */
-        max-width: 100%; /* Ensure consistency across all boxes */
-        flex-grow: 1; /* Ensure boxes grow to same width */
+        border: 1px solid #cce7e8;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        height: 300px;
+        max-width: 100%;
       }
 
       .experience-img {
-        width: 300px; /* Fixed width for consistency */
-        height: 100%; /* Full height to match the box */
-        border: 1px solid #030e1a; /* Border around the image */
-        border-radius: 10px 0 0 10px; /* Rounded edges for image */
-        object-fit: cover; /* Ensure image scales properly */
-        flex-shrink: 0; /* Prevent image shrinkage */
+        width: 300px;
+        height: 100%;
+        border: 1px solid #030e1a;
+        border-radius: 10px 0 0 10px;
+        object-fit: cover;
+        flex-shrink: 0;
       }
 
       .experience-text {
         color: #030e1a;
-        flex: 1; /* Ensures text fills available space */
-        padding: 20px; /* Add padding inside the text section */
-        text-align: justify; /* Justify the text */
-        overflow-y: auto; /* Handle overflow if content exceeds box height */
-        height: 100%; /* Match height of the container */
-        border-radius: 0 10px 10px 0; /* Rounded edges for text area */
+        flex: 1;
+        padding: 20px;
+        text-align: justify;
+        overflow-y: auto;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
       }
 
       .experience-text h4 {
@@ -1427,18 +1427,15 @@
 
       .experience-text h5 {
         font-size: 16px;
-        margin-bottom: 15px; /* Add spacing between role and description */
+        margin-bottom: 10px;
       }
 
       .experience-text p {
-        margin: 0 0 10px 0; /* Add spacing below the role description */
-        padding: 0;
+        margin-bottom: 10px;
       }
 
       .experience-text ul {
-        list-style-type: disc;
-        padding-left: 20px; /* Add padding for bullet list alignment */
-        margin: 0;
+        padding-left: 20px;
       }
 
       .experience-text ul li {
@@ -1446,139 +1443,207 @@
         line-height: 1.5;
         text-align: left;
       }
-      .section-title h2 {
-        word-wrap: break-word;
-      }
 
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .experience-box {
-          flex-direction: column;
-          height: auto; /* Allow variable height on smaller screens */
+      @media (max-width:768px){
+
+        .experience-box{
+          flex-direction:column;
+          height:auto;
         }
 
-        .experience-img {
-          width: 100%; /* Full width for smaller screens */
-          height: auto; /* Maintain aspect ratio */
-          border-radius: 10px 10px 0 0; /* Rounded edges for top alignment */
+        .experience-img{
+          width:100%;
+          height:auto;
+          border-radius:10px 10px 0 0;
         }
 
-        .experience-text {
-          border-radius: 0 0 10px 10px; /* Rounded edges for bottom alignment */
+        .experience-text{
+          border-radius:0 0 10px 10px;
         }
 
-        .section-title h2 {
-          word-wrap: break-word; /* Ensure long words wrap to the next line */
-        }
       }
 
     </style>
 
     <div class="row">
-      <!-- Administrative Information Technology Services -->
+
+      <!-- GE HealthCare -->
       <div class="col-md-12">
         <div class="experience-box">
-          <img src="assets/img/2.jpg" alt="AITS Logo" class="experience-img">
+
+          <img src="assets/img/1.jpg" class="experience-img" alt="GE HealthCare">
+
           <div class="experience-text">
-            <h4> University of Illinois System(AITS)</h4>
+
+            <h4>GE HealthCare, USA</h4>
             <h5>August 2024 – Present</h5>
-            <p><em>Data Science Analyst </em></p>
+
+            <p><em>AI/ML Engineer</em></p>
+
             <ul>
-              <li>Analyzed legislative trends impacting education, identifying the top 5 states driving 80% of changes, which inform strategic decision-making and funding initiatives.</li>
-              <li>Developed machine learning models using TF-IDF and cosine similarity to standardize job postings data, achieving 77% accuracy and enhancing the precision of job classification.</li>
-              <li>Initiated the transition of workflows and data processes from KNIME to Microsoft Azure for improved scalability.</li>
+
+              <li>Architected a healthcare imaging intelligence ecosystem for multi-class abnormality detection, streamlining diagnostic triage, accelerating clinical review cycles, and improving AI-assisted interpretation across enterprise radiology operations.</li>
+
+              <li>Engineered distributed image processing pipelines using Apache Spark, Apache Airflow, and Google Cloud, processing <strong>650 GB</strong> of DICOM, MRI, CT, and X-ray data weekly for augmentation, annotation, and GPU-based CNN training.</li>
+
+              <li>Developed deep feature extraction pipelines using PyTorch and Hugging Face Transformers, integrating ResNet and EfficientNet across <strong>185K+</strong> scans for lesion localization, segmentation, and disease classification.</li>
+
+              <li>Implemented FAISS vector indexing on CNN embeddings, enabling semantic similarity search across <strong>185K+</strong> imaging studies for case-based retrieval.</li>
+
+              <li>Optimized Scikit-learn and XGBoost models using SHAP explainability and hyperparameter tuning, improving detection accuracy by <strong>18%</strong> and recall by <strong>14%</strong>.</li>
+
+              <li>Designed multimodal AI workflows using GPT-4, LangGraph, and LLMs by integrating CNN outputs with patient records and radiology context for explainable clinical decision support.</li>
+
+              <li>Fine-tuned LLMs using PEFT and LoRA, combining imaging predictions with EHR narratives and physician notes to automate diagnostic reporting.</li>
+
+              <li>Operationalized AI workloads using Docker and MLflow with CI/CD, model registry, drift monitoring, and GPU inference services supporting <strong>45K+</strong> predictions daily.</li>
+
             </ul>
+
           </div>
+
         </div>
       </div>
 
-      <!-- Business Intelligence Group -->
+      <!-- University of Illinois -->
+
       <div class="col-md-12">
+
         <div class="experience-box">
-          <img src="assets/img/1.jpg" alt="BIG Logo" class="experience-img">
+
+          <img src="assets/img/2.jpg" class="experience-img" alt="University of Illinois">
+
           <div class="experience-text">
-            <h4>Business Intelligence Group (BIG)</h4>
-            <h5>August 2024 – December 2024</h5>
-            <p><em> Data Consultant</em></p>
+
+            <h4>University of Illinois System (AITS), Illinois, USA</h4>
+
+            <h5>August 2024 – March 2026</h5>
+
+            <p><em>Data Science Analyst</em></p>
+
             <ul>
-              <li>Provided demand forecasting solutions for a Japan-based food export/import company, optimizing inventory with 7 years of historical sales data analysis.</li>
-              <li>Conducted a detailed evaluation of stock management processes, identifying inefficiencies and providing actionable insights projected to enhance operational efficiency by 15% in Q1 2025.</li>
-              <li>Identified external demand influencers like CPI, fuel prices, inflation, and weather, incorporating them into a hybrid XGBoost and Random Forest model, achieving 96% accuracy in forecasting</li>
+
+              <li>Enabled <strong>86% promotion prediction accuracy</strong> for workforce planning by standardizing <strong>5K+</strong> HR records and developing predictive mobility models using Python, Scikit-learn, Markov Chains, and NLP embeddings.</li>
+
+              <li>Transformed <strong>10K+</strong> legislative policy documents into actionable insights by building an end-to-end NLP pipeline integrating API ingestion, Selenium/pdfplumber extraction, semantic clustering, and Generative AI workflows on Google Cloud.</li>
+
+              <li>Delivered real-time legislative intelligence by launching a Streamlit analytics platform powered by LLaMA prompt engineering and Retrieval-Augmented Generation (RAG), while migrating KNIME and Jupyter pipelines to Azure, Microsoft Fabric, and Linux.</li>
+
             </ul>
+
           </div>
+
         </div>
+
       </div>
 
-      <!-- Radia, Inc -->
+      <!-- Radia -->
+
       <div class="col-md-12">
+
         <div class="experience-box">
-          <img src="assets/img/3.jpg" alt="Radia Logo" class="experience-img">
+
+          <img src="assets/img/3.jpg" class="experience-img" alt="Radia">
+
           <div class="experience-text">
-            <h4>Radia, Inc </h4>
+
+            <h4>Radia, Inc., Colorado, USA</h4>
+
             <h5>June 2024 – August 2024</h5>
-            <p><em>Interconnection Data Analyst</em></p>
+
+            <p><em>Data Science Intern</em></p>
+
             <ul>
-              <li>Managed the end-to-end data engineering process, including scraping, ingesting, and mapping data from over 15 renewable energy sources to Amazon AWS S3 buckets.</li>
-              <li>Enhanced overall data accessibility by managing the integration process, contributing to a 30% improvement in workflow efficiency.</li>
-              <li>Engineered a structured approach for cross-functional teams to ensure seamless integration of renewable energy data, improving operational efficiency for 30+ users.</li>
+
+              <li>Expanded renewable energy cost-tracking visibility by integrating data from <strong>15+</strong> energy sources through automated ETL pipelines built with Python and SQL, consolidating datasets into AWS S3 and BigQuery.</li>
+
+              <li>Increased data pipeline throughput by <strong>30%</strong> while improving SQL query performance, transformation logic, and validation workflows.</li>
+
+              <li>Lowered operational rework by <strong>15%</strong> through standardized ETL pipelines, cross-functional data integration, and enhanced data quality validation.</li>
+
             </ul>
+
           </div>
+
+        </div>
+
+      </div>
+
+            <!-- Business Intelligence Group -->
+      <div class="col-md-12">
+        <div class="experience-box">
+
+          <img src="assets/img/4.jpg" class="experience-img" alt="Business Intelligence Group">
+
+          <div class="experience-text">
+
+            <h4>Business Intelligence Group (BIG), Illinois, USA</h4>
+
+            <h5>August 2023 – December 2023</h5>
+
+            <p><em>Data Science Consultant</em></p>
+
+            <ul>
+
+              <li>Reduced inventory stockouts by <strong>18%</strong> for a Japanese food company by analyzing seven years of sales data and developing ensemble demand forecasting models using <strong>XGBoost</strong> and <strong>Random Forest</strong> with Python and Snowflake datasets.</li>
+
+              <li>Improved operational and financial performance by <strong>15%</strong> in Q1 2024 by auditing stock management workflows and validating optimization strategies through SQL analysis, A/B testing experiments, and advanced Tableau/Power BI dashboards.</li>
+
+              <li>Achieved <strong>98% forecast accuracy</strong> and drove approximately <strong>12% uplift in customer satisfaction</strong> by integrating external demand drivers (CPI, fuel prices, inflation, weather) with NPS sentiment analytics, market basket analysis, and visualization dashboards using Python and Google Cloud.</li>
+
+            </ul>
+
+          </div>
+
         </div>
       </div>
 
-      <!-- Svenska Design Hotel -->
+      <!-- Accenture -->
       <div class="col-md-12">
         <div class="experience-box">
-          <img src="assets/img/4.jpg" alt="Svenska Design Hotel" class="experience-img">
+
+          <img src="assets/img/5.jpg" class="experience-img" alt="Accenture">
+
           <div class="experience-text">
-            <h4>Svenska Design Hotel</h4>
-            <h5>January 2023 – March 2023</h5>
-            <p><em>Data Analyst Intern</em></p>
+
+            <h4>Accenture, India</h4>
+
+            <h5>May 2018 – May 2021</h5>
+
+            <p><em>Data Scientist</em></p>
+
             <ul>
-              <li>Optimized revenue and bolstered customer satisfaction by analyzing consumer data from Bengaluru, India.</li>
-              <li>Performed sentiment analysis on web reviews to interpret customer sentiment using stored data and dashboards.</li>
-              <li>Applied SQL and data analysis techniques to achieve high precision (94%) and recall (93%) for a Gradient Boosting Model, identifying key features affecting customer satisfaction.</li>
+
+              <li>Led development of a centralized banking analytics ecosystem integrating transaction, lending, and customer datasets to deliver ML solutions for fraud detection, credit risk modeling, AML surveillance, and regulatory decision intelligence.</li>
+
+              <li>Analyzed <strong>3.2M+</strong> transaction records using Python and SQL, applying exploratory analysis, cohort modeling, propensity scoring, survival analysis, and customer segmentation to identify delinquency patterns and churn drivers.</li>
+
+              <li>Built predictive machine learning models using <strong>XGBoost</strong> and <strong>Scikit-learn</strong>, delivering fraud detection, underwriting risk, recommendation, and next-best-action systems that improved targeting accuracy and conversion by <strong>18%</strong>.</li>
+
+              <li>Developed NLP pipelines using <strong>Hugging Face Transformers</strong> and <strong>BERT</strong> to automate complaint classification, KYC extraction, semantic search, and intent detection across <strong>420K+</strong> customer interactions annually.</li>
+
+              <li>Applied statistical validation techniques including A/B testing, t-tests, chi-square tests, uplift modeling, and confidence intervals to evaluate fraud interventions and loan offer effectiveness, improving engagement by <strong>14%</strong>.</li>
+
+              <li>Enhanced model performance through feature engineering, PCA, SHAP explainability, ROC-AUC optimization, F1-score tuning, and precision-recall analysis, increasing fraud detection sensitivity by <strong>16%</strong>.</li>
+
+              <li>Optimized model hyperparameters using Bayesian Optimization, improving resilience across payment spikes, seasonal trends, and real-time financial streams processing <strong>2.7K+</strong> events per minute.</li>
+
+              <li>Built Apache Airflow ETL pipelines processing <strong>28GB+</strong> of daily transaction, account, and market data for anomaly detection, feature engineering, and automated model retraining.</li>
+
+              <li>Deployed ML services using <strong>AWS SageMaker</strong> and <strong>Docker</strong>, operationalizing fraud scoring, credit assessment, and recommendation APIs supporting <strong>38K+</strong> inference requests per day.</li>
+
+              <li>Partnered with fraud, underwriting, treasury, and product teams to deliver enterprise ML systems for AML surveillance, credit underwriting, portfolio optimization, and customer intelligence, reducing manual investigations by <strong>22%</strong>.</li>
+
             </ul>
+
           </div>
+
         </div>
       </div>
 
-      <!-- Leadership Boulevard -->
-      <div class="col-md-12">
-        <div class="experience-box">
-          <img src="assets/img/5.jpg" alt="Leadership Boulevard" class="experience-img">
-          <div class="experience-text">
-            <h4>Leadership Boulevard Private Limited (Leadschool)</h4>
-            <h5>April 2022 – June 2022</h5>
-            <p><em>Business Analyst Intern</em></p>
-            <ul>
-              <li>Analyzed student learning outcomes and school distribution using Python, Tableau, and Excel to provide investor-centric insights.</li>
-              <li>Conducted exploratory data analysis on zone-wise BSU growth, revealing regional performance and revenue potential.</li>
-              <li>Introduced innovative concepts like Atal Tinkering Labs, leading to $6000 in cost savings.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- S. K. Patodia & Associates -->
-      <div class="col-md-12">
-        <div class="experience-box">
-          <img src="assets/img/6.jpg" alt="S. K. Patodia & Associates" class="experience-img">
-          <div class="experience-text">
-            <h4>Kotak Mahindra Bank (via S. K. Patodia & Associates)</h4>
-            <h5>September 2019 – June 2021</h5>
-            <p><em>Financial Analyst</em></p>
-            <ul>
-              <li>Led concurrent audits of the Credit Card Department of Kotak Mahindra Bank Limited using data analysis techniques, managing a team of 10 for accurate data analysis and compliance.</li>
-              <li>Produced comprehensive monthly reports unveiling data-driven insights, earning a Certificate of Appreciation for exemplary leadership.</li>
-              <li>Utilized Python and SQL to analyze extensive datasets, resolving discrepancies and clarifying data queries for informed decision-making.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-</section>   
+</section>
 <!-- End Experience Section -->
 
   <!-- ======= Projects Section ======= -->
